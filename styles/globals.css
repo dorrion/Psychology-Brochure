@@ -6,3 +6,9 @@
 /* .bg-primary {
   @apply bg-white dark:bg-slate-800;
 } */
+
+@layer components {
+  .tag {
+    @apply text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-stone-600 bg-stone-200 uppercase last:mr-0 mr-1;
+  }
+}
