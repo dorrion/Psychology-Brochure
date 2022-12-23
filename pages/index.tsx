@@ -2,8 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { Inter } from '@next/font/google';
 import Layout from '../components/layout';
-
-const inter = Inter({ subsets: ['latin'] });
+import { StudentIcon } from '../components/icon';
 
 export default function Home() {
   return (
@@ -34,25 +33,27 @@ export default function Home() {
                 <div className="bg-gray-100 p-6 rounded-lg">
                   {/* <img className="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/720x400" alt="content"> */}
                   <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                    SUBTITLE
+                    아주대학교 심리학과 졸업 규정
                   </h3>
                   <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                    Chichen Itza
+                    심리학과에서 졸업하기
                   </h2>
-                  <p className="leading-relaxed text-base">
-                    Fingerstache flexitarian street art 8-bit waistcoat.
-                    Distillery hexagon disrupt edison bulbche.
-                  </p>
+                  <span className="tag">이수학점</span>
+                  <span className="tag">어학점수</span>
+                  <span className="tag">학점</span>
+                  <span className="tag">교필</span>
+                  <span className="tag">전필/전선</span>
+                  <span className="tag">아티클</span>
                 </div>
               </div>
               <div className="xl:w-1/4 md:w-1/2 p-4">
                 <div className="bg-gray-100 p-6 rounded-lg">
                   {/* <img className="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/721x401" alt="content"> */}
                   <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                    SUBTITLE
+                    교내/교외 장학금 모음.zip
                   </h3>
                   <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                    Colosseum Roma
+                    심리학과에서 장학금 받기
                   </h2>
                   <p className="leading-relaxed text-base">
                     Fingerstache flexitarian street art 8-bit waistcoat.
@@ -64,10 +65,10 @@ export default function Home() {
                 <div className="bg-gray-100 p-6 rounded-lg">
                   {/* <img className="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/722x402" alt="content"> */}
                   <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                    SUBTITLE
+                    교수님 안녕하십니까. 감자학개론 수강생 김감자입니다.
                   </h3>
                   <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                    Great Pyramid of Giza
+                    심리학과에서 메일 쓰기
                   </h2>
                   <p className="leading-relaxed text-base">
                     Fingerstache flexitarian street art 8-bit waistcoat.
@@ -79,10 +80,10 @@ export default function Home() {
                 <div className="bg-gray-100 p-6 rounded-lg">
                   {/* <img className="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/723x403" alt="content"> */}
                   <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                    SUBTITLE
+                    우리 학교는 무엇을 지원해 주는가 : 방학 Todo list
                   </h3>
                   <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                    San Francisco
+                    심리학과에서 비교과 프로그램 하기
                   </h2>
                   <p className="leading-relaxed text-base">
                     Fingerstache flexitarian street art 8-bit waistcoat.
@@ -94,10 +95,10 @@ export default function Home() {
                 <div className="bg-gray-100 p-6 rounded-lg">
                   {/* <img className="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/723x403" alt="content"> */}
                   <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                    SUBTITLE
+                    노동하고 먹고 자기
                   </h3>
                   <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                    San Francisco
+                    심리학과에서 노식주
                   </h2>
                   <p className="leading-relaxed text-base">
                     Fingerstache flexitarian street art 8-bit waistcoat.
@@ -109,10 +110,10 @@ export default function Home() {
                 <div className="bg-gray-100 p-6 rounded-lg">
                   {/* <img className="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/723x403" alt="content"> */}
                   <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                    SUBTITLE
+                    수강신청, 공부, 논문 검색의 모든 것
                   </h3>
                   <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                    San Francisco
+                    심리학과에서 공부하기
                   </h2>
                   <p className="leading-relaxed text-base">
                     Fingerstache flexitarian street art 8-bit waistcoat.
@@ -124,10 +125,10 @@ export default function Home() {
                 <div className="bg-gray-100 p-6 rounded-lg">
                   {/* <img className="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/723x403" alt="content"> */}
                   <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                    SUBTITLE
+                    마이쭈 먹을래?
                   </h3>
                   <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                    San Francisco
+                    심리학과에서 놀기
                   </h2>
                   <p className="leading-relaxed text-base">
                     Fingerstache flexitarian street art 8-bit waistcoat.
@@ -139,10 +140,10 @@ export default function Home() {
                 <div className="bg-gray-100 p-6 rounded-lg">
                   {/* <img className="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/723x403" alt="content"> */}
                   <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                    SUBTITLE
+                    아무노래나 일단 틀어 아무거나 신나는 걸로
                   </h3>
                   <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                    San Francisco
+                    Free Talk
                   </h2>
                   <p className="leading-relaxed text-base">
                     Fingerstache flexitarian street art 8-bit waistcoat.
