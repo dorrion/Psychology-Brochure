@@ -15,7 +15,13 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "postcss.config.js"],
+  "include": [
+    "custom.d.ts",
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "postcss.config.js"
+  ],
   "exclude": ["node_modules"],
   "baseUrl": ".",
   "paths": {
