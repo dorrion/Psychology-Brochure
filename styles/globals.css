@@ -9,6 +9,9 @@
 
 @layer components {
   .tag {
-    @apply text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-stone-600 bg-stone-200 uppercase last:mr-0 mr-1;
+    @apply text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-stone-600 bg-stone-200 uppercase last:mr-0 mr-1 mb-2;
+  }
+  .tag-category {
+    @apply text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full  text-orange-600 bg-orange-200 uppercase last:mr-0 mr-1 mb-2;
   }
 }
