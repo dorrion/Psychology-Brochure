@@ -1,10 +1,11 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import { Inter } from '@next/font/google';
+import { promises as fs } from 'fs';
+import path from 'path';
 import Layout from '../components/layout';
-import { StudentIcon } from '../components/icon';
+import Alert from '../components/modal';
 
-export default function Home() {
+export default function Home({ survival }: any) {
   return (
     <>
       <Layout>
@@ -15,11 +16,12 @@ export default function Home() {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
+        <Alert />
         <section className="text-gray-600 body-font">
           <div className="container px-5 py-24 mx-auto">
             <div className="flex-col flex-wrap w-full mb-20">
               <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
-                <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
+                <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900 dark:text-gray-100">
                   심리학과에서 살아남기
                 </h1>
                 <div className="h-1 w-20 bg-indigo-500 rounded"></div>
@@ -43,13 +45,6 @@ export default function Home() {
                   <span className="tag">학점</span>
                   <span className="tag">교필</span>
                   <span className="tag">전필/전선</span>
-                  <Image
-                    className="h-40 rounded w-full object-cover object-center mb-6"
-                    src="/images/오은.webp"
-                    alt="content"
-                    width={600}
-                    height={1000}
-                  />
                 </div>
               </div>
               <div className="xl:w-1/4 md:w-1/2 p-4">
@@ -163,4 +158,26 @@ export default function Home() {
       </Layout>
     </>
   );
+}
+
+export async function getStaticProps() {
+  const dataDirectory = path.join(process.cwd(), 'data'); // /data 폴더 들어간다
+  const filenames = await fs.readdir(dataDirectory); // data 폴더 읽는다
+
+  const survival = filenames.map(async (filename) => {
+    // 돌면서 data에 있는 파일 다 가져온다
+    const filePath = path.join(dataDirectory, filename);
+    const fileContent = await fs.readFile(filePath, 'utf8');
+
+    return {
+      filename, // 파일 이름
+      content: fileContent, // Json 내용
+    };
+  });
+
+  return {
+    props: {
+      survival: await Promise.all(survival),
+    },
+  };
 }
