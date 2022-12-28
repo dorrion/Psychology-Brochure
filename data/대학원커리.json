@@ -1,0 +1,64 @@
+[
+  {
+    "id": 1,
+    "major": "아동임상",
+    "freshmen": {
+      "spring": {
+        "majorRequired": [
+          {
+            "name": "심리학개론",
+            "engName": "Introduction to Psychology",
+            "explain": "심리학의 과학적 측면과 심리학을 전공하는데 필수적인 기초 개념, 연구절차, 연구영역과 적용범위에 관한 개괄적인 지식 을 습득한다."
+          },
+          {
+            "name": "심리통계와 데이터분석",
+            "engName": "Experimental Design and Analysis",
+            "explain": "본 과목은 학생들에게 심리학에서 널리 사용되고 있는 실험 설계에 대한 지식을 습득함을 목적으로 한다."
+          }
+        ],
+        "majorChoice": [
+          {
+            "name": "산업심리학 및 실습",
+            "engName": "Industrial Psychology and Practicums",
+            "explain": "산업심리학은 인사심리학, 조직심리학, 소비자심리학 등의 제 분야를 망라하며, 이들 분야의 유기적 관련성을 배운다. 특히 인력의 선발과 훈련, 평가 등 인사심리학의 중요 주제 들에 대한 이론과 방법, 적용사례를 다루며, 관련 주제들에 대한 실증적 연구를 병행한다"
+          },
+          {
+            "name": "산업심리학 및 실습",
+            "engName": "Industrial Psychology and Practicums",
+            "explain": "산업심리학은 인사심리학, 조직심리학, 소비자심리학 등의 제 분야를 망라하며, 이들 분야의 유기적 관련성을 배운다. 특히 인력의 선발과 훈련, 평가 등 인사심리학의 중요 주제 들에 대한 이론과 방법, 적용사례를 다루며, 관련 주제들에 대한 실증적 연구를 병행한다"
+          }
+        ],
+        "minorRequired": [],
+        "minorChoice": []
+      },
+      "fall": {
+        "majorRequired": [
+          {
+            "name": "심리학개론",
+            "engName": "Introduction to Psychology",
+            "explain": "심리학의 과학적 측면과 심리학을 전공하는데 필수적인 기초 개념, 연구절차, 연구영역과 적용범위에 관한 개괄적인 지식 을 습득한다."
+          },
+          {
+            "name": "심리통계와 데이터분석",
+            "engName": "Experimental Design and Analysis",
+            "explain": "본 과목은 학생들에게 심리학에서 널리 사용되고 있는 실험 설계에 대한 지식을 습득함을 목적으로 한다."
+          }
+        ],
+        "majorChoice": [
+          {
+            "name": "산업심리학 및 실습",
+            "engName": "Industrial Psychology and Practicums",
+            "explain": "산업심리학은 인사심리학, 조직심리학, 소비자심리학 등의 제 분야를 망라하며, 이들 분야의 유기적 관련성을 배운다. 특히 인력의 선발과 훈련, 평가 등 인사심리학의 중요 주제 들에 대한 이론과 방법, 적용사례를 다루며, 관련 주제들에 대한 실증적 연구를 병행한다"
+          },
+          {
+            "name": "산업심리학 및 실습",
+            "engName": "Industrial Psychology and Practicums",
+            "explain": "산업심리학은 인사심리학, 조직심리학, 소비자심리학 등의 제 분야를 망라하며, 이들 분야의 유기적 관련성을 배운다. 특히 인력의 선발과 훈련, 평가 등 인사심리학의 중요 주제 들에 대한 이론과 방법, 적용사례를 다루며, 관련 주제들에 대한 실증적 연구를 병행한다"
+          }
+        ],
+        "minorRequired": [],
+        "minorChoice": []
+      }
+    }
+  }
+]
