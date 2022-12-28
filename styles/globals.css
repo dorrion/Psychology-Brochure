@@ -1,3 +1,11 @@
+/*
+- base : 뭔가 tailwind 클래스네임 정도만
+- components : 컴포넌트 단위 주로 card, btn, badge
+    - css 느낌 : 난 이거 써야겠네
+    - apply 쓰면 tailwind 느낌
+- utilities : 호버, 반응형 등등
+*/
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,5 +21,9 @@
   }
   .tag-category {
     @apply text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full  text-orange-600 bg-orange-200 uppercase last:mr-0 mr-1 mb-2;
+  }
+
+  .flexBox {
+    @apply flex justify-center items-center;
   }
 }
