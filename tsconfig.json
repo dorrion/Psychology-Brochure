@@ -23,10 +23,5 @@
     "postcss.config.js"
   ],
   "exclude": ["node_modules"],
-  "baseUrl": ".",
-  "paths": {
-    "components/*": ["components/*"],
-    "pages/*": ["pages/*"],
-    "public/*": ["public/*"]
-  }
+  "baseUrl": "."
 }
