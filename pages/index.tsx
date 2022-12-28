@@ -5,7 +5,8 @@ import path from 'path';
 import Layout from '../components/layout';
 import Alert from '../components/modal';
 
-export default function Home({ survival }: any) {
+export default function Home({ HomeData }: any) {
+
   return (
     <>
       <Layout>
@@ -161,23 +162,14 @@ export default function Home({ survival }: any) {
 }
 
 export async function getStaticProps() {
-  const dataDirectory = path.join(process.cwd(), 'data'); // /data 폴더 들어간다
-  const filenames = await fs.readdir(dataDirectory); // data 폴더 읽는다
-
-  const survival = filenames.map(async (filename) => {
-    // 돌면서 data에 있는 파일 다 가져온다
-    const filePath = path.join(dataDirectory, filename);
-    const fileContent = await fs.readFile(filePath, 'utf8');
-
-    return {
-      filename, // 파일 이름
-      content: fileContent, // Json 내용
-    };
-  });
+  // 살아남기 데이터 경로
+  const filePath = path.join(process.cwd(), 'data', 'HomeData.json');
+  const HomeData = await fs.readFile(filePath, 'utf8');
+  const objectData = JSON.parse(HomeData);
 
   return {
     props: {
-      survival: await Promise.all(survival),
+      HomeData: await Promise.all(objectData),
     },
   };
 }
