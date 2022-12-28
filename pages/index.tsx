@@ -2,10 +2,24 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { promises as fs } from 'fs';
 import path from 'path';
-import Layout from '../components/layout';
+
 import Alert from '../components/modal';
+import Layout from '../components/layout';
+import SurvivalWrapper from '../components/Home/SurvivalWrapper';
+import { SurvivalProps } from '../shared/types';
 
 export default function Home({ HomeData }: any) {
+  console.log(HomeData);
+
+  const TipList: JSX.Element[] = HomeData.map((tip: SurvivalProps) => (
+    <SurvivalWrapper
+      key={tip.tipId}
+      title={tip.title!}
+      subtitle={tip.subtitle!}
+      category={tip.category!}
+      tag={tip.tag!}
+    />
+  ));
 
   return (
     <>
@@ -31,129 +45,7 @@ export default function Home({ HomeData }: any) {
                 아주대학교 심리학과 학생들에게 유용한 정보를 소개합니다.
               </p>
             </div>
-            <div className="flex flex-wrap -m-4">
-              <div className="xl:w-1/4 md:w-1/2 p-4">
-                <div className="bg-gray-100 p-6 rounded-lg">
-                  <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                    아주대학교 심리학과 졸업 규정
-                  </h3>
-                  <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                    심리학과에서 졸업하기
-                  </h2>
-                  <span className="tag-category">아티클</span>
-                  <span className="tag">이수학점</span>
-                  <span className="tag">어학점수</span>
-                  <span className="tag">학점</span>
-                  <span className="tag">교필</span>
-                  <span className="tag">전필/전선</span>
-                </div>
-              </div>
-              <div className="xl:w-1/4 md:w-1/2 p-4">
-                <div className="bg-gray-100 p-6 rounded-lg">
-                  <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                    교내/교외 장학금 모음.zip
-                  </h3>
-                  <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                    심리학과에서 장학금 받기
-                  </h2>
-                  <span className="tag-category">아티클</span>
-                  <span className="tag">장학금</span>
-                  <span className="tag">기준</span>
-                  <span className="tag">전액</span>
-                  <span className="tag">생활비성</span>
-                  <span className="tag">교외/교내</span>
-                </div>
-              </div>
-              <div className="xl:w-1/4 md:w-1/2 p-4">
-                <div className="bg-gray-100 p-6 rounded-lg">
-                  <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                    교수님 안녕하십니까. 감자학개론 수강생 김감자입니다.
-                  </h3>
-                  <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                    심리학과에서 메일 쓰기
-                  </h2>
-                  <span className="tag-category">아티클</span>
-                  <span className="tag">인사말</span>
-                  <span className="tag">자기소개</span>
-                  <span className="tag">본론</span>
-                  <span className="tag">마무리</span>
-                </div>
-              </div>
-              <div className="xl:w-1/4 md:w-1/2 p-4">
-                <div className="bg-gray-100 p-6 rounded-lg">
-                  <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                    우리 학교는 무엇을 지원해 주는가 : 방학 Todo list
-                  </h3>
-                  <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                    심리학과에서 비교과 프로그램 하기
-                  </h2>
-                  <span className="tag-category">아티클</span>
-                  <span className="tag">비교과</span>
-                  <span className="tag">자격증</span>
-                  <span className="tag">대회</span>
-                  <span className="tag">스펙</span>
-                  <span className="tag">교외활동</span>
-                </div>
-              </div>
-              <div className="xl:w-1/4 md:w-1/2 p-4">
-                <div className="bg-gray-100 p-6 rounded-lg">
-                  <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                    노동하고 먹고 자기
-                  </h3>
-                  <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                    심리학과에서 노식주
-                  </h2>
-                  <span className="tag-category">인터뷰</span>
-                  <span className="tag">학교근로</span>
-                  <span className="tag">맛집리스트</span>
-                  <span className="tag">기숙사</span>
-                  <span className="tag">통학</span>
-                  <span className="tag">자취</span>
-                </div>
-              </div>
-              <div className="xl:w-1/4 md:w-1/2 p-4">
-                <div className="bg-gray-100 p-6 rounded-lg">
-                  <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                    수강신청, 공부, 논문 검색의 모든 것
-                  </h3>
-                  <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                    심리학과에서 공부하기
-                  </h2>
-                  <span className="tag-category">인터뷰</span>
-                  <span className="tag">수강신청</span>
-                  <span className="tag">전공공부</span>
-                  <span className="tag">논문</span>
-                </div>
-              </div>
-              <div className="xl:w-1/4 md:w-1/2 p-4">
-                <div className="bg-gray-100 p-6 rounded-lg">
-                  <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                    마이쭈 먹을래?
-                  </h3>
-                  <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                    심리학과에서 놀기
-                  </h2>
-                  <span className="tag-category">인터뷰</span>
-                  <span className="tag">MT</span>
-                  <span className="tag">연애 ❣️️</span>
-                  <span className="tag">친구</span>
-                </div>
-              </div>
-              <div className="xl:w-1/4 md:w-1/2 p-4">
-                <div className="bg-gray-100 p-6 rounded-lg">
-                  <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                    아무노래나 일단 틀어 아무거나 신나는 걸로
-                  </h3>
-                  <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                    Free Talk
-                  </h2>
-                  <p className="leading-relaxed text-base">
-                    Fingerstache flexitarian street art 8-bit waistcoat.
-                    Distillery hexagon disrupt edison bulbche.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <div className="flex flex-wrap -m-4">{TipList}</div>
           </div>
         </section>
       </Layout>
