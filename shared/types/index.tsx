@@ -5,3 +5,10 @@ export interface SurvivalProps {
   category?: string;
   tag?: string[];
 }
+
+export interface MemberProps {
+  memberId?: number;
+  profileImg?: string;
+  name?: string;
+  role?: string[];
+}
