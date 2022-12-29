@@ -1,7 +1,21 @@
+import path from 'path';
+import { promises as fs } from 'fs';
 import Head from 'next/head';
 import Layout from '../components/layout';
+import { MemberProps } from '../shared/types';
+import MemberWrapper from '../components/Introduce/MemberWrapper';
 
-export default function Introduce() {
+export default function Introduce({ MemberData }: any) {
+  const MemberLists: JSX.Element[] = MemberData.map((member: MemberProps) => (
+    <MemberWrapper
+      key={member.memberId!}
+      memberId={member.memberId}
+      profileImg={member.profileImg!}
+      name={member.name!}
+      role={member.role!}
+    />
+  ));
+
   return (
     <Layout>
       <Head>
@@ -21,6 +35,7 @@ export default function Introduce() {
               프로젝트 사용 설명 및 팀 소개
             </p>
           </div>
+
           <div>
             <section>
               <p className="text-3xl font-semibold text-left">
@@ -98,10 +113,24 @@ export default function Introduce() {
                   Our Members
                 </span>
               </p>
+              <div className="flex  flex-wrap -m-4">{MemberLists}</div>
             </section>
           </div>
         </div>
       </section>
     </Layout>
   );
+}
+
+export async function getStaticProps() {
+  // 살아남기 데이터 경로
+  const filePath = path.join(process.cwd(), 'data', 'MemberData.json');
+  const MemberData = await fs.readFile(filePath, 'utf8');
+  const objectData = JSON.parse(MemberData);
+
+  return {
+    props: {
+      MemberData: await Promise.all(objectData),
+    },
+  };
 }
