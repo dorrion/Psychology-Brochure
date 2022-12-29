@@ -13,7 +13,8 @@ module.exports = {
         backgroundColor: '#EDEDED',
       },
       backgroundImage: {
-        potato: "bg-[url('../public/images/감자배경.webp')]",
+        'potato': "url('../public/images/감자배경.webp')",
+        'soil':"url('../public/images/땅.webp')"
       },
     },
   },
