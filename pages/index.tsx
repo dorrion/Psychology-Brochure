@@ -3,14 +3,11 @@ import Image from 'next/image';
 import { promises as fs } from 'fs';
 import path from 'path';
 
-import Alert from '../components/modal';
 import Layout from '../components/layout';
 import SurvivalWrapper from '../components/Home/SurvivalWrapper';
 import { SurvivalProps } from '../shared/types';
 
 export default function Home({ HomeData }: any) {
-  console.log(HomeData);
-
   const TipList: JSX.Element[] = HomeData.map((tip: SurvivalProps) => (
     <SurvivalWrapper
       key={tip.tipId}
@@ -31,7 +28,6 @@ export default function Home({ HomeData }: any) {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <Alert />
         <section className="text-gray-600 body-font">
           <div className="container px-5 py-24 mx-auto">
             <div className="flex-col flex-wrap w-full mb-20">
