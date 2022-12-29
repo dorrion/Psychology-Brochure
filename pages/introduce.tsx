@@ -12,8 +12,8 @@ export default function Introduce() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <section className="text-gray-600 body-font">
-        <div className="container px-5 py-24 mx-auto">
-          <div className="w-[1024px] h-[248px] bg-potato">
+        <div className="container px-5 py-12 mx-auto">
+          <div className="flex-col flex-wrap w-full mb-20">
             <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">
               구르는 감자단 소개
             </h2>
@@ -23,11 +23,11 @@ export default function Introduce() {
           </div>
           <div>
             <section>
-              <p className="text-3xl font-medium text-left">
-                <span className="text-3xl font-medium text-left text-neutral-800">
+              <p className="text-3xl font-semibold text-left">
+                <span className="text-3xl font-semibold text-left text-neutral-800">
                   About{' '}
                 </span>
-                <span className="text-3xl font-medium text-left text-[#8eb695]">
+                <span className="text-3xl font-semibold text-left text-[#8eb695]">
                   Us
                 </span>
               </p>
@@ -65,9 +65,9 @@ export default function Introduce() {
                 사람들이 정보를 공유할 수 있는 시발점이 되었으면 좋겠습니다.
               </div>
             </section>
-            <section>
-              <p className="text-3xl font-medium text-left">
-                <span className="text-3xl font-medium text-left text-neutral-800">
+            <section className="mt-24">
+              <p className="text-3xl font-semibold text-left">
+                <span className="text-3xl font-semibold text-left text-neutral-800">
                   License
                 </span>
               </p>
@@ -92,11 +92,13 @@ export default function Introduce() {
               </div>
               <div>*이메일 : ajoupsybrochure@gmail.com</div>
             </section>
-            <p className="text-3xl font-medium text-left">
-              <span className="text-3xl font-medium text-left text-neutral-800">
-                Our Members
-              </span>
-            </p>
+            <section className="mt-24">
+              <p className="text-3xl font-semibold text-left">
+                <span className="text-3xl font-semibold text-left text-neutral-800">
+                  Our Members
+                </span>
+              </p>
+            </section>
           </div>
         </div>
       </section>
