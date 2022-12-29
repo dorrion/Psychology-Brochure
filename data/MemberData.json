@@ -1,7 +1,7 @@
 [
   {
     "memberId": 1,
-    "profileImg": "public/images/나연.webp",
+    "profileImg": "/images/나연.webp",
     "name": "이나연",
     "role": [
       "Officer of the project",
@@ -12,31 +12,31 @@
   },
   {
     "memberId": 2,
-    "profileImg": "public/images/문경.webp",
+    "profileImg": "/images/문경.webp",
     "name": "김문경",
     "role": ["Translator", "Planning"]
   },
   {
     "memberId": 3,
-    "profileImg": "public/images/오은.webp",
+    "profileImg": "/images/오은.webp",
     "name": "김오은",
     "role": ["Making web page"]
   },
   {
     "memberId": 4,
-    "profileImg": "public/images/정운.webp",
+    "profileImg": "/images/정운.webp",
     "name": "서정운",
     "role": ["Making web page"]
   },
   {
     "memberId": 5,
-    "profileImg": "public/images/도연.webp",
+    "profileImg": "/images/도연.webp",
     "name": "임도연",
     "role": ["Planning", "Designing web page"]
   },
   {
     "memberId": 6,
-    "profileImg": "public/images/영수.webp",
+    "profileImg": "/images/영수.webp",
     "name": "장영수",
     "role": ["Planning", "Survey"]
   }
