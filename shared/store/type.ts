@@ -1,3 +1,5 @@
+export interface ModalStore {}
+
 export interface SurvivalProps {
   tipId?: number;
   title?: string;
