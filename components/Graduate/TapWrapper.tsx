@@ -1,5 +1,6 @@
 import { Tab } from '@headlessui/react';
 import { CurriProps } from 'shared/store/type';
+import SemesterWrapper from './SemesterWrapper';
 
 export default function TapWrapper({
   major,
@@ -24,10 +25,21 @@ export default function TapWrapper({
           <Tab className="mr-14">4학년</Tab>
         </Tab.List>
         <Tab.Panels>
-          <Tab.Panel>Content 1</Tab.Panel>
-          <Tab.Panel>Content 2</Tab.Panel>
-          <Tab.Panel>Content 3</Tab.Panel>
-          <Tab.Panel>Content 4</Tab.Panel>
+          <Tab.Panel>
+            <SemesterWrapper spring={freshmen?.spring} fall={freshmen?.fall} />
+          </Tab.Panel>
+          <Tab.Panel>
+            <SemesterWrapper spring={junior?.spring} fall={junior?.fall} />
+          </Tab.Panel>
+          <Tab.Panel>
+            <SemesterWrapper
+              spring={sophomore?.spring}
+              fall={sophomore?.fall}
+            />
+          </Tab.Panel>
+          <Tab.Panel>
+            <SemesterWrapper spring={senior?.spring} fall={senior?.fall} />
+          </Tab.Panel>
         </Tab.Panels>
       </Tab.Group>
     </div>
