@@ -36,4 +36,8 @@
   .modal_window {
     @apply absolute w-full h-90v bottom-0 rounded bg-white;
   }
+
+  .selective {
+    @apply underline text-yellow-500;
+  }
 }
