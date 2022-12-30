@@ -1,4 +1,7 @@
-export interface ModalStore {}
+export interface ModalStore {
+  isOpen: boolean;
+  setIsOpen: () => void;
+}
 
 export interface SurvivalProps {
   tipId?: number;
