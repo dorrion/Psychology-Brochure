@@ -9,7 +9,6 @@ import { CurriProps } from 'shared/store/type';
 import TapWrapper from 'components/Graduate/TapWrapper';
 
 const Tabs = ({ CurriData }: any) => {
-  console.log(CurriData);
   const TapWrap = CurriData.map((el: CurriProps) => {
     return (
       <TapWrapper
