@@ -5,13 +5,8 @@ export default function SurvivalWrapper({
   title,
   subtitle,
   category,
-  tag,
 }: SurvivalProps) {
-  const TagList = tag?.map((el, idx) => (
-    <span key={idx} className="tag">
-      {el}
-    </span>
-  ));
+
   return (
     <>
       <div className="xl:w-1/4 md:w-1/2 p-4">
@@ -23,7 +18,6 @@ export default function SurvivalWrapper({
             {title}
           </h2>
           {category && <span className="tag-category">{category}</span>}
-          {TagList}
         </div>
       </div>
     </>

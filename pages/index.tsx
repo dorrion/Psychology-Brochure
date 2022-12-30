@@ -14,7 +14,6 @@ export default function Home({ HomeData }: any) {
       title={tip.title!}
       subtitle={tip.subtitle!}
       category={tip.category!}
-      tag={tip.tag!}
     />
   ));
 
