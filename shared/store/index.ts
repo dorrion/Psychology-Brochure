@@ -1,7 +1,7 @@
-import { StateCreator } from 'zustand';
-import { ModalStore } from './type';
+import create from 'zustand';
+import { Modal } from './type';
 
-export const Modal: StateCreator<ModalStore> = (set) => ({
+export const ModalStore = create<Modal>((set) => ({
   isOpen: false,
   setIsOpen: () => set((state) => ({ isOpen: !state.isOpen })),
-});
+}));
