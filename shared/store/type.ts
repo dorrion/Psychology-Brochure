@@ -8,6 +8,7 @@ export interface SurvivalProps {
   title?: string;
   subtitle?: string;
   category?: string;
+  homeImg?: string;
 }
 
 export interface MemberProps {
