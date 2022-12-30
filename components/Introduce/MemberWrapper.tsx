@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { MemberProps } from '../../shared/types';
+import { MemberProps } from 'shared/store/type';
 
 export default function MemberWrapper({
   memberId,
@@ -8,7 +8,7 @@ export default function MemberWrapper({
   role,
 }: MemberProps) {
   return (
-    <div key={memberId}>
+    <>
       <div className="flex flex-wrap -m-4">
         <div className="h-full flex flex-col items-center text-center">
           <div className="bg-soil w-48 h-48  rounded-full">
@@ -33,6 +33,6 @@ export default function MemberWrapper({
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
