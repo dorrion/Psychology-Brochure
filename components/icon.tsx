@@ -129,7 +129,7 @@ export function SemesterIcon() {
           width={33}
           height={33}
         >
-          <rect width={33} height={33} fill="#D9D9D9" />
+          <rect width={33} height={33} fill="#5C5C5C" />
         </mask>
         <g mask="url(#mask0_602_312)">
           <path

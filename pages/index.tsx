@@ -29,6 +29,7 @@ export default function Home({ HomeData }: any) {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
+
         <section className="text-gray-600 body-font">
           <div className="container px-5 py-24 mx-auto">
             <div className="flex-col flex-wrap w-full mb-20">

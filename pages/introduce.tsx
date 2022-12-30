@@ -7,9 +7,8 @@ import MemberWrapper from 'components/Introduce/MemberWrapper';
 
 export default function Introduce({ MemberData }: any) {
   const MemberLists: JSX.Element[] = MemberData.map((member: MemberProps) => (
-    <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
+    <div className="lg:w-1/3 md:w-1/2 p-4 w-full" key={member.memberId!}>
       <MemberWrapper
-        key={member.memberId!}
         memberId={member.memberId}
         profileImg={member.profileImg!}
         name={member.name!}
