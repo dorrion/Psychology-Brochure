@@ -6,9 +6,9 @@ export default function donut() {
   return (
     <div className="relative">
       <Doughnut data={expData} />
-      <div className="text-5xl font-bold absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
+      <p className="text-5xl font-bold absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
         120학점
-      </div>
+      </p>
     </div>
   );
 }
@@ -19,11 +19,11 @@ const expData = {
     {
       labels: ['전공', '교양필수', '기타'],
       data: [42, 32, 46],
-      borderWidth: 1,
+      borderWidth: 0,
       hoverBorderWidth: 3,
       backgroundColor: ['#20C770', '#FFCC00', '#015BFF'],
       fill: false,
-      cutout: '70%',
+      cutout: '75%',
     },
   ],
 };
