@@ -37,8 +37,8 @@ export default function index() {
                 <BookIcon />
               </div>
               <div className="">
-                <div>최소 이수 학점</div>
-                <div className="text-lg font-bold">120학점</div>
+                <p>최소 이수 학점</p>
+                <p className="text-lg font-bold">120학점</p>
               </div>
             </div>
             <div className="p-4 md:w-1/4  flex-col text-center justify-center items-center">
@@ -46,8 +46,8 @@ export default function index() {
                 <ScoreIcon />
               </div>
               <div className="">
-                <div>최소 평점</div>
-                <div className="text-lg font-bold">평점 2.0</div>
+                <p>최소 평점</p>
+                <p className="text-lg font-bold">평점 2.0</p>
               </div>
             </div>
             <div className="p-4 md:w-1/4  flex-col text-center justify-center items-center">
@@ -55,8 +55,8 @@ export default function index() {
                 <EnglishIcon />
               </div>
               <div className="">
-                <div>공인어학점수</div>
-                <div className="text-lg font-bold">730 Toeic</div>
+                <p>공인어학점수</p>
+                <p className="text-lg font-bold">730 Toeic</p>
               </div>
             </div>
             <div className="p-4 md:w-1/4  flex-col text-center justify-center items-center">
@@ -64,14 +64,14 @@ export default function index() {
                 <SemesterIcon />
               </div>
               <div className="">
-                <div>최소 이수 학기</div>
-                <div className="text-lg font-bold">6학기</div>
+                <p>최소 이수 학기</p>
+                <p className="text-lg font-bold">6학기</p>
               </div>
             </div>
           </div>
-          <article className="mt-32">
-            <div className="grid place-items-center w-60 items-center justify-center ">
-              <div className="my-8">Detail</div>
+          <article className="flex-col flexBox text-center mt-32">
+            <div className="w-1/2">
+              <h1 className="my-8 text-4xl font-bold">Detail</h1>
               <Donut />
             </div>
           </article>
