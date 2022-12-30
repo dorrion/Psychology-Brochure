@@ -1,4 +1,5 @@
 import { SubjectType, SemesterType } from 'shared/store/type';
+import { BulbIcon } from 'components/icon';
 
 export default function MajorWrapper({ spring, fall }: SemesterType) {
   return (
@@ -45,19 +46,90 @@ const Major = ({
   minorRequired,
   minorChoice,
 }: SubjectType) => {
-  const majorList = majorRequired?.map((el, idx) => {
+  const majorRQList = majorRequired?.map((el, idx) => {
     return (
       <div key={idx} className="flex justify-center items-start mt-6">
         <div className="w-10 h-10 rounded-full flex-shrink-0 bg-primaryColor flexBox">
-          <div className="text-xs text-slate-100 dark:text-slate-800">전필</div>
+          <div className="text-xs text-slate-100 dark:text-slate-700">전필</div>
         </div>
         <div className="ml-4 flex-col">
-          <p className="text-base font-bold">{el.name}</p>
+          <p className="text-base font-bold dark:text-slate-200">{el.name}</p>
           <p className="text-sm">{el.engName}</p>
           <p className="text-sm">{el.explain}</p>
         </div>
       </div>
     );
   });
-  return <>{majorList}</>;
+  const majorChList = majorChoice?.map((el, idx) => {
+    return (
+      <div key={idx} className="flex justify-center items-start mt-6">
+        <div className="w-10 h-10 rounded-full flex-shrink-0 bg-secondaryColor flexBox">
+          <div className="text-xs text-slate-100 dark:text-slate-200 ">
+            전선
+          </div>
+        </div>
+        <div className="ml-4 flex-col">
+          <p className="text-base font-bold dark:text-slate-200">{el.name}</p>
+          <p className="text-sm">{el.engName}</p>
+          <p className="text-sm">{el.explain}</p>
+          {el.addExplain && (
+            <div className="flex mt-4 p-3 bg-gray-200 dark:bg-slate-500">
+              <div className="mr-1 text-primaryColor">
+                <BulbIcon />
+              </div>
+              <p className="text-xs dark:text-slate-300">{el.addExplain}</p>
+            </div>
+          )}
+        </div>
+      </div>
+    );
+  });
+  const minorRQList = minorRequired?.map((el, idx) => {
+    return (
+      <div key={idx} className="flex justify-start items-start mt-6">
+        <div className="flexBox">
+          <div className="w-10 h-10 rounded-full flex-shrink-0 bg-[#C9B99D] flexBox">
+            <div className="text-xs text-slate-100 dark:text-slate-700">
+              교필
+            </div>
+          </div>
+          <div className="ml-4 flex-col">
+            <p className="text-base font-bold dark:text-slate-200">{el.name}</p>
+          </div>
+        </div>
+      </div>
+    );
+  });
+  const minorChList = minorChoice?.map((el, idx) => {
+    return (
+      <div key={idx} className="flex justify-start items-start mt-6">
+        <div className={el.addExplain ? 'flex' : 'flexBox'}>
+          <div className="w-10 h-10 rounded-full flex-shrink-0 bg-[#F2E2C6] flexBox">
+            <div className="text-xs text-slate-100 dark:text-slate-700">
+              교선
+            </div>
+          </div>
+          <div className="ml-4 flex-col">
+            <p className="text-base font-bold dark:text-slate-200">{el.name}</p>
+            {el.addExplain && (
+              <div className="flex mt-4 p-3 bg-gray-200 dark:bg-slate-500">
+                <div className="mr-1 text-primaryColor">
+                  <BulbIcon />
+                </div>
+                <p className="text-xs dark:text-slate-300">{el.addExplain}</p>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    );
+  });
+  return (
+    <>
+      {majorRQList}
+      {majorChList}
+      {minorRQList}
+      {minorChList}
+    </>
+  );
 };
