@@ -49,7 +49,7 @@ const Major = ({
     return (
       <div key={idx} className="flex justify-center items-start mt-6">
         <div className="w-10 h-10 rounded-full flex-shrink-0 bg-primaryColor flexBox">
-          <div className="text-xs text-white">전필</div>
+          <div className="text-xs text-slate-100 dark:text-slate-800">전필</div>
         </div>
         <div className="ml-4 flex-col">
           <p className="text-base font-bold">{el.name}</p>
