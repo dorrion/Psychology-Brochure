@@ -27,13 +27,18 @@ export interface MajorType {
   name?: string;
   engName?: string;
   explain?: string;
+  addExplain?: string;
+}
+export interface MinorType {
+  name?: string;
+  addExplain?: string;
 }
 
 export interface SubjectType {
   majorRequired?: MajorType[];
-  majorChoice?: string[];
-  minorRequired?: string[];
-  minorChoice?: string[];
+  majorChoice?: MajorType[];
+  minorRequired?: MinorType[];
+  minorChoice?: MinorType[];
 }
 
 export interface CurriProps {
