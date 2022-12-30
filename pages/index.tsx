@@ -3,14 +3,15 @@ import Image from 'next/image';
 import { promises as fs } from 'fs';
 import path from 'path';
 
-import Layout from '../components/layout';
-import SurvivalWrapper from '../components/Home/SurvivalWrapper';
-import { SurvivalProps } from '../shared/types';
+import Layout from 'components/layout';
+import SurvivalWrapper from 'components/Home/SurvivalWrapper';
+import { SurvivalProps } from 'shared/store/type';
 
 export default function Home({ HomeData }: any) {
   const TipList: JSX.Element[] = HomeData.map((tip: SurvivalProps) => (
     <SurvivalWrapper
       key={tip.tipId}
+      tipId={tip.tipId}
       title={tip.title!}
       subtitle={tip.subtitle!}
       category={tip.category!}
