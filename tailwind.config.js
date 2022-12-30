@@ -10,29 +10,30 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'backgroundColor': '#EDEDED',
+        backgroundColor: '#EDEDED',
+        primaryColor: '#FFC05C',
       },
       backgroundImage: {
-        'potato': "url('../public/images/감자배경.webp')",
-        'soil':"url('../public/images/땅.webp')"
+        potato: "url('../public/images/감자배경.webp')",
+        soil: "url('../public/images/땅.webp')",
       },
       height: {
-        "10v": "10vh",
-        "20v": "20vh",
-        "30v": "30vh",
-        "40v": "40vh",
-        "50v": "50vh",
-        "60v": "60vh",
-        "70v": "70vh",
-        "80v": "80vh",
-        "90v": "90vh",
-        "95v": "95vh",
-        "100v": "100vh",
+        '10v': '10vh',
+        '20v': '20vh',
+        '30v': '30vh',
+        '40v': '40vh',
+        '50v': '50vh',
+        '60v': '60vh',
+        '70v': '70vh',
+        '80v': '80vh',
+        '90v': '90vh',
+        '95v': '95vh',
+        '100v': '100vh',
       },
     },
   },
   plugins: [
-    require("tailwind-scrollbar-hide"),
+    require('tailwind-scrollbar-hide'),
     require('@headlessui/tailwindcss'),
   ],
 };

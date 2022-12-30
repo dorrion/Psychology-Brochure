@@ -38,6 +38,6 @@
   }
 
   .selective {
-    @apply underline text-yellow-500;
+    @apply underline text-primaryColor;
   }
 }

@@ -48,7 +48,7 @@ const Major = ({
   const majorList = majorRequired?.map((el, idx) => {
     return (
       <div key={idx} className="flex justify-center items-start mt-6">
-        <div className="w-10 h-10 rounded-full flex-shrink-0 bg-yellow-400 flexBox">
+        <div className="w-10 h-10 rounded-full flex-shrink-0 bg-primaryColor flexBox">
           <div className="text-xs text-white">전필</div>
         </div>
         <div className="ml-4 flex-col">
