@@ -17,3 +17,30 @@ export interface MemberProps {
   name?: string;
   role?: string[];
 }
+
+export interface SemesterType {
+  spring?: SubjectType;
+  fall?: SubjectType;
+}
+
+export interface MajorType {
+  name?: string;
+  engName?: string;
+  explain?: string;
+}
+
+export interface SubjectType {
+  majorRequired?: MajorType[];
+  majorChoice?: string[];
+  minorRequired?: string[];
+  minorChoice?: string[];
+}
+
+export interface CurriProps {
+  id?: number;
+  major?: string;
+  freshmen?: SemesterType;
+  sophomore?: SemesterType;
+  junior?: SemesterType;
+  senior?: SemesterType;
+}
