@@ -52,9 +52,9 @@ const Major = ({
           <div className="text-xs text-white">전필</div>
         </div>
         <div className="ml-4 flex-col">
-          <div className="text-base font-bold">{el.name}</div>
-          <div className="text-sm">{el.engName}</div>
-          <div className="text-sm">{el.explain}</div>
+          <p className="text-base font-bold">{el.name}</p>
+          <p className="text-sm">{el.engName}</p>
+          <p className="text-sm">{el.explain}</p>
         </div>
       </div>
     );

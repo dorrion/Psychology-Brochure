@@ -32,9 +32,7 @@ const Tabs = ({ CurriData }: any) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <section className="text-gray-600 body-font">
-        <div className="container px-5 py-24 mx-auto">
-          <div className="border-8 border-sky-500">{TapWrap}</div>
-        </div>
+        <div className="container px-5 py-24 mx-auto">{TapWrap}</div>
       </section>
     </Layout>
   );

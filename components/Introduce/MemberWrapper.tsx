@@ -21,12 +21,15 @@ export default function MemberWrapper({
             />
           </div>
           <div className="w-full my-4">
-            <h2 className="title-font font-medium text-xl text-gray-900">
+            <h2 className="title-font font-medium text-xl text-gray-900 dark:text-slate-100">
               {name}
             </h2>
 
             {role?.map((el, idx) => (
-              <h3 key={idx} className="text-gray-500 font-light mb-2">
+              <h3
+                key={idx}
+                className="text-gray-500 dark:text-slate-400 font-light mb-2"
+              >
                 {el}
               </h3>
             ))}

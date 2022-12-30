@@ -37,7 +37,7 @@ export default function Home({ HomeData }: any) {
                 <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900 dark:text-gray-100">
                   심리학과에서 살아남기
                 </h1>
-                <div className="h-1 w-20 mt-4 bg-indigo-500 rounded"></div>
+                <div className="h-1 w-20 my-2 bg-indigo-500 rounded"></div>
               </div>
               <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
                 아주대학교 심리학과 학생들에게 유용한 정보를 소개합니다.
