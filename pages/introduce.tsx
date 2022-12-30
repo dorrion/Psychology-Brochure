@@ -1,9 +1,9 @@
 import path from 'path';
-import { promises as fs } from 'fs';
 import Head from 'next/head';
-import Layout from '../components/layout';
-import { MemberProps } from '../shared/types';
-import MemberWrapper from '../components/Introduce/MemberWrapper';
+import { promises as fs } from 'fs';
+import Layout from 'components/layout';
+import { MemberProps } from 'shared/store/type';
+import MemberWrapper from 'components/Introduce/MemberWrapper';
 
 export default function Introduce({ MemberData }: any) {
   const MemberLists: JSX.Element[] = MemberData.map((member: MemberProps) => (
