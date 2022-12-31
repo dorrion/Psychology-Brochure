@@ -71,7 +71,7 @@ export default function GraduationCriteria() {
             <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
               <div className="flex-col">
                 <div className="flex justify-center items-center">
-                  <div className="w-2.5 h-2.5 rounded-full flex-shrink-0  bg-[#015BFF] "></div>
+                  <div className="w-2.5 h-2.5 rounded-full flex-shrink-0  bg-customBlue "></div>
                   <h2 className="text-gray-900 ml-1 text-xl title-font font-bold">
                     {' '}
                     전공 42학점
@@ -104,7 +104,7 @@ export default function GraduationCriteria() {
             <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
               <div className="flex-col">
                 <div className="flex justify-center items-center">
-                  <div className="w-2.5 h-2.5 rounded-full flex-shrink-0  bg-[#20C770]  "></div>
+                  <div className="w-2.5 h-2.5 rounded-full flex-shrink-0  bg-customGreen  "></div>
                   <h2 className="text-gray-900 ml-1 text-xl title-font font-bold">
                     {' '}
                     교양필수 32학점
