@@ -5,7 +5,7 @@ export default function English() {
         <div className="container px-5 py-24 mx-auto flexBox flex-col">
           <h1 className="text-4xl font-bold  text-center">외국어 공인 성적</h1>
           {/* 묶음 */}
-          <div className="flex-row flexBox">
+          <div className="flex-row flexBox mt-16">
             {/* 하나 */}
             <div className="w-20 h-32 rounded flex-col flexBox bg-slate-200 mr-4">
               <p className="text-[15px] font-medium text-center">TOEIC</p>
@@ -31,29 +31,32 @@ export default function English() {
 
             {/* 하나 */}
             <div className="w-20 h-32 rounded flex-col flexBox bg-slate-200 mr-4">
-              <p className="text-[15px] font-medium text-center">TOEIC</p>
+              <p className="text-[15px] font-medium text-center">G-TELP</p>
               <div className="h-0.5 w-10 my-2 bg-slate-300 rounded"></div>
-              <p className="text-[23px] font-black text-center">730</p>
+              <p className="text-[12px] font-black text-center">level2 67</p>
+              <p className="text-[12px] font-black text-center">level3 89</p>
             </div>
 
             {/* 하나 */}
             <div className="w-20 h-32 rounded flex-col flexBox bg-slate-200 mr-4">
-              <p className="text-[15px] font-medium text-center">TOEIC</p>
+              <p className="text-[15px] font-medium text-center">
+                TOEIC Speaking
+              </p>
               <div className="h-0.5 w-10 my-2 bg-slate-300 rounded"></div>
-              <p className="text-[23px] font-black text-center">730</p>
+              <p className="text-[23px] font-black text-center">Level6</p>
             </div>
 
             {/* 하나 */}
             <div className="w-20 h-32 rounded flex-col flexBox bg-slate-200 mr-4">
-              <p className="text-[15px] font-medium text-center">TOEIC</p>
+              <p className="text-[15px] font-medium text-center">OPic</p>
               <div className="h-0.5 w-10 my-2 bg-slate-300 rounded"></div>
-              <p className="text-[23px] font-black text-center">730</p>
+              <p className="text-[23px] font-black text-center">IM</p>
             </div>
             {/* 하나 */}
             <div className="w-20 h-32 rounded flex-col flexBox bg-slate-200 mr-4">
-              <p className="text-[15px] font-medium text-center">TOEIC</p>
+              <p className="text-[15px] font-medium text-center">IELTS</p>
               <div className="h-0.5 w-10 my-2 bg-slate-300 rounded"></div>
-              <p className="text-[23px] font-black text-center">730</p>
+              <p className="text-[23px] font-black text-center">5.5</p>
             </div>
           </div>
         </div>
