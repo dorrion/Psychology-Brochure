@@ -1,16 +1,25 @@
-## Psychology Brochure
-안녕하세요. 아주대학교 심리학과 요람 프로젝트를 진행하고 있는 구르는 감자단입니다!
+# 심리학과 요람 프로젝트, 아늑
 
-요람 프로젝트의 목적은 다음과 같습니다.
+안녕하세요. 아늑을 개발하고 있는 🥔구르는 감자단입니다!
 
-- 아주대학교 심리학과 학우들의 진로 선택에 도움
-- 아주대학교 심리학과 생활에 도움이 될 수 있는 정보 제공
+소외되는 학우 없이 심리학의 진로/진학 정보를 얻을 수 있게 하자!
 
-배포 주소 : https://psychology-brochure.vercel.app/
+![image](https://user-images.githubusercontent.com/100553086/210134846-8c469ae4-f383-44b5-ad03-cccc5940597d.png)
 
-## 프로젝트 기간
+<br />
 
-2022.10.27 ~ (진행 중)
+## ✈️ 배포 링크 & 영상
+[프로젝트 배포 링크](https://psychology-brochure.vercel.app/)
+[프로젝트 소개 영상](https://drive.google.com/file/d/1s4UOqBDYHJmk-59d_QCNmFXulGzn1TQQ/view?usp=sharing)
+
+
+<br />
+
+## 🗓  프로젝트 기간
+
+> 2022.10.27 ~ (진행 중)
+
+<br />
 
 ## 팀원 소개
 
@@ -28,3 +37,16 @@
     </tr>
   </tbody>
 </table>
+
+## 🛠 기술스택 
+
+![image](https://user-images.githubusercontent.com/100553086/210134543-44c77bf3-7b34-49b8-8a0d-d54caf13f9c7.png)
+
+
+## 🎨 시연
+### 메인 페이지
+### 아티클 및 인터뷰 
+### 진로/진학별 커리큘럼
+### 학점 계산기
+### 다크모드
+### 반응형
