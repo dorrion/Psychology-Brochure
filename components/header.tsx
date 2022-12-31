@@ -10,7 +10,7 @@ export default function Header() {
             href="/"
             className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
           >
-            <span className="ml-3 text-xl">심리학과 요람 로고</span>
+            <span className="ml-3 text-xl font-bold">아늑</span>
           </Link>
           <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
             <Link className="mr-5 hover:text-gray-900" href="/introduce">
