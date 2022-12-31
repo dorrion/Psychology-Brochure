@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Layout from 'components/layout';
 import GraduationCriteria from 'components/Home/post/GraduationCriteria';
 import GPA from 'components/Home/post/GPA';
+import English from 'components/Home/post/English';
 
 export default function index() {
   return (
@@ -16,6 +17,9 @@ export default function index() {
       <GraduationCriteria />
       <div className="bg-gray-200 dark:bg-slate-700">
         <GPA />
+      </div>
+      <div className="bg-slate-100 dark:bg-slate-700">
+        <English />
       </div>
     </Layout>
   );
