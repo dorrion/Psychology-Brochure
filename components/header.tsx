@@ -25,6 +25,9 @@ export default function Header() {
             <Link href="/abroad" className="mr-5 hover:text-gray-900">
               유학
             </Link>
+            <Link href="/tool" className="mr-5 hover:text-gray-900">
+              도구
+            </Link>
           </nav>
           <DarkmodeToggleButton />
         </div>
