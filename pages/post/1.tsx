@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Layout from 'components/layout';
 import GraduationCriteria from 'components/Home/post/GraduationCriteria';
+import GPA from 'components/Home/post/GPA';
 
 export default function index() {
   return (
@@ -13,6 +14,9 @@ export default function index() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <GraduationCriteria />
+      <div className="bg-gray-200 dark:bg-slate-700">
+        <GPA />
+      </div>
     </Layout>
   );
 }
