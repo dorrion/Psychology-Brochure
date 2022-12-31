@@ -1,16 +1,14 @@
 # 심리학과 요람 프로젝트, 아늑
 
-안녕하세요. 아늑을 개발하고 있는 🥔구르는 감자단입니다!
-
-소외되는 학우 없이 심리학의 진로/진학 정보를 얻을 수 있게 하자!
-
 ![image](https://user-images.githubusercontent.com/100553086/210134846-8c469ae4-f383-44b5-ad03-cccc5940597d.png)
 
 <br />
 
 ## ✈️ 배포 링크 & 영상
-[프로젝트 배포 링크](https://psychology-brochure.vercel.app/)
-[프로젝트 소개 영상](https://drive.google.com/file/d/1s4UOqBDYHJmk-59d_QCNmFXulGzn1TQQ/view?usp=sharing)
+
+### [프로젝트 배포 링크](https://psychology-brochure.vercel.app/)
+
+### [프로젝트 소개 영상](https://drive.google.com/file/d/1s4UOqBDYHJmk-59d_QCNmFXulGzn1TQQ/view?usp=sharing)
 
 
 <br />
