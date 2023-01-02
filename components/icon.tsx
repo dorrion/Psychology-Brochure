@@ -158,3 +158,27 @@ export function BulbIcon() {
     </svg>
   );
 }
+
+export function ArrowRightIcon() {
+  return (
+    <>
+      <svg
+        width={7}
+        height={11}
+        viewBox="0 0 7 11"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="xMidYMid meet"
+        className="ml-1"
+      >
+        <path
+          d="M1 1L6 5.5L1 10"
+          stroke="#909090"
+          stroke-width="0.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </>
+  );
+}

@@ -1,6 +1,7 @@
 import { SurvivalProps } from 'shared/store/type';
 import Link from 'next/link';
 import Image from 'next/image';
+import { ArrowRightIcon } from 'components/icon';
 
 export default function SurvivalWrapper({
   tipId,
@@ -45,20 +46,9 @@ export default function SurvivalWrapper({
               </h1>
               <p className="text-gray-600 leading-relaxed mb-3">{subtitle}</p>
 
-              <div className="text-slate-400 inline-flex items-center md:mb-2 lg:mb-0 ">
+              <div className="flexBox text-slate-400 inline-flex items-center md:mb-2 lg:mb-0 ">
                 보기
-                <svg
-                  className="w-4 h-4 ml-2"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M5 12h14"></path>
-                  <path d="M12 5l7 7-7 7"></path>
-                </svg>
+                <ArrowRightIcon />
               </div>
             </div>
           </Link>
