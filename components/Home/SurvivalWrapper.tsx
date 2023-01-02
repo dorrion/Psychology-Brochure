@@ -12,7 +12,7 @@ export default function SurvivalWrapper({
   return (
     <>
       <div className="xl:w-1/4 lg:w-1/3 md:w-1/2 p-4">
-        <div className="h-full border-2 dark:bg-slate-700 border-gray-200 dark:border-slate-600 border-opacity-60 rounded-lg overflow-hidden">
+        <div className="h-full dark:bg-slate-700 bg-gray-50 overflow-hidden">
           <Link href="/post/[id]" as={`/post/${tipId}`}>
             {homeImg === '/images/홈졸업.webp' ? (
               // The Largest Contentful Paint 해결
