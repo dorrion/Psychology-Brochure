@@ -30,8 +30,8 @@ export default function Home({ HomeData }: any) {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <section className="text-gray-600 body-font">
-          <div className="container px-5 py-24 mx-auto">
+        <section className="text-gray-600 body-font bg-slate-200 dark:bg-slate-800">
+          <div className="container px-5 py-24 mx-auto ">
             <div className="flex-col flex-wrap flexBox w-full mb-20">
               <div className="lg:w-1/2 w-full mb-6 lg:mb-0 ">
                 <h1 className="text-center sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900 dark:text-gray-100">

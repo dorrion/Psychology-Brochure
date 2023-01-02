@@ -12,7 +12,7 @@
 
 /* 공통적으로 사용되는 css */
 .bg-primary {
-  @apply bg-slate-100 dark:bg-slate-800;
+  @apply bg-slate-50 dark:bg-slate-800;
 }
 
 h1,
