@@ -15,6 +15,7 @@ module.exports = {
         secondaryColor: '#6D9A75',
         customGreen: '#20C770',
         customBlue: '#015BFF',
+        customYellow: '#FFCC00',
       },
       backgroundImage: {
         potato: "url('../public/images/감자배경.webp')",
