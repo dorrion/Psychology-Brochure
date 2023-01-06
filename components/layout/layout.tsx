@@ -8,7 +8,7 @@ type childrenType = {
 
 export default function layout({ children }: childrenType) {
   return (
-    <div className='bg-primary'>
+    <div className="bg-primary">
       <Header />
       <div>{children}</div>
       <Footer />
