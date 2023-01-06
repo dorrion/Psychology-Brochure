@@ -1,8 +1,9 @@
 import Head from 'next/head';
-import Layout from 'components/layout';
+import Layout from 'components/layout/layout';
 import GraduationCriteria from 'components/Home/post/GraduationCriteria';
 import GPA from 'components/Home/post/GPA';
 import English from 'components/Home/post/English';
+import CompleteSemester from 'components/Home/post/CompleteSemester';
 
 export default function index() {
   return (
@@ -20,6 +21,7 @@ export default function index() {
       </div>
       <div className="bg-slate-100 dark:bg-slate-700">
         <English />
+        <CompleteSemester />
       </div>
     </Layout>
   );
