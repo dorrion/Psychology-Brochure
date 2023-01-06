@@ -62,4 +62,9 @@ p {
   .selective {
     @apply underline text-primaryColor;
   }
+
+  /* 원 */
+  .circle {
+    @apply rounded-full flex-col flexBox flex-shrink-0;
+  }
 }
