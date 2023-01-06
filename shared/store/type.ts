@@ -49,3 +49,8 @@ export interface CurriProps {
   junior?: SemesterType;
   senior?: SemesterType;
 }
+
+export interface EnglishProps {
+  english?: string;
+  score?: string;
+}
