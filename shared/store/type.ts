@@ -54,3 +54,15 @@ export interface EnglishProps {
   english?: string;
   score?: string;
 }
+
+export interface AnswerType {
+  name?: string;
+  content?: string;
+  color?: number;
+}
+
+export interface QnAProps {
+  id?: number;
+  question?: string;
+  answer?: AnswerType[];
+}
