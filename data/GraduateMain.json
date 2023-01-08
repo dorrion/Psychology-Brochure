@@ -1,0 +1,30 @@
+[
+  {
+    "tipId": 1,
+    "title": "입시요건",
+    "subtitle": "대학원 전기/후기 입시요강 알아보기",
+    "category": "아티클",
+    "homeImg": "/images/홈졸업.webp"
+  },
+  {
+    "tipId": 2,
+    "title": "학부 연구생",
+    "subtitle": "학부 연구생에 대해서 알아보기",
+    "category": "아티클",
+    "homeImg": "/images/홈장학금.webp"
+  },
+  {
+    "tipId": 3,
+    "title": "심층 인터뷰",
+    "subtitle": "선배님들의 조언",
+    "category": "인터뷰",
+    "homeImg": "/images/홈메일.webp"
+  },
+  {
+    "tipId": 4,
+    "title": "자유발언",
+    "subtitle": "그 외 해주고 싶은 말",
+    "category": "인터뷰",
+    "homeImg": "/images/홈비교과.webp"
+  }
+]
