@@ -16,6 +16,15 @@ module.exports = {
         customGreen: '#20C770',
         customBlue: '#015BFF',
         customYellow: '#FFCC00',
+
+        interview: {
+          100: '#F2E2C6',
+          200: '#C9B99D',
+          300: '#8EB695',
+          400: '#7DB1D0',
+          500: '#7E75A0',
+          600: '#FFC05C',
+        },
       },
       backgroundImage: {
         potato: "url('../public/images/감자배경.webp')",
