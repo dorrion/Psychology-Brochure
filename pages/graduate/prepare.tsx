@@ -16,7 +16,6 @@ export default function prepare({ GraduatePrepareData }: any) {
     },
   );
 
-  console.log(InterviewList);
   return (
     <Layout>
       <Head>

@@ -2,7 +2,6 @@ import { QnAProps } from 'shared/store/type';
 
 export default function Interview({ question, answer }: QnAProps) {
   const AnswerList = answer?.map((ans: any) => {
-    console.log(ans.color);
     return (
       <div className="flex items-center mt-4">
         <div className="circle bg-interview-100"></div>
