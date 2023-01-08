@@ -66,3 +66,14 @@ export interface QnAProps {
   question?: string;
   answer?: AnswerType[];
 }
+export interface MajorQnAProps {
+  id?: number;
+  question?: string;
+  answer?: AnswerType[];
+}
+
+export interface MajorProps {
+  id: number;
+  major: string;
+  explain: QnAProps;
+}
