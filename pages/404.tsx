@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-import Layout from 'components/layout/layout';
+import Layout from 'components/layout';
 import Ing from 'public/images/제작중.webp';
 
 function PageNotFound() {

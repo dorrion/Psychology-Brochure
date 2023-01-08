@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Layout from 'components/layout/layout';
+import Layout from 'components/layout';
 import GraduationCriteria from 'components/Home/post/GraduationCriteria';
 import GPA from 'components/Home/post/GPA';
 import English from 'components/Home/post/English';
