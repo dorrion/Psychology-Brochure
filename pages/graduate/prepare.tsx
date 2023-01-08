@@ -9,9 +9,7 @@ export default function prepare({ GraduatePrepareData }: any) {
   const InterviewList: JSX.Element[] = GraduatePrepareData.map(
     (QnA: QnAProps) => {
       return (
-        <>
-          <Interview key={QnA.id} question={QnA.question} answer={QnA.answer} />
-        </>
+        <Interview key={QnA.id} question={QnA.question} answer={QnA.answer} />
       );
     },
   );
@@ -26,7 +24,7 @@ export default function prepare({ GraduatePrepareData }: any) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <section className="text-gray-600 body-font bg-slate-200 dark:bg-slate-800">
-        <div className="container px-5 py-24 mx-auto flex-row flex-wrap flexBox w-full mb-20">
+        <div className="container px-5 py-24 mx-auto flex-row flex-wrap j w-full mb-20">
           {InterviewList}
         </div>
       </section>
