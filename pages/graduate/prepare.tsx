@@ -4,6 +4,7 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import Interview from 'components/Graduate/Interview';
 import { QnAProps } from 'shared/store/type';
+import GraduateHeader from 'components/Graduate/GraduateHeader';
 
 export default function prepare({ GraduatePrepareData }: any) {
   const InterviewList: JSX.Element[] = GraduatePrepareData.map(
@@ -23,8 +24,9 @@ export default function prepare({ GraduatePrepareData }: any) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section className="text-gray-600 body-font bg-slate-200 dark:bg-slate-800">
+      <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto flex-row flex-wrap j w-full mb-20">
+          <GraduateHeader />
           {InterviewList}
         </div>
       </section>

@@ -3,6 +3,7 @@ import { SurvivalProps } from 'shared/store/type';
 import GraduateMain from 'data/GraduateMain.json';
 import Layout from 'components/layout';
 import Head from 'next/head';
+import GraduateHeader from 'components/Graduate/GraduateHeader';
 
 export default function main() {
   const GraduateTipList: JSX.Element[] = GraduateMain.map(
@@ -28,10 +29,10 @@ export default function main() {
       </Head>
       <section className="text-gray-600 body-font bg-slate-200 dark:bg-slate-800">
         <div className="container px-5 py-24 mx-auto flex-row flex-wrap flexBox w-full mb-20">
+          <GraduateHeader />
           {GraduateTipList}
         </div>
       </section>
-
     </Layout>
   );
 }

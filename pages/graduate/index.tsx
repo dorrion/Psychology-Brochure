@@ -7,6 +7,7 @@ import Layout from 'components/layout';
 import { Tab } from '@headlessui/react';
 import { CurriProps } from 'shared/store/type';
 import TapWrapper from 'components/Graduate/TapWrapper';
+import GraduateHeader from 'components/Graduate/GraduateHeader';
 
 const Tabs = ({ CurriData }: any) => {
   const TapWrap = CurriData.map((el: CurriProps) => {
@@ -32,7 +33,10 @@ const Tabs = ({ CurriData }: any) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <section className="text-gray-600 body-font">
-        <div className="container px-5 py-24 mx-auto">{TapWrap}</div>
+        <div className="container px-5 py-24 mx-auto">
+          <GraduateHeader />
+          {TapWrap}
+        </div>
       </section>
     </Layout>
   );
