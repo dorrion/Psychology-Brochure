@@ -65,6 +65,13 @@
             "explain": "생활주기의 전 과정에 드러나는 이상행동의 원인, 증상, 분 류 등을 다룬다"
           }
         ],
+        "majorChoice": [
+          {
+            "name": "동기와 정서",
+            "engName": "Motivation & Emotion",
+            "explain": "인간행동의 특성과 방향성을 결정짓는 생물학적이고 기본 적인 동기를 고찰하고 보다 복잡한 동기의 원리와 이론들을 검토한다."
+          }
+        ],
         "minorRequired": [
           { "name": "경제원론1, 행정학개론, 사회학개론, 정치학개론" },
           { "name": "영역별교양" }
@@ -88,6 +95,11 @@
             "name": "아동이상심리학 및 실습",
             "engName": "Child Abnormal Psychology and Practicums",
             "explain": "아동의 심리적 장애를 이해하고 설명하는 다양한 접근들을 학습하고 우울증, 주의력결핍/과잉행동 장애, 불안장애, 기분 장애, 정신지체, 자폐증, 의사소통장애, 학습장애, 아동학대 등의 주요 심리장애들의 임상적 특징, 원인, 진단, 치료 등을 이해한다."
+          },
+          {
+            "name": "발달심리학",
+            "engName": "Developmental Psychology",
+            "explain": "행동의 발달과 성장을 좌우하는 요인과 기제, 그리고 각 발 달단계별 행동특성을 다루어 인간의 성격형성과정을 파악 한다. 언어, 인지발달의 지체에 관해서도 검토한다."
           }
         ],
         "minorRequired": [{ "name": "자기주도 진로탐색" }]
@@ -109,9 +121,9 @@
             "explain": "교육, 직장, 산업조직에 이용될 수 있는 상담과정의 성격과 역할, 기법 등을 배운다."
           },
           {
-            "name": "심리측정 및 실습",
-            "engName": "Psychometrics & Practicums",
-            "explain": "심리학적 변수들을 측정하는 것에 고스한 이론적, 경험적 문제를 다룬다."
+            "name": "다문화심리 및 상담",
+            "engName": "Multicultural Psychology and Counseling",
+            "explain": "본 교과목은 한국사회가 다문화 사회로 변해가는 과정과 그 로 인해 발생하는 문제를 심리학적 측면에서 다루고자 한다."  
           }
         ]
       },
@@ -132,6 +144,21 @@
             "engName": "Clinical Psychology",
             "explain": "임상심리학의 주요분야인 심리진단, 치료 및 이와 관련된 연구방법들에 대한 다양한 접근방법들을 배운다.",
             "addExplain": "임상을 3학년에 들었습니다. 임상심리학은 임상심리학자에 대한 개관이기 때문에 일찍부터 준비하는 것도 좋지만 어느정도 임상에 대한 기초 지식을 쌓은 후 들어도 좋은 것 같습니다."
+          },
+          {
+            "name": "사고과정의 이해",
+            "engName": "Research Practicums on Thinking",
+            "explain": "본 과목에서는 인간의 고차사고를 범주화, 추론, 의사 결정, 문제해결의 4 수준으로 나누어 수준별로 관련된 심리 학적 이론과 더불어 이러한 이론들과 관련된 다양한 실예들 을 실험/실습을 통해 학습해 나가고자 한다"
+          },
+          {
+            "name": "심리검사 및 실습",
+            "engName": "Psychological Test & Practicums",
+            "explain": "심리학적 이론에 기반을 둔 다양한 심리검사들의 제작과정 과 실시방법, 채점 및 그 결과에 대한 해석을 다룬다."
+          },
+          {
+            "name": "집단상담",
+            "engName": "Group Counseling",
+            "explain": "집단상담의 기본 개념과 집단역동, 집단상담 이론에 대해 이해하며, 집단상담의 실제 및 적용과 관련된 주제들을 다 루게 된다"
           }
         ]
       }
@@ -219,6 +246,23 @@
             "explain": "생활주기의 전 과정에 드러나는 이상행동의 원인, 증상, 분 류 등을 다룬다"
           }
         ],
+        "majorChoice": [
+          {
+            "name": "동기와 정서",
+            "engName": "Motivation & Emotion",
+            "explain": "인간행동의 특성과 방향성을 결정짓는 생물학적이고 기본 적인 동기를 고찰하고 보다 복잡한 동기의 원리와 이론들을 검토한다."
+          },
+          {
+            "name": "성격심리학",
+            "engName": "Theories of Personality",
+            "explain": "인성에 대한 정신분석학, 학습이론, 특질이론, 현상학적 이 론을 비교·검토한다"
+          },
+          {
+            "name": "학습심리학",
+            "engName": "Psychology of Learning",
+            "explain": "인간과 동물을 대상으로 한 기초적 학습실험과 조건형성을 다룬다."
+          }
+        ],
         "minorRequired": [
           { "name": "경제원론1, 행정학개론, 사회학개론, 정치학개론" },
           { "name": "영역별교양" }
@@ -237,16 +281,6 @@
             "name": "발달심리학",
             "engName": "Developmental Psychology",
             "explain": "행동의 발달과 성장을 좌우하는 요인과 기제, 그리고 각 발 달단계별 행동특성을 다루어 인간의 성격형성과정을 파악 한다. 언어, 인지발달의 지체에 관해서도 검토한다."
-          },
-          {
-            "name": "아동이상심리학 및 실습",
-            "engName": "Child Abnormal Psychology and Practicums",
-            "explain": "아동의 심리적 장애를 이해하고 설명하는 다양한 접근들을 학습하고 우울증, 주의력결핍/과잉행동 장애, 불안장애, 기분 장애, 정신지체, 자폐증, 의사소통장애, 학습장애, 아동학대 등의 주요 심리장애들의 임상적 특징, 원인, 진단, 치료 등을 이해한다."
-          },
-          {
-            "name": "임상심리학",
-            "engName": "Clinical Psychology",
-            "explain": "임상심리학의 주요분야인 심리진단, 치료 및 이와 관련된 연구방법들에 대한 다양한 접근방법들을 배운다."
           }
         ],
         "minorRequired": [{ "name": "자기주도 진로탐색" }]
@@ -263,9 +297,25 @@
         ],
         "majorChoice": [
           {
-            "name": "상담심리학 및 실습",
-            "engName": "Counseling Psychology and Practicums",
-            "explain": "교육, 직장, 산업조직에 이용될 수 있는 상담과정의 성격과 역할, 기법 등을 배운다."
+            "name": "심리측정 및 실습",
+            "engName": "Psychometrics & Practicums",
+            "explain": "심리학적 변수들을 측정하는 것에 고스한 이론적, 경험적 문제를 다룬다."
+          },
+          {
+            "name": "인지공학심리학",
+            "engName": "Psychology of Cognitive Engineering",
+            "explain": "이 과목에서는 인지 심리학, 실험심리학 등의 인간에 관한 심리학적 지식이 여러 시스템 디자인에 어떻게 활용될 수 있는가를 구체적인 예를 들어 학습한다"
+          },
+          {
+            "name": "건강심리학",
+            "engName": "health psychology",
+            "explain": "건강과 질병의 원인에 관한 통합적인 이해로부터 건강을 증진시키고 질병을 예방하는 과정에 이르기까지 다양한 건강 관련 영역에 심리학적 지식을 배운다"
+
+          },
+          {
+            "name": "인지행동치료 입문",
+            "engName": "Introduction to Cognitive-Behavioral Therapy",
+            "explain": "인지행동 치료를 소개하는 입문과정으로 사례개념화 과정, 치료시간 구조화, 주요 심리장애에 대해 개입할 수 있는 치료 적 기법과 절차들을 다룬다."
           }
         ]
       },
@@ -277,12 +327,6 @@
             "explain": "지각 현상의 보편적 속성을 인지과정과 관련하여 검토한다."
           },
           {
-            "name": "아동이상심리학 및 실습",
-            "engName": "Child Abnormal Psychology and Practicums",
-            "explain": "아동의 심리적 장애를 이해하고 설명하는 다양한 접근들을 학습하고 우울증, 주의력결핍/과잉행동 장애, 불안장애, 기분 장애, 정신지체, 자폐증, 의사소통장애, 학습장애, 아동학대 등의 주요 심리장애들의 임상적 특징, 원인, 진단, 치료 등을 이해한다",
-            "addExplain": "4학년에 듣는 것도 추천"
-          },
-          {
             "name": "현대상담과 이론의 실제",
             "engName": "Theories and Practice of Modern Counseling",
             "explain": "본 교과목에서는 현재 한국인들이 자주 대면하는 심리적 문제(예. 섭식장애, 분노조절문제, 화병, 불안, 직장스트레 스, 가족문제, 알코올문제)를 이해하고 접근하는 다양한 현 대상담이론(정신역동 상담이론, 수용-전념 상담이론, 동기 강화 상담, 여성주의 상담, 해결중심 상담, 이야기상담)을 다룬다."
@@ -291,11 +335,31 @@
             "name": "심리검사 및 실습",
             "engName": "Psychological Test & Practicums",
             "explain": "심리학적 이론에 기반을 둔 다양한 심리검사들의 제작과정 과 실시방법, 채점 및 그 결과에 대한 해석을 다룬다."
+          },
+          {
+            "name": "집단상담",
+            "engName": "Group Counseling",
+            "explain": "집단상담의 기본 개념과 집단역동, 집단상담 이론에 대해 이해하며, 집단상담의 실제 및 적용과 관련된 주제들을 다 루게 된다"
           }
+          
         ]
       }
     },
     "senior": {
+      "spring":{
+        "majorChoice": [
+          {
+            "name": "건강심리학",
+            "engName": "health psychology",
+            "explain": "건강과 질병의 원인에 관한 통합적인 이해로부터 건강을 증진시키고 질병을 예방하는 과정에 이르기까지 다양한 건강 관련 영역에 심리학적 지식을 배운다"
+          },
+          {
+            "name": "인지행동치료 입문",
+            "engName": "Introduction to Cognitive-Behavioral Therapy",
+            "explain": "인지행동 치료를 소개하는 입문과정으로 사례개념화 과정, 치료시간 구조화, 주요 심리장애에 대해 개입할 수 있는 치료 적 기법과 절차들을 다룬다."
+          }
+        ]
+      },
       "fall": {
         "majorChoice": [
           {
@@ -312,6 +376,11 @@
             "name": "심리측정 및 실습",
             "engName": "Psychometrics & Practicums",
             "explain": "심리학적 변수들을 측정하는 것에 고스한 이론적, 경험적 문제를 다룬다."
+          },
+          {
+            "name": "언어심리학",
+            "engName": "Psychology of Language",
+            "explain": "언어분석과 언어에 관한 기본이론들을 소개하고 아울러 사고와 언어간의 연계성, 언어의 습득문제를 기본주제로 다룬다"
           }
         ]
       }
@@ -387,6 +456,11 @@
             "name": "성격심리학",
             "engName": "Theories of Personality",
             "explain": "인성에 대한 정신분석학, 학습이론, 특질이론, 현상학적 이 론을 비교·검토한다"
+          },
+          {
+            "name": "학습심리학",
+            "engName": "Psychology of Learning",
+            "explain": "인간과 동물을 대상으로 한 기초적 학습실험과 조건형성을 다룬다."
           }
         ],
         "minorRequired": [
@@ -400,6 +474,18 @@
             "name": "사회심리학 및 실험",
             "engName": "Theories & Experiments in Social Psychology",
             "explain": "사회적 상황에서의 인간의 행동과 사고과정에 관한 여러 이 론들과 실험연구들을 고찰한다."
+          }
+        ],
+        "majorChoice": [
+          {
+            "name": "아동이상심리학 및 실습",
+            "engName": "Child Abnormal Psychology and Practicums",
+            "explain": "아동의 심리적 장애를 이해하고 설명하는 다양한 접근들을 학습하고 우울증, 주의력결핍/과잉행동 장애, 불안장애, 기분 장애, 정신지체, 자폐증, 의사소통장애, 학습장애, 아동학대 등의 주요 심리장애들의 임상적 특징, 원인, 진단, 치료 등을 이해한다."
+          },
+          {
+            "name": "발달심리학",
+            "engName": "Developmental Psychology",
+            "explain": "행동의 발달과 성장을 좌우하는 요인과 기제, 그리고 각 발 달단계별 행동특성을 다루어 인간의 성격형성과정을 파악 한다. 언어, 인지발달의 지체에 관해서도 검토한다."
           }
         ],
         "minorRequired": [{ "name": "자기주도 진로탐색" }]
@@ -469,11 +555,6 @@
             "name": "인지행동치료 입문",
             "engName": "Introduction to Cognitive-Behavioral Therapy",
             "explain": "인지행동 치료를 소개하는 입문과정으로 사례개념화 과정, 치료시간 구조화, 주요 심리장애에 대해 개입할 수 있는 치료 적 기법과 절차들을 다룬다."
-          },
-          {
-            "name": "심리측정 및 실습",
-            "engName": "Psychometrics & Practicums",
-            "explain": "심리학적 변수들을 측정하는 것에 고스한 이론적, 경험적 문제를 다룬다."
           }
         ]
       }
@@ -541,7 +622,7 @@
           {
             "name": "이상심리학 및 실험",
             "engName": "Abnormal Psychology and Practicums",
-            "explain": "생활주기의 전 과정에 드러나는 이상행동의 원인, 증상, 분 류 등을 다룬다"
+            "explain": "생활주기의 전 과정에 드러나는 이상행동의 원인, 증상, 분류 등을 다룬다"
           }
         ],
         "majorChoice": [
@@ -615,14 +696,24 @@
         ],
         "majorChoice": [
           {
-            "name": "인지공학심리학",
-            "engName": "Psychology of Cognitive Engineering",
-            "explain": "이 과목에서는 인지 심리학, 실험심리학 등의 인간에 관한 심리학적 지식이 여 러 시스템 디자인에 어떻게 활용될 수 있는가를 구체적인 예를 들어 학습한다"
+            "name": "상담심리학 및 실습",
+            "engName": "Counseling Psychology and Practicums",
+            "explain": "교육, 직장, 산업조직에 이용될 수 있는 상담과정의 성격과 역할, 기법 등을 배운다."
           },
           {
             "name": "심리측정 및 실습",
             "engName": "Psychometrics & Practicums",
             "explain": "심리학적 변수들을 측정하는 것에 고스한 이론적, 경험적 문제를 다룬다."
+          },
+          {
+            "name": "긍정심리학",
+            "engName": "Positive Psychology",
+            "explain": "한 다양한 연구개념들과 이론 및 방법론에 서 상당한 진전을 이루고 있어서, 이미 다른 사회과학분야 에도 강력한 영향을 미치고 있다. 이러한 긍정심리학의 주 제와 연구방법, 이론과 실증자료들을 습득할 필요가 있다"
+          },
+          {
+            "name": "다문화심리 및 상담",
+            "engName": "Multicultural Psychology and Counseling",
+            "explain": "본 교과목은 한국사회가 다문화 사회로 변해가는 과정과 그로 인해 발생하는 문제를 심리학적 측면에서 다루고자 한다" 
           }
         ]
       },
@@ -655,9 +746,24 @@
       "fall": {
         "majorRequired": [
           {
-            "name": "사회심리학 및 실험",
-            "engName": "Theories & Experiments in Social Psychology",
-            "explain": "사회적 상황에서의 인간의 행동과 사고과정에 관한 여러 이 론들과 실험연구들을 고찰한다."
+            "name": "광고심리학",
+            "engName": "Psychology of Advertising",
+            "explain": "심리학의 이론을 바탕으로 광고가 개인과 사회의 경제활동 에 미치는 영향과 그 과정을 다룬다."
+          },
+          {
+            "name": "심리학과 컴퓨터",
+            "engName": "Psychology and Computer",
+            "explain": "심리학 연구에서 컴퓨터는 필수적인 역할을 한다. 여러실험 기기의 통제, 자극의 제시, 자료의 수집 및 분석 등에 컴퓨 터가 활용된다"
+          },
+          {
+            "name": "언어심리학",
+            "engName": "Psychology of Language",
+            "explain": "언어분석과 언어에 관한 기본이론들을 소개하고 아울러 사고와 언어간의 연계성, 언어의 습득문제를 기본주제로 다룬다"
+          },
+          {
+            "name": "현대상담과 이론의 실제",
+            "engName": "Theories and Practice of Modern Counseling",
+            "explain": "본 교과목에서는 현재 한국인들이 자주 대면하는 심리적 문제(예. 섭식장애, 분노조절문제, 화병, 불안, 직장스트레 스, 가족문제, 알코올문제)를 이해하고 접근하는 다양한 현 대상담이론(정신역동 상담이론, 수용-전념 상담이론, 동기 강화 상담, 여성주의 상담, 해결중심 상담, 이야기상담)을 다룬다."
           }
         ]
       }
@@ -745,6 +851,11 @@
             "name": "학습심리학",
             "engName": "Psychology of Learning",
             "explain": "인간과 동물을 대상으로 한 기초적 학습실험과 조건형성을 다룬다."
+          },
+          {
+            "name": "데이터 분석 방법과 적용",
+            "engName": "Data Analysis and Its Application",
+            "explain": "연구기관과 공,사기업에서 가장 일반적으로 사용되는 엑셀 (excel)을 이용한 자료의 분석방법을 습득하고, 사회과학의 주 연구대상인 비실험적 자료의 접근, 획득에 대한 방법 및 지식을 습득 한 후, 수강생 본인이 정한 연구주제를 직접 구 한 자료를 이용하여 분석하고, 그 결과를 간결하고 이해하 기 쉽게 표와 도표로 시각화하여 발표하는 과정을 체험하도 록 한다."
           }
         ],
         "minorRequired": [
@@ -759,6 +870,16 @@
             "name": "사회심리학 및 실험",
             "engName": "Theories & Experiments in Social Psychology",
             "explain": "사회적 상황에서의 인간의 행동과 사고과정에 관한 여러 이 론들과 실험연구들을 고찰한다."
+          },
+          {
+            "name": "데이터 분석 방법과 적용",
+            "engName": "Data Analysis and Its Application",
+            "explain": "연구기관과 공,사기업에서 가장 일반적으로 사용되는 엑셀 (excel)을 이용한 자료의 분석방법을 습득하고, 사회과학의 주 연구대상인 비실험적 자료의 접근, 획득에 대한 방법 및 지식을 습득 한 후, 수강생 본인이 정한 연구주제를 직접 구 한 자료를 이용하여 분석하고, 그 결과를 간결하고 이해하 기 쉽게 표와 도표로 시각화하여 발표하는 과정을 체험하도 록 한다."
+          },
+          {
+            "name": "산업심리학 및 실습",
+            "engName": "Industrial Psychology and Practicums",
+            "explain": "산업심리학은 인사심리학, 조직심리학, 소비자심리학 등의 제 분야를 망라하며, 이들 분야의 유기적 관련성을 배운다. 특히 인력의 선발과 훈련, 평가 등 인사심리학의 중요 주제 들에 대한 이론과 방법, 적용사례를 다루며, 관련 주제들에 대한 실증적 연구를 병행한다"
           }
         ],
         "minorRequired": [{ "name": "자기주도 진로탐색" }]
@@ -829,7 +950,7 @@
           {
             "name": "언어심리학",
             "engName": "Psychology of Language",
-            "explain": "언어분석과 언어에 관한 기본이론들을 소개하고 아울러 사 고와 언어간의 연계성, 언어의 습득문제를 기본주제로 다룬 다"
+            "explain": "언어분석과 언어에 관한 기본이론들을 소개하고 아울러 사고와 언어간의 연계성, 언어의 습득문제를 기본주제로 다룬다"
           }
         ]
       }
