@@ -174,9 +174,9 @@ export function ArrowRightIcon() {
         <path
           d="M1 1L6 5.5L1 10"
           stroke="#909090"
-          stroke-width="0.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="0.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </svg>
     </>
