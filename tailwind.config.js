@@ -16,6 +16,7 @@ module.exports = {
         customGreen: '#20C770',
         customBlue: '#015BFF',
         customYellow: '#FFCC00',
+        shadowColor: '#D9D9D9',
 
         interview: {
           100: '#F2E2C6',
