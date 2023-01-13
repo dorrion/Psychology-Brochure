@@ -77,3 +77,10 @@ export interface MajorProps {
   major: string;
   explain: QnAProps;
 }
+
+export interface MoneyProps {
+  category: string;
+  name: string;
+  description: string;
+  benefit: string;
+}
