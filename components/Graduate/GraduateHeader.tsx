@@ -24,7 +24,7 @@ export default function Header() {
         </Link>
         <p className="mx-4 w-px h-2.5 bg-shadowColor" />
         <Link
-          href="/graduate/major"
+          href="/graduate/life"
           className="focus:text-secondaryColor hover:text-gray-900"
         >
           대학원 생활
