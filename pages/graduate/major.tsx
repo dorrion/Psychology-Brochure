@@ -2,14 +2,14 @@ import Layout from 'components/layout';
 import Head from 'next/head';
 import { promises as fs } from 'fs';
 import path from 'path';
-import Life from 'components/Graduate/Life';
+import Major from 'components/Graduate/Major';
 import { MajorProps } from 'shared/store/type';
 import GraduateHeader from 'components/Graduate/GraduateHeader';
 
 export default function prepare({ GraduateMajorData }: any) {
   const MajorQnAList: JSX.Element[] = GraduateMajorData.map(
     (el: MajorProps) => {
-      return <Life key={el.id} major={el.major} explain={el.explain} id={0} />;
+      return <Major key={el.id} major={el.major} explain={el.explain} id={0} />;
     },
   );
 
