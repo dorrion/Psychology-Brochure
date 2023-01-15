@@ -81,3 +81,30 @@ export const MoneyList = [
     benefit: '수업료 40% 면제',
   },
 ];
+
+export const GraduateBanner = [
+  {
+    title: '추천 커리큘럼',
+    desc: '세부 전공 별 추천 이수 과목을 알려드려요',
+  },
+  {
+    title: '대학원 준비',
+    desc: '대학원 준비 과정을 알려드려요',
+  },
+  {
+    title: '대학원 생활',
+    desc: '대학원 생활을 알려드려요',
+  },
+  {
+    title: '전공별 질문',
+    desc: '대학원 전공별 질문과 답변을 알려드려요',
+  },
+  {
+    title: '자유 발언',
+    desc: '자유 발업을 알려드려요',
+  },
+  {
+    title: '입시요강',
+    desc: '입시요강을 알려드려요',
+  },
+];
