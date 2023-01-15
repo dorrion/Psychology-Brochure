@@ -1,10 +1,6 @@
 import Link from 'next/link';
-import { useState } from 'react';
 
 export default function Header() {
-  const [count, setCount] = useState<number>(0);
-  const [selectedIndex, setSelectedIndex] = useState<number>(0);
-
   return (
     <>
       <nav className="mb-12 md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
