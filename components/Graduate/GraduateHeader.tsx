@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import { useState } from 'react';
-import { GraduateHeader } from 'data/Data';
 
 export default function Header() {
   const [count, setCount] = useState<number>(0);
