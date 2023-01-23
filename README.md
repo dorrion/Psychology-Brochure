@@ -40,6 +40,8 @@
 
 ![image](https://user-images.githubusercontent.com/100553086/210134543-44c77bf3-7b34-49b8-8a0d-d54caf13f9c7.png)
 
+## 📚 규칙
+아늑의 규칙 및 개발 방식은 [아늑위키](https://github.com/dorrion/Psychology-Brochure/wiki)에서 더 자세히 보실 수 있습니다!
 
 ## 🎨 시연
 
