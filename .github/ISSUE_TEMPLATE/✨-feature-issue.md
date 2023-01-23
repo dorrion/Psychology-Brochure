@@ -2,8 +2,8 @@
 name: "✨ Feature Issue"
 about: 'Feature 작업 내용을 작성합니다. '
 title: "✨ [Feat] 이슈타이틀 "
-labels: ''
-assignees: ''
+labels: "✨FEAT"
+assignees: dorrion
 
 ---
 
@@ -18,4 +18,4 @@ assignees: ''
 - [ ] 
 
 ## ETC
-- 
+-
