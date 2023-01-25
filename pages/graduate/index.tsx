@@ -4,7 +4,6 @@ import Image from 'next/image';
 import path from 'path';
 import { promises as fs } from 'fs';
 import Layout from 'components/layout';
-import { Tab } from '@headlessui/react';
 import { CurriProps } from 'shared/store/type';
 import TapWrapper from 'components/Graduate/TapWrapper';
 import GraduateHeader from 'components/Graduate/GraduateHeader';
@@ -34,6 +33,23 @@ const Tabs = ({ CurriData }: any) => {
       </Head>
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
+          <div className="w-full h-32 bg-shadowColor rounded-lg flex mb-9 relative overflow-hidden">
+            <div className="flex flex-col justify-center ml-8">
+              <h1 className="text-xl font-bold mb-2">추천 커리큘럼</h1>
+              <h2 className="text-base">
+                세부 전공 별 추천 이수 과목을 알려드려요
+              </h2>
+            </div>
+            {/* layout 적용해서 컨테이너 사이즈 따라 이미지 사이즈 변경되도록 하기 */}
+            <Image
+              className="absolute -bottom-14 right-0"
+              src="/images/대학원커리.webp"
+              width={534}
+              height={212}
+              alt="대학원 커리큘럼 이미지"
+              layout="intrinsic"
+            />
+          </div>
           <GraduateHeader />
           {TapWrap}
         </div>
