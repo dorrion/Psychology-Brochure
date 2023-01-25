@@ -44,7 +44,7 @@ const Tabs = ({ CurriData }: any) => {
             </div>
             {/* 반응형 위해 줄어들면 이미지는 없어지도록 */}
             <Image
-              className="absolute -bottom-14 right-0"
+              className="absolute -bottom-14 right-0 hidden lg:block"
               src="/images/대학원커리.webp"
               width={534}
               height={212}
