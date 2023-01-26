@@ -26,10 +26,10 @@ export default function Home({ HomeData }: any) {
             height={200}
             priority={true}
           />
-          <div className="container px-5 py-24 mx-auto ">
-            <div className="mb-20">
+          <div className="container px-5 py-24 mx-auto">
+            <div className=" mb-36">
               {/* 취업 현황 배너 */}
-              <h1 className="text-4xl mb-4">취업 현황</h1>
+              <h1 className="text-4xl mb-4 font-bold">취업 현황</h1>
               <div className="w-full max-w-5xl h-64 bg-gray-400 flex-col flex justify-end items-center p-8">
                 <h1 className="text-2xl font-bold mb-2 text-slate-100 mb-2.5">
                   취업 관련 정보
@@ -43,16 +43,12 @@ export default function Home({ HomeData }: any) {
                   </h2>
                 </div>
               </div>
-              <div className="lg:w-1/2 w-full mb-6 lg:mb-0 ">
-                <h1 className="text-left sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900 dark:text-gray-100">
-                  Information
-                </h1>
-                <div className="h-1 w-20 my-2 mx-auto bg-indigo-500 rounded"></div>
-              </div>
-              <p className="text-center lg:w-1/2 w-full leading-relaxed text-gray-500">
-                아주대학교 심리학과 학생들에게 유용한 정보를 소개합니다.
-              </p>
             </div>
+            <h1 className="text-4xl mb-4 font-bold">취업 인터뷰</h1>
+            <p className="leading-relaxed text-gray-500">
+              심리학과 졸업생들의 취업 이야기. 취업과 관련된 다양한 궁금증을
+              물어봤습니다.
+            </p>
           </div>
         </section>
       </Layout>
