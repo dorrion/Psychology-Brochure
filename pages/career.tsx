@@ -1,10 +1,8 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import { promises as fs } from 'fs';
-import path from 'path';
 import Layout from 'components/layout';
 
-export default function Home({ HomeData }: any) {
+export default function Home() {
   return (
     <>
       <Layout>
@@ -54,17 +52,4 @@ export default function Home({ HomeData }: any) {
       </Layout>
     </>
   );
-}
-
-export async function getStaticProps() {
-  // 살아남기 데이터 경로
-  const filePath = path.join(process.cwd(), 'data', 'HomeData.json');
-  const HomeData = await fs.readFile(filePath, 'utf8');
-  const objectData = JSON.parse(HomeData);
-
-  return {
-    props: {
-      HomeData: await Promise.all(objectData),
-    },
-  };
 }
