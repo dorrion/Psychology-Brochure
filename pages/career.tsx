@@ -27,14 +27,14 @@ export default function Home({ HomeData }: any) {
             priority={true}
           />
           <div className="container px-5 py-24 mx-auto ">
-            <div className="flex-col flex-wrap flexBox w-full mb-20">
-              <h1 className="text-4xl top-half">취업 현황</h1>
+            <div className="mb-20">
               {/* 취업 현황 배너 */}
-              <div className="w-2/3 h-64 bg-gray-400 flex-col flex justify-end items-center p-8">
-                <h1 className="text-2xl font-bold mb-2 text-slate-100">
+              <h1 className="text-4xl mb-4">취업 현황</h1>
+              <div className="w-full max-w-5xl h-64 bg-gray-400 flex-col flex justify-end items-center p-8">
+                <h1 className="text-2xl font-bold mb-2 text-slate-100 mb-2.5">
                   취업 관련 정보
                 </h1>
-                <h2 className="text-base text-slate-100">
+                <h2 className="text-base text-slate-100 mb-6">
                   심리학과 취업률, 급여, 취직 분야 통계 자료
                 </h2>
                 <div className="w-40 h-9 border border-slate-100 flexBox">
