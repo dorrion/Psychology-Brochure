@@ -44,9 +44,6 @@ module.exports = {
         '95v': '95vh',
         '100v': '100vh',
       },
-      rotate: {
-        30: '30deg',
-      },
     },
   },
   plugins: [
