@@ -55,11 +55,11 @@ export default function Home() {
               </div>
             </div>
             <h1 className="text-4xl mb-4 font-bold">취업 인터뷰</h1>
-            <p className="leading-relaxed text-gray-500">
+            <p className="mb-8 leading-relaxed text-gray-500">
               심리학과 졸업생들의 취업 이야기. 취업과 관련된 다양한 궁금증을
               물어봤습니다.
             </p>
-            <div className="flex flex-wrap -m-4">{CarrerList}</div>
+            <div className="flexBox -m-4">{CarrerList}</div>
           </div>
         </section>
       </Layout>
