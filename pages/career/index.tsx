@@ -37,11 +37,13 @@ export default function Home() {
             priority={true}
           />
           <div className="container px-5 py-24 mx-auto">
-            <div className=" mb-36">
+            <div className="mb-36">
               {/* 취업 현황 배너 */}
               <h1 className="text-4xl mb-4 font-bold">취업 현황</h1>
               <div className="absolute w-10/12 flex-col flex justify-end items-center">
-                <div className="w-full h-64 bg-gray-900 opacity-50 "></div>
+                {/* 반투명한 검은 배경 */}
+                <div className="w-full h-64 bg-gray-900 opacity-50" />
+                {/* 흰색 취업 관련 정보 */}
                 <div className="absolute w-full h-64 flex-col flex justify-end items-center p-8">
                   <h1 className="text-2xl font-bold mb-2.5 text-slate-100">
                     취업 관련 정보
@@ -49,7 +51,11 @@ export default function Home() {
                   <h2 className="text-base text-slate-100 mb-6">
                     심리학과 취업률, 급여, 취직 분야 통계 자료
                   </h2>
-                  <div className="w-40 h-9 border border-slate-100 flexBox">
+                  {/* 취업 정보 바로 가기 버튼 */}
+                  <div
+                    className="w-40 h-9 border border-slate-100  flexBox
+                   hover:bg-slate-800 hover:scale-110 transition-transform ease-in-out duration-100"
+                  >
                     <h2 className="px-5 text-xs text-slate-100">
                       취업 정보 바로가기
                     </h2>
