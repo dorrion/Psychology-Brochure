@@ -1,8 +1,20 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Layout from 'components/layout';
+import { CarrerProps } from 'shared/store/type';
+import { CareerInterview } from 'data/Data';
+import InterviewWrapper from 'components/Career/InterviewWrapper';
 
 export default function Home() {
+  const CarrerList: JSX.Element[] = CareerInterview.map((tip: CarrerProps) => (
+    <InterviewWrapper
+      key={tip.tipId}
+      tipId={tip.tipId}
+      title={tip.title!}
+      subtitle={tip.subtitle!}
+      carrerImg={tip.carrerImg!}
+    />
+  ));
   return (
     <>
       <Layout>
@@ -47,6 +59,7 @@ export default function Home() {
               심리학과 졸업생들의 취업 이야기. 취업과 관련된 다양한 궁금증을
               물어봤습니다.
             </p>
+            <div className="flex flex-wrap -m-4">{CarrerList}</div>
           </div>
         </section>
       </Layout>
