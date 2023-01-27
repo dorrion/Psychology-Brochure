@@ -27,7 +27,7 @@ export default function Home() {
         </Head>
 
         <section className="text-gray-600 body-font bg-slate-200 dark:bg-slate-800 ">
-          {/* 크롭해서 사용하기 때문에 화질 저하 문제 발생하는 것으로 보임. */}
+          {/* 상단 배너 */}
           <Image
             src={'/images/취업.webp'}
             className="lg:h-48 md:h-36 w-full object-cover object-center mb-4"
@@ -36,11 +36,19 @@ export default function Home() {
             height={200}
             priority={true}
           />
-          <div className="container px-5 py-24 mx-auto">
-            <div className="mb-36">
+          <div className="container px-5 py-24 mx-auto relative">
+            <div className="w-2/3 max-w-5xl mb-36">
               {/* 취업 현황 배너 */}
               <h1 className="text-4xl mb-4 font-bold">취업 현황</h1>
-              <div className="absolute w-10/12 flex-col flex justify-end items-center">
+              <Image
+                src={'/images/취업현황.webp'}
+                className="absolute z-0 max-w-5xl h-64 object-cover object-center mb-4"
+                alt="picture"
+                width={1920}
+                height={200}
+                layout="fixed"
+              />
+              <div className="absolute z-10 w-2/3 flex-col flex justify-end items-center">
                 {/* 반투명한 검은 배경 */}
                 <div className="w-full h-64 bg-gray-900 opacity-50" />
                 {/* 흰색 취업 관련 정보 */}
@@ -62,15 +70,10 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <Image
-                src={'/images/취업현황.webp'}
-                className="w-full max-w-5xl h-64 object-cover object-center mb-4"
-                alt="picture"
-                width={1920}
-                height={200}
-                layout="fixed"
-              />
             </div>
+          </div>
+          {/* 취업 인터뷰 */}
+          <div className="container px-5 py-24 mx-auto relative">
             <h1 className="text-4xl mb-4 font-bold">취업 인터뷰</h1>
             <p className="mb-8 leading-relaxed text-gray-500">
               심리학과 졸업생들의 취업 이야기. 취업과 관련된 다양한 궁금증을
