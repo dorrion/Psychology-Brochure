@@ -43,13 +43,13 @@ export default function Home() {
               <h1 className="text-4xl mb-4 font-bold">취업 현황</h1>
               <Image
                 src={'/images/취업현황.webp'}
-                className="absolute z-0 w-full h-64 object-cover object-center mb-4"
+                className="absolute w-full h-64 object-cover object-center mb-4"
                 alt="picture"
                 width={1920}
                 height={200}
                 layout="fixed"
               />
-              <div className="absolute z-10 w-full flex-col flex justify-end items-center">
+              <div className="absolute w-full flex-col flex justify-end items-center">
                 {/* 반투명한 검은 배경 */}
                 <div className="w-full h-64 bg-gray-900 opacity-50" />
                 {/* 흰색 취업 관련 정보 */}
