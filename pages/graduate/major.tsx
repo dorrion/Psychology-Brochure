@@ -1,5 +1,6 @@
 import Layout from 'components/layout';
 import Head from 'next/head';
+import Image from 'next/image';
 import { promises as fs } from 'fs';
 import path from 'path';
 import Major from 'components/Graduate/Major';
@@ -24,6 +25,25 @@ export default function prepare({ GraduateMajorData }: any) {
       </Head>
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto flex-row flex-wrap j w-full mb-20">
+          <div className="w-full h-32 bg-shadowColor rounded-lg flex mb-9 relative overflow-hidden">
+            <div className="flex flex-col justify-center ml-8">
+              <h1 className="text-xl font-bold mb-2 dark:text-slate-800">
+                전공별 질문
+              </h1>
+              <h2 className="text-base dark:text-slate-800">
+                세부 전공 별 정보를 알려드려요
+              </h2>
+            </div>
+            {/* 반응형 위해 줄어들면 이미지는 없어지도록 */}
+            <Image
+              className="absolute -bottom-11 right-14 hidden lg:block"
+              src="/images/대학원전공별.webp"
+              width={570}
+              height={325}
+              alt="대학원 커리큘럼 이미지"
+              layout="full"
+            />
+          </div>
           <GraduateHeader />
           {MajorQnAList}
         </div>
