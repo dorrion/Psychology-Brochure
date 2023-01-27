@@ -11,6 +11,13 @@ export interface SurvivalProps {
   homeImg?: string;
 }
 
+export interface CarrerProps {
+  tipId?: number;
+  title?: string;
+  subtitle?: string;
+  carrerImg?: string;
+}
+
 export interface MemberProps {
   memberId?: number;
   profileImg?: string;
