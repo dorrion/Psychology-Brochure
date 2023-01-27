@@ -11,8 +11,8 @@ export default function InterviewWrapper({
 }: CarrerProps) {
   return (
     <>
-      <div className="xl:w-1/4 lg:w-1/3 md:w-1/2 m-4">
-        <div className="h-96 dark:bg-slate-700 bg-gray-50 overflow-hidden relative">
+      <div className="xl:w-1/4 lg:w-1/3 md:w-1/2 m-4 ">
+        <div className="drop-shadow-xl h-96 dark:bg-slate-700 bg-gray-50 overflow-hidden relative">
           <Link href="/carrer/[id]" as={`/post/${tipId}`}>
             <Image
               src={carrerImg!}
