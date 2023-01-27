@@ -36,10 +36,10 @@ const Tabs = ({ CurriData }: any) => {
           <div className="w-full h-32 bg-shadowColor rounded-lg flex mb-9 relative overflow-hidden">
             <div className="flex flex-col justify-center ml-8">
               <h1 className="text-xl font-bold mb-2 dark:text-slate-800">
-                추천 커리큘럼
+                자유 발언
               </h1>
               <h2 className="text-base dark:text-slate-800">
-                세부 전공 별 추천 이수 과목을 알려드려요
+                선배들의 free한 조언을 전해드려요
               </h2>
             </div>
             {/* 반응형 위해 줄어들면 이미지는 없어지도록 */}
@@ -53,7 +53,6 @@ const Tabs = ({ CurriData }: any) => {
             />
           </div>
           <GraduateHeader />
-          {TapWrap}
         </div>
       </section>
     </Layout>
