@@ -39,20 +39,32 @@ export default function Home() {
           <div className="container px-5 py-24 mx-auto">
             <div className=" mb-36">
               {/* 취업 현황 배너 */}
+
               <h1 className="text-4xl mb-4 font-bold">취업 현황</h1>
-              <div className="w-full max-w-5xl h-64 bg-gray-400 flex-col flex justify-end items-center p-8">
-                <h1 className="text-2xl font-bold mb-2 text-slate-100 mb-2.5">
-                  취업 관련 정보
-                </h1>
-                <h2 className="text-base text-slate-100 mb-6">
-                  심리학과 취업률, 급여, 취직 분야 통계 자료
-                </h2>
-                <div className="w-40 h-9 border border-slate-100 flexBox">
-                  <h2 className="px-5 text-xs text-slate-100">
-                    취업 정보 바로가기
+              <div className="absolute w-10/12 flex-col flex justify-end items-center">
+                <div className="w-full h-64 bg-gray-900 opacity-50 "></div>
+                <div className="absolute w-full h-64 flex-col flex justify-end items-center p-8">
+                  <h1 className="text-2xl font-bold mb-2.5 text-slate-100">
+                    취업 관련 정보
+                  </h1>
+                  <h2 className="text-base text-slate-100 mb-6">
+                    심리학과 취업률, 급여, 취직 분야 통계 자료
                   </h2>
+                  <div className="w-40 h-9 border border-slate-100 flexBox">
+                    <h2 className="px-5 text-xs text-slate-100">
+                      취업 정보 바로가기
+                    </h2>
+                  </div>
                 </div>
               </div>
+              <Image
+                src={'/images/취업현황.webp'}
+                className="w-full max-w-5xl h-64 object-cover object-center mb-4"
+                alt="picture"
+                width={1920}
+                height={200}
+                layout="fixed"
+              />
             </div>
             <h1 className="text-4xl mb-4 font-bold">취업 인터뷰</h1>
             <p className="mb-8 leading-relaxed text-gray-500">
