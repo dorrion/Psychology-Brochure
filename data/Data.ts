@@ -108,3 +108,24 @@ export const GraduateBanner = [
     desc: '입시요강을 알려드려요',
   },
 ];
+
+export const CareerInterview = [
+  {
+    tipId: 1,
+    title: '공군 장교 취업 SSUL',
+    subtitle: '대한민국 영공을 수호하는 강력한 힘',
+    carrerImg: '/images/취업공군.webp',
+  },
+  {
+    tipId: 2,
+    title: '신용분석가 취업 SSUL',
+    subtitle: '취업, 자신의 경쟁력',
+    carrerImg: '/images/취업신용분석.webp',
+  },
+  {
+    tipId: 3,
+    title: '그래픽스엔지니어, \n웹개발자 취업 SSUL',
+    subtitle: '그동안 해왔던 것들은 배신하지 않는다',
+    carrerImg: '/images/취업그래픽.webp',
+  },
+];
