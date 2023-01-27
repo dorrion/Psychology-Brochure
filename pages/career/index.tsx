@@ -39,7 +39,6 @@ export default function Home() {
           <div className="container px-5 py-24 mx-auto">
             <div className=" mb-36">
               {/* 취업 현황 배너 */}
-
               <h1 className="text-4xl mb-4 font-bold">취업 현황</h1>
               <div className="absolute w-10/12 flex-col flex justify-end items-center">
                 <div className="w-full h-64 bg-gray-900 opacity-50 "></div>
