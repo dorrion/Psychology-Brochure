@@ -34,8 +34,8 @@ export default function SurvivalWrapper({
                 height={200}
               />
             )}
-
-            <div className="p-4 mb-4">
+            {/* 반응형 시 보기와의 마진 */}
+            <div className="p-4 mb-4 md:mb-8">
               {category && (
                 <h2 className="tracking-widest text-xs title-font font-medium text-primaryColor dark:text-secondaryColor mb-1">
                   {category}
