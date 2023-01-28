@@ -82,7 +82,7 @@ export default function Home() {
               심리학과 졸업생들의 취업 이야기. 취업과 관련된 다양한 궁금증을
               물어봤습니다.
             </p>
-            <div className="flexBox -m-4">{CarrerList}</div>
+            <div className="flex flex-wrap -m-4">{CarrerList}</div>
           </div>
         </section>
       </Layout>
