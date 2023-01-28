@@ -24,6 +24,7 @@ export default function SurvivalWrapper({
                 width={200}
                 height={200}
                 priority={true}
+                layout="fixed"
               />
             ) : (
               <Image
@@ -32,6 +33,7 @@ export default function SurvivalWrapper({
                 alt="picture"
                 width={200}
                 height={200}
+                layout="fixed"
               />
             )}
             {/* 반응형 시 보기와의 마진 */}
