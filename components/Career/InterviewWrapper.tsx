@@ -16,9 +16,9 @@ export default function InterviewWrapper({
           <Link href={`/carrer/$[tipId]`} as={`/career/${tipId}`}>
             <Image
               src={carrerImg!}
-              className="h-48 w-full object-cover object-center mb-4"
+              className="h-48 sm:w-full object-cover object-center mb-4"
               alt="picture"
-              width={200}
+              width={232}
               height={140}
             />
 

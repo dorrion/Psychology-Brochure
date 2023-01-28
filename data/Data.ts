@@ -113,7 +113,7 @@ export const CareerInterview = [
   {
     tipId: 1,
     title: '공군 장교 취업 SSUL',
-    subtitle: '대한민국 영공을 수호하는 강력한 힘',
+    subtitle: '대한민국 영공을 수호하는 \n강력한 힘',
     carrerImg: '/images/취업공군.webp',
   },
   {
