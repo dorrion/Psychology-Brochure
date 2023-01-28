@@ -125,7 +125,7 @@ export const CareerInterview = [
   {
     tipId: 3,
     title: '그래픽스엔지니어, \n웹개발자 취업 SSUL',
-    subtitle: '그동안 해왔던 것들은 배신하지 않는다',
+    subtitle: '그동안 해왔던 것들은 \n배신하지 않는다',
     carrerImg: '/images/취업그래픽.webp',
   },
 ];
