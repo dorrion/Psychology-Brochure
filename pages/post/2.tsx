@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Layout from 'components/layout';
 import { MoneyList } from 'data/Data';
-import MoneyCard from 'components/Post/MoneyCard';
+import MoneyCard from 'components/Home/2/MoneyCard';
 
 export default function index() {
   return (
