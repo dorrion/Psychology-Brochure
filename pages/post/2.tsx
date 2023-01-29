@@ -1,9 +1,57 @@
 import Head from 'next/head';
 import Layout from 'components/layout';
-import { MoneyList } from 'data/Data';
-import MoneyCard from 'components/Post/MoneyCard';
+import { SchoolMoneyList, SuburbsMoneyList } from 'data/Data';
+import MoneyCard from 'components/Home/2/MoneyCard';
+import { useState } from 'react';
+import { DownArrow, UpArrow } from 'components/icon';
 
 export default function index() {
+  // 교내 더보기&접기 상태 저장
+  const [isSchoolMoreView, setIsSchoolMoreView] = useState<Boolean>(false);
+  const onClickMoreViewButton = () => {
+    setIsSchoolMoreView(!isSchoolMoreView);
+  }; // 클릭시 상태 반전
+
+  // 교외 더보기&접기 상태 저장
+  const [isSuburbsMoreView, setIsSuburbsMoreView] = useState<Boolean>(false);
+  const onClickSuburbsMoreViewButton = () => {
+    setIsSuburbsMoreView(!isSuburbsMoreView);
+  }; // 클릭시 상태 반전
+
+  // 더보기 버튼이 True일 때는 모두 보여주기
+  // 더보기 버튼이 False일 때는 3개만 slice 해서 보여주기
+  let SchoolMoney = isSchoolMoreView
+    ? SchoolMoneyList
+    : SchoolMoneyList.slice(0, 3);
+  let SuburbsMoney = isSuburbsMoreView
+    ? SuburbsMoneyList
+    : SuburbsMoneyList.slice(0, 3);
+
+  // 교내 장학
+  const school = SchoolMoney?.map((el) => {
+    return (
+      <MoneyCard
+        key={el.name}
+        name={el.name}
+        description={el.description}
+        category={el.category}
+        benefit={el.benefit}
+      />
+    );
+  });
+  // 교외 장학
+  const suburbs = SuburbsMoney?.map((el) => {
+    return (
+      <MoneyCard
+        key={el.name}
+        name={el.name}
+        description={el.description}
+        category={el.category}
+        benefit={el.benefit}
+      />
+    );
+  });
+  console.log(isSchoolMoreView);
   return (
     <Layout>
       <Head>
@@ -13,21 +61,25 @@ export default function index() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section className="text-gray-600 body-font">
-        <div className="container px-5 py-24 mx-auto flexBox">
-          <div className="flex flex-wrap">
-            {MoneyList?.map((el) => {
-              return (
-                <MoneyCard
-                  key={el.name}
-                  name={el.name}
-                  description={el.description}
-                  category={el.category}
-                  benefit={el.benefit}
-                />
-              );
-            })}
-          </div>
+      <section className="text-gray-600 body-font ">
+        <div className="container px-5 py-24 mx-auto flex-col flexBox">
+          <div className="flex flex-wrap">{school}</div>
+          <button className="flex-col flexBox" onClick={onClickMoreViewButton}>
+            <p className="mb-4 font-base">
+              {isSchoolMoreView ? '접기' : '더보기'}
+            </p>
+            {isSchoolMoreView ? <UpArrow /> : <DownArrow />}
+          </button>
+          <div className="flex flex-wrap">{suburbs}</div>
+          <button
+            className="flex-col flexBox"
+            onClick={onClickSuburbsMoreViewButton}
+          >
+            <p className="mb-4 font-base">
+              {isSuburbsMoreView ? '접기' : '더보기'}
+            </p>
+            {isSuburbsMoreView ? <UpArrow /> : <DownArrow />}
+          </button>
         </div>
       </section>
     </Layout>

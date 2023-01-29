@@ -223,3 +223,34 @@ export function Sun() {
     </svg>
   );
 }
+
+export function DownArrow() {
+  return (
+    <svg width={22} height={11} fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M21 1L11 9.75 1 1"
+        stroke="#252525"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+export function UpArrow() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      className="w-6 h-6"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M4.5 15.75l7.5-7.5 7.5 7.5"
+      />
+    </svg>
+  );
+}
