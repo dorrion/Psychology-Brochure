@@ -1,9 +1,9 @@
 import Head from 'next/head';
 import Layout from 'components/layout';
-import GraduationCriteria from 'components/Home/post/GraduationCriteria';
-import GPA from 'components/Home/post/GPA';
-import English from 'components/Home/post/English';
-import CompleteSemester from 'components/Home/post/CompleteSemester';
+import GraduationCriteria from 'components/Home/1/GraduationCriteria';
+import GPA from 'components/Home/1/GPA';
+import English from 'components/Home/1/English';
+import CompleteSemester from 'components/Home/1/CompleteSemester';
 
 export default function index() {
   return (
