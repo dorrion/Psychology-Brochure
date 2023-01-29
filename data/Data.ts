@@ -41,7 +41,7 @@ export const majorChList = [
   '사회과학인턴십3',
 ];
 
-export const MoneyList = [
+export const SchoolMoneyList = [
   {
     category: '교내장학',
     name: '대우장학',
@@ -61,6 +61,48 @@ export const MoneyList = [
       '학년별 직전학기 성적순으로 선발\n(단,영어성적 소지자를 대상으로 함)',
     benefit: '1개 학기 수업료 전액',
   },
+  {
+    category: '교내장학',
+    name: '원천장학',
+    description:
+      '학과별로 신청여부가 다르므로 반드시 소속학과에 장학 신청여부를 확인해야 함',
+    benefit: '수업료 30% 면제',
+  },
+  {
+    category: '교내장학',
+    name: '학장추천장학',
+    description: '단과대학 특성에 맞도록 운영',
+    benefit: '학업지원비(연수, 참가, 공모전, 어학시험 지원 등)',
+  },
+  {
+    category: '교내장학',
+    name: '자기개발장학',
+    description: '단과대학 특성에 맞도록 운영',
+    benefit: '학업지원비(연수, 참가, 공모전, 어학시험 지원 등)',
+  },
+  {
+    category: '교내장학',
+    name: '리더장학A',
+    description: '학생자치활동으로 대학의 명예를 선양한 자 총학생회장 정, 부',
+    benefit: '학업지원비(수업료 100%) 지원',
+  },
+  {
+    category: '교내장학',
+    name: '리더장학B',
+    description:
+      '학생자치활동으로 대학의 명예를 선양한 자 단대 학생회장 정, 부 및 이에 준하는 자치기구 임원',
+    benefit: '학업지원비(수업료 70%) 지원',
+  },
+  {
+    category: '교내장학',
+    name: '리더장학C',
+    description:
+      '학생자치활동으로 대학의 명예를 선양한 자 학과 학생회장 정, 부 및 이에 준하는 자치기구 임원',
+    benefit: '학업지원비(수업료 30%) 지원',
+  },
+];
+
+export const SuburbsMoneyList = [
   {
     category: '교외장학',
     name: '아경장학(최고, 비전)',

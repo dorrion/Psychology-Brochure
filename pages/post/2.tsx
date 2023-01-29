@@ -1,19 +1,31 @@
 import Head from 'next/head';
 import Layout from 'components/layout';
-import { MoneyList } from 'data/Data';
+import { SchoolMoneyList, SuburbsMoneyList } from 'data/Data';
 import MoneyCard from 'components/Home/2/MoneyCard';
 import { useState } from 'react';
 import { DownArrow } from 'components/icon';
 
 export default function index() {
-  const [isMoreView, setIsMoreView] = useState<Boolean>(false); // 더보기&접기 상태 저장
+  // 교내 더보기&접기 상태 저장
+  const [isSchoolMoreView, setIsSchoolMoreView] = useState<Boolean>(false);
   const onClickMoreViewButton = () => {
-    setIsMoreView(!isMoreView);
+    setIsSchoolMoreView(!isSchoolMoreView);
+  }; // 클릭시 상태 반전
+
+  // 교외 더보기&접기 상태 저장
+  const [isSuburbsMoreView, setIsSuburbsMoreView] = useState<Boolean>(false);
+  const onClickSuburbsMoreViewButton = () => {
+    setIsSuburbsMoreView(!isSuburbsMoreView);
   }; // 클릭시 상태 반전
 
   // 더보기 버튼이 True일 때는 모두 보여주기
   // 더보기 버튼이 False일 때는 3개만 slice 해서 보여주기
-  let SchoolMoney = isMoreView ? MoneyList : MoneyList.slice(0, 3);
+  let SchoolMoney = isSchoolMoreView
+    ? SchoolMoneyList
+    : SchoolMoneyList.slice(0, 3);
+  let SuburbsMoney = isSuburbsMoreView
+    ? SuburbsMoneyList
+    : SuburbsMoneyList.slice(0, 3);
 
   // 교내 장학
   const school = SchoolMoney?.map((el) => {
@@ -28,8 +40,18 @@ export default function index() {
     );
   });
   // 교외 장학
-  // const suburbs;
-  console.log(isMoreView);
+  const suburbs = SuburbsMoney?.map((el) => {
+    return (
+      <MoneyCard
+        key={el.name}
+        name={el.name}
+        description={el.description}
+        category={el.category}
+        benefit={el.benefit}
+      />
+    );
+  });
+  console.log(isSchoolMoreView);
   return (
     <Layout>
       <Head>
@@ -43,6 +65,14 @@ export default function index() {
         <div className="container px-5 py-24 mx-auto flex-col flexBox">
           <div className="flex flex-wrap">{school}</div>
           <button className="flex-col flexBox" onClick={onClickMoreViewButton}>
+            <p className="mb-4 font-base">더보기</p>
+            <DownArrow />
+          </button>
+          <div className="flex flex-wrap">{suburbs}</div>
+          <button
+            className="flex-col flexBox"
+            onClick={onClickSuburbsMoreViewButton}
+          >
             <p className="mb-4 font-base">더보기</p>
             <DownArrow />
           </button>
