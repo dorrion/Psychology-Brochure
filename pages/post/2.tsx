@@ -3,7 +3,7 @@ import Layout from 'components/layout';
 import { SchoolMoneyList, SuburbsMoneyList } from 'data/Data';
 import MoneyCard from 'components/Home/2/MoneyCard';
 import { useState } from 'react';
-import { DownArrow } from 'components/icon';
+import { DownArrow, UpArrow } from 'components/icon';
 
 export default function index() {
   // 교내 더보기&접기 상태 저장
@@ -65,16 +65,20 @@ export default function index() {
         <div className="container px-5 py-24 mx-auto flex-col flexBox">
           <div className="flex flex-wrap">{school}</div>
           <button className="flex-col flexBox" onClick={onClickMoreViewButton}>
-            <p className="mb-4 font-base">더보기</p>
-            <DownArrow />
+            <p className="mb-4 font-base">
+              {isSchoolMoreView ? '접기' : '더보기'}
+            </p>
+            {isSchoolMoreView ? <UpArrow /> : <DownArrow />}
           </button>
           <div className="flex flex-wrap">{suburbs}</div>
           <button
             className="flex-col flexBox"
             onClick={onClickSuburbsMoreViewButton}
           >
-            <p className="mb-4 font-base">더보기</p>
-            <DownArrow />
+            <p className="mb-4 font-base">
+              {isSuburbsMoreView ? '접기' : '더보기'}
+            </p>
+            {isSuburbsMoreView ? <UpArrow /> : <DownArrow />}
           </button>
         </div>
       </section>
