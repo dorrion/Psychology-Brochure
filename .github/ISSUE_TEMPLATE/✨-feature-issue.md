@@ -8,6 +8,7 @@ assignees: dorrion
 ---
 
 ### Issue 타입(하나 이상의 Issue 타입을 선택해주세요)
+
 - [ ] 기능 추가
 - [ ] 기능 삭제
 - [ ] 디자인
@@ -18,6 +19,7 @@ assignees: dorrion
 ex) Github 소셜 로그인 기능이 필요합니다.
 
 ## 예상 소요 시간
+
 - [ ] `0.5h`
 - [ ] `1h`
 - [ ] `1.5h`
