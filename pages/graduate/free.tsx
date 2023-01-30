@@ -1,25 +1,15 @@
 import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-import path from 'path';
-import { promises as fs } from 'fs';
 import Layout from 'components/layout';
-import { CurriProps } from 'shared/store/type';
-import TapWrapper from 'components/Graduate/TapWrapper';
+import { Free } from 'data/Data';
+import { EnrolementProps } from 'shared/store/type';
+import FreeCard from 'components/Graduate/FreeCard';
 import GraduateHeader from 'components/Graduate/GraduateHeader';
 
-const Tabs = ({ CurriData }: any) => {
-  const TapWrap = CurriData.map((el: CurriProps) => {
-    return (
-      <TapWrapper
-        key={el.id}
-        major={el.major}
-        freshmen={el.freshmen}
-        junior={el.junior}
-        sophomore={el.sophomore}
-        senior={el.senior}
-      />
-    );
+const FreePage = () => {
+  const FreeList = Free.map((el: EnrolementProps, idx) => {
+    return <FreeCard key={idx} idx={idx} name={el.name} tip={el.tip} />;
   });
 
   return (
@@ -39,7 +29,7 @@ const Tabs = ({ CurriData }: any) => {
                 자유 발언
               </h1>
               <h2 className="text-base dark:text-slate-800">
-                선배들의 free한 조언을 전해드려요
+                선배님들의 추가 조언을 전해드려요
               </h2>
             </div>
             {/* 반응형 위해 줄어들면 이미지는 없어지도록 */}
@@ -53,23 +43,12 @@ const Tabs = ({ CurriData }: any) => {
             />
           </div>
           <GraduateHeader />
+
+          <div className="grid grid-cols-3 gap-4">{FreeList}</div>
         </div>
       </section>
     </Layout>
   );
 };
 
-export default Tabs;
-
-export async function getStaticProps() {
-  // 커리큘럼
-  const filePath = path.join(process.cwd(), 'data', 'GraduateCrc.json');
-  const CurriData = await fs.readFile(filePath, 'utf8');
-  const objectData = JSON.parse(CurriData);
-
-  return {
-    props: {
-      CurriData: await Promise.all(objectData),
-    },
-  };
-}
+export default FreePage;
