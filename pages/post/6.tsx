@@ -44,7 +44,7 @@ export default function index() {
       </section>
       <section className="text-gray-600 body-font bg-shadowColor">
         <div className="container px-5 py-24 mx-auto flex-col flexBox ">
-          <h1 className="text-xl font-semibold mb-8">논문 검색 꿀팁!🍯</h1>
+          <h1 className="dark:text-slate-700 text-xl font-semibold mb-8">논문 검색 꿀팁!🍯</h1>
           <div className="w-full h-96 flex flex-col flex-wrap items-center p-4 bg-fixed">
             {SearchTip}
           </div>
