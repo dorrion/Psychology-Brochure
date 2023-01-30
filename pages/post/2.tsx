@@ -51,7 +51,7 @@ export default function index() {
       />
     );
   });
-  console.log(isSchoolMoreView);
+
   return (
     <Layout>
       <Head>
