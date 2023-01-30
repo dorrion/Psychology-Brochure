@@ -28,7 +28,6 @@ export default function index() {
   // 더보기 버튼이 False일 때는 3개만 slice 해서 보여주기
   let LectureList = isLectureMoreView ? Lecture : Lecture.slice(0, 3);
   let SeminarList = isSeminarMoreView ? Seminar : Seminar.slice(0, 3);
-  let CampList = isCampMoreView ? Camp : Camp.slice(0, 3);
 
   // 강의형
   const lecture = LectureList?.map((el) => {
@@ -57,7 +56,7 @@ export default function index() {
     );
   });
   // 캠프, 연수형
-  const camp = CampList?.map((el) => {
+  const camp = Camp?.map((el) => {
     return (
       <ProgramCard
         key={el.name}
@@ -99,15 +98,6 @@ export default function index() {
             {isSeminarMoreView ? <UpArrow /> : <DownArrow />}
           </button>
           <div className="flex flex-wrap">{camp}</div>
-          <button
-            className="flex-col flexBox"
-            onClick={onClickCampMoreViewButton}
-          >
-            <p className="mb-4 font-base">
-              {isCampMoreView ? '접기' : '더보기'}
-            </p>
-            {isCampMoreView ? <UpArrow /> : <DownArrow />}
-          </button>
         </div>
       </section>
     </Layout>
