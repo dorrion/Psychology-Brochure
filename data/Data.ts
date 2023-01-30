@@ -320,3 +320,61 @@ export const CareerInterview = [
     carrerImg: '/images/취업그래픽.webp',
   },
 ];
+
+// 강의형
+export const Lecture = [
+  {
+    category: '강의형',
+    name: '취업훈련소 AJOU-JEP',
+    description: '취업준비 과정 전반 대비 프로그램',
+    area: '취창업',
+    period: '하계',
+  },
+  {
+    category: '강의형',
+    name: '파이썬 기초',
+    description: '파이썬 언어에 관심 있는 학생들의 기초 과정',
+    area: '취창업',
+    period: '하계',
+  },
+  {
+    category: '강의형',
+    name: '포토샵 자격과정',
+    description: '인문사회계열 디지털 역량 강화를 위한 포토샵 자격과정',
+    area: '취창업',
+    period: '하계',
+  },
+  {
+    category: '강의형',
+    name: '프리미어 자격과정',
+    description: '인문사회계열 디지털 역량 강화를 위한 영상편집 자격과정',
+    area: '취창업',
+    period: '하계',
+  },
+  {
+    category: '강의형',
+    name: '구글애널리틱스(GAIQ)자격 과정',
+    description:
+      '인문사회상경계열 디지털 역량 강화를 위한 구글애널리틱스 자격과정',
+    area: '취창업',
+    period: '하계',
+  },
+];
+
+export const Seminar = [
+  {
+    category: '교외장학',
+    name: '아경장학(최고, 비전)',
+    description: '최고 - 단과대학별 2, 3학년 재학생 \n비전 - 경영대학 재학생',
+    benefit: '아경(최고)장학 등록금 전액',
+  },
+];
+
+export const Camp = [
+  {
+    category: '교외장학',
+    name: '아경장학(최고, 비전)',
+    description: '최고 - 단과대학별 2, 3학년 재학생 \n비전 - 경영대학 재학생',
+    benefit: '아경(최고)장학 등록금 전액',
+  },
+];
