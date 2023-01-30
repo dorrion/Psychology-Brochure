@@ -19,7 +19,7 @@ export default function index() {
       <section className="text-gray-600 body-font bg-secondaryColor">
         <div className="container px-5 py-24 mx-auto flex-col flexBox ">
           <h1 className="text-xl font-semibold">수강신청 성공하는 꿀팁!🍯</h1>
-          <div className=" h-96 flex flex-col flex-wrap justify-start items-start p-4">
+          <div className="w-full h-96 flex flex-col flex-wrap items-center p-4 bg-fixed">
             {Enrole}
           </div>
         </div>
