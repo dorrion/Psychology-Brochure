@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Layout from 'components/layout';
-import { Enrolement, Study } from 'data/Data';
+import { Enrolement, Study, Search } from 'data/Data';
 import EnrolementCard from 'components/Home/6/EnrolementCard';
 
 export default function index() {
@@ -9,6 +9,10 @@ export default function index() {
   });
 
   const StudyTip = Study?.map((el) => {
+    return <EnrolementCard key={el.name} name={el.name} tip={el.tip} />;
+  });
+
+  const SearchTip = Search?.map((el) => {
     return <EnrolementCard key={el.name} name={el.name} tip={el.tip} />;
   });
   return (
@@ -22,7 +26,9 @@ export default function index() {
       </Head>
       <section className="text-gray-600 body-font bg-secondaryColor">
         <div className="container px-5 py-24 mx-auto flex-col flexBox ">
-          <h1 className="text-xl font-semibold">수강신청 성공하는 꿀팁!🍯</h1>
+          <h1 className="text-xl font-semibold mb-8">
+            수강신청 성공하는 꿀팁!🍯
+          </h1>
           <div className="w-full h-96 flex flex-col flex-wrap items-center p-4 bg-fixed">
             {Enrole}
           </div>
@@ -30,9 +36,17 @@ export default function index() {
       </section>
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto flex-col flexBox ">
-          <h1 className="text-xl font-semibold">학과 공부 꿀팁!🍯</h1>
+          <h1 className="text-xl font-semibold mb-8">학과 공부 꿀팁!🍯</h1>
           <div className="w-full h-96 flex flex-col flex-wrap items-center p-4 bg-fixed">
             {StudyTip}
+          </div>
+        </div>
+      </section>
+      <section className="text-gray-600 body-font bg-shadowColor">
+        <div className="container px-5 py-24 mx-auto flex-col flexBox ">
+          <h1 className="text-xl font-semibold mb-8">논문 검색 꿀팁!🍯</h1>
+          <div className="w-full h-96 flex flex-col flex-wrap items-center p-4 bg-fixed">
+            {SearchTip}
           </div>
         </div>
       </section>
