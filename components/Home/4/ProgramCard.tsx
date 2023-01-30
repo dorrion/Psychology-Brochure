@@ -13,7 +13,7 @@ export default function ProgramCard({
   let color;
   if (category === '강의형') {
     color = 'secondaryColor';
-  } else if (category === '세미나') {
+  } else if (category === '세미나형') {
     color = 'primaryColor';
   } else {
     color = 'interview-200';
