@@ -91,3 +91,11 @@ export interface MoneyProps {
   description: string;
   benefit: string;
 }
+
+export interface ProgramProps {
+  category: string;
+  name: string;
+  description: string;
+  area: string;
+  period: string;
+}
