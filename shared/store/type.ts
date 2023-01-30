@@ -101,6 +101,7 @@ export interface ProgramProps {
 }
 
 export interface EnrolementProps {
+  idx?: number;
   name: string;
   tip: string;
 }
