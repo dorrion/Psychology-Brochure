@@ -80,14 +80,14 @@ export default function index() {
       </Head>
       <section className="text-gray-600 body-font ">
         <div className="container px-5 py-24 mx-auto flex-col flexBox">
-          <div className="flex flex-wrap">{lecture}</div>
+          <div className="flex-wrap flexBox">{lecture}</div>
           <button className="flex-col flexBox" onClick={onClickMoreViewButton}>
             <p className="mb-4 font-base">
               {isLectureMoreView ? '접기' : '더보기'}
             </p>
             {isLectureMoreView ? <UpArrow /> : <DownArrow />}
           </button>
-          <div className="flex flex-wrap">{seminar}</div>
+          <div className="flex-wrap flexBox">{seminar}</div>
           <button
             className="flex-col flexBox"
             onClick={onClickSeminarMoreViewButton}
@@ -97,7 +97,7 @@ export default function index() {
             </p>
             {isSeminarMoreView ? <UpArrow /> : <DownArrow />}
           </button>
-          <div className="flex flex-wrap">{camp}</div>
+          <div className="flex-wrap flexBox">{camp}</div>
         </div>
       </section>
     </Layout>
