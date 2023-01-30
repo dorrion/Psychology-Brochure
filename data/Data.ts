@@ -353,7 +353,7 @@ export const Lecture = [
   },
   {
     category: '강의형',
-    name: '구글애널리틱스(GAIQ)자격 과정',
+    name: '구글애널리틱스(GAIQ) 자격 과정',
     description:
       '인문사회상경계열 디지털 역량 강화를 위한 구글애널리틱스 자격과정',
     area: '취창업',
@@ -363,18 +363,64 @@ export const Lecture = [
 
 export const Seminar = [
   {
-    category: '교외장학',
-    name: '아경장학(최고, 비전)',
-    description: '최고 - 단과대학별 2, 3학년 재학생 \n비전 - 경영대학 재학생',
-    benefit: '아경(최고)장학 등록금 전액',
+    category: '세미나형',
+    name: '<삼성그룹> 면접 준비 전략',
+    description: '삼성그룹 주요 면접 전형 분석',
+    area: '취창업',
+    period: '1학기',
+  },
+  {
+    category: '세미나형',
+    name: '공기업(NCS) 직무적성검사 프로그램',
+    description: '2022-상반기 공기업 직무적성 대비 프로그램',
+    area: '취창업',
+    period: '1학기',
+  },
+  {
+    category: '세미나형',
+    name: '대기업 문항분석 및 자소서 작성법 특강',
+    description: '대기업위주 입사지원서 문항 분석 및 자기소개서 작성법 특강',
+    area: '취창업',
+    period: '1학기',
+  },
+  {
+    category: '세미나형',
+    name: '면접특강',
+    description: '공기업/대기업 채용트랜드, 하반기 프리패스 면접전략',
+    area: '취창업',
+    period: '하계',
+  },
+  {
+    category: '세미나형',
+    name: '선배 만남의 날',
+    description: '선배 만남의 날 (재직동문)',
+    area: '취창업',
+    period: '1, 2학기',
+  },
+  {
+    category: '세미나형',
+    name: '월간 자소서 4~6월호',
+    description: '서류 작성이 처음인 학생 대상 자소서 특강 및 컨설팅',
+    area: '취창업',
+    period: '1학기',
+  },
+  {
+    category: '세미나형',
+    name: '내게 ON 상담- eDISC 진단을 통한 진로 상담',
+    description:
+      '인문사회상경계열 학생들의 진로탐색을 위한 EDISC 검사와 해석상담',
+    area: '상담',
+    period: '하계',
   },
 ];
 
 export const Camp = [
   {
-    category: '교외장학',
-    name: '아경장학(최고, 비전)',
-    description: '최고 - 단과대학별 2, 3학년 재학생 \n비전 - 경영대학 재학생',
-    benefit: '아경(최고)장학 등록금 전액',
+    category: '강의형',
+    name: '구글애널리틱스(GAIQ) 자격 과정',
+    description:
+      '인문사회상경계열 디지털 역량 강화를 위한 구글애널리틱스 자격과정',
+    area: '취창업',
+    period: '하계',
   },
 ];
