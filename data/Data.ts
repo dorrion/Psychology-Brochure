@@ -412,15 +412,64 @@ export const Seminar = [
     area: '상담',
     period: '하계',
   },
+  {
+    category: '세미나형',
+    name: '<삼성그룹> 공채 대비 자소서 컨설팅(화상상담)',
+    description: '삼성그룹 자소서 1:1 컨설팅',
+    area: '취창업',
+    period: '1학기',
+  },
+  {
+    category: '세미나형',
+    name: '<SK하이닉스> 맞춤 1:1 개별 컨설팅',
+    description: 'sk하이닉스 자소서 첨삭',
+    area: '취창업',
+    period: '하계',
+  },
+  {
+    category: '세미나형',
+    name: '1:1 면접코칭(1~10탄)',
+    description: '면접코칭(1:1) 일대일로 50분동안 진행됨',
+    area: '취창업',
+    period: '하계',
+  },
+  {
+    category: '세미나형',
+    name: '네오챌린지플러스 (미취업졸업생)',
+    description: '기업분석특강 및 개인별 1:1 맞춤 컨설팅 진행',
+    area: '취창업',
+    period: '1학기',
+  },
+  {
+    category: '세미나형',
+    name: '직무별 모의면접',
+    description:
+      '모의면접후 코칭:IT, 경영지원, 마케팅, 반도체, 전기전자, 품질관리, 제약바이오',
+    area: '취창업',
+    period: '1학기',
+  },
 ];
 
 export const Camp = [
   {
-    category: '강의형',
-    name: '구글애널리틱스(GAIQ) 자격 과정',
-    description:
-      '인문사회상경계열 디지털 역량 강화를 위한 구글애널리틱스 자격과정',
+    category: '연수형',
+    name: '학습법 특강',
+    description: '학습관련 다양한 주제의 특강',
+    area: '학습역량',
+    period: '1학기',
+  },
+  {
+    category: '연수형',
+    name: '「2022 KBO-NINE 프로그램」 모집',
+    description: '프로야구단 ESG PBL 프로그램',
     area: '취창업',
+    period: '2학기',
+  },
+  {
+    category: '연수형',
+    name: '아주대학교 클라우드 부트캠프',
+    description: '클라우드 부트캠프 <도커&쿠버네티스 실무 Deep-dive과정>',
+    area: '학습역량',
     period: '하계',
   },
 ];
