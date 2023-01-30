@@ -1,7 +1,12 @@
 import Head from 'next/head';
 import Layout from 'components/layout';
+import { Enrolement } from 'data/Data';
+import EnrolementCard from 'components/Home/6/EnrolementCard';
 
 export default function index() {
+  const Enrole = Enrolement?.map((el) => {
+    return <EnrolementCard key={el.name} name={el.name} tip={el.tip} />;
+  });
   return (
     <Layout>
       <Head>
@@ -11,18 +16,11 @@ export default function index() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section className="text-gray-600 body-font ">
-        <div className="container px-5 py-24 mx-auto flex-col flexBox">
-          <div className="flex flex-col items-center text-center p-4">
-            <div className="flex flex-col items-center text-center p-4">
-              <div className="w-44 h-full bg-white rounded-lg shadow-lg overflow-hidden">
-                <p className="p-4">
-                  글자 내용에 따라 박스의 높이가 달라집니다. 글자 내용에 따라
-                  박스의 높이가 달라집니다. 글자 내용에 따라 박스의 높이가
-                  달라집니다. 글자 내용에 따라 박스의 높이가 달라집니다. 글자
-                </p>
-              </div>
-            </div>
+      <section className="text-gray-600 body-font bg-secondaryColor">
+        <div className="container px-5 py-24 mx-auto flex-col flexBox ">
+          <h1 className="text-xl font-semibold">수강신청 성공하는 꿀팁!🍯</h1>
+          <div className=" h-96 flex flex-col flex-wrap justify-start items-start p-4">
+            {Enrole}
           </div>
         </div>
       </section>
