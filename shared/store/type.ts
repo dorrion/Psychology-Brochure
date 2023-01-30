@@ -99,3 +99,8 @@ export interface ProgramProps {
   area: string;
   period: string;
 }
+
+export interface EnrolementProps {
+  name: string;
+  tip: string;
+}
