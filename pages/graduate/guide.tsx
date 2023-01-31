@@ -6,7 +6,12 @@ import { promises as fs } from 'fs';
 import Layout from 'components/layout';
 import GraduateHeader from 'components/Graduate/GraduateHeader';
 
-const Tabs = () => {
+const Guide = () => {
+  const PDFViewer = () => {
+    return (
+      <iframe src="/api/pdf" title="pdf-viewer" width="100%" height="768px" />
+    );
+  };
   return (
     <Layout>
       <Head>
@@ -54,13 +59,14 @@ const Tabs = () => {
             />
           </div>
           <GraduateHeader />
+          <PDFViewer />
         </div>
       </section>
     </Layout>
   );
 };
 
-export default Tabs;
+export default Guide;
 
 export async function getStaticProps() {
   // 커리큘럼
