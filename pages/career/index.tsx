@@ -61,7 +61,7 @@ export default function Home() {
                     심리학과 취업률, 급여, 취직 분야 통계 자료
                   </h2>
                   {/* 취업 정보 바로 가기 버튼 */}
-                  <Link href="/carrer/info">
+                  <Link href="/career/info">
                     <button
                       className="w-40 h-9 border border-slate-100  flexBox
                    hover:bg-slate-800 hover:scale-110 transition-transform ease-in-out duration-100"
