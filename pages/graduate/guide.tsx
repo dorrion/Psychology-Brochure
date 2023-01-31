@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-import path from 'path';
-import { promises as fs } from 'fs';
 import Layout from 'components/layout';
 import GraduateHeader from 'components/Graduate/GraduateHeader';
 
