@@ -623,3 +623,21 @@ export const CareerInfo1 = {
     },
   ],
 };
+
+export const CareerInfo2 = {
+  labels: ['경영', '교육', '영업', '미용', '보건', '농림어업직'],
+  datasets: [
+    {
+      data: [49.2, 23.1, 12.3, 9.3, 3.1, 3.0],
+      backgroundColor: [
+        '#20C770',
+        '#FFCC00',
+        '#2E4EF9',
+        '#909090',
+        '#C3C3C3',
+        '#D9D9D9',
+      ],
+      cutout: '70%',
+    },
+  ],
+};
