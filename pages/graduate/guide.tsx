@@ -33,7 +33,7 @@ const Guide = () => {
           {tabs.map((tab) => (
             <li
               key={tab.id}
-              className={`w-56 h-12 p-4 text-base text-center cursor-pointer rounded-2xl border ${
+              className={`m-4 w-56 h-12 p-4 flexBox text-base text-center cursor-pointer rounded-2xl border ${
                 activeTab === tab.id ? 'bg-shadowColor' : ''
               }`}
               onClick={() => setActiveTab(tab.id)}
@@ -97,13 +97,12 @@ const Guide = () => {
           <GraduateHeader />
           <Tabs
             tabs={[
-              { id: '1', label: '서울대학교 모집요강' },
+              { id: '1', label: '서울대학교 모집요강', content: <PDFViewer /> },
               { id: '2', label: '고려대학교 모집요강' },
               { id: '3', label: '연세대학교 모집요강' },
               { id: '4', label: '아주대학교 모집요강' },
             ]}
           />
-          <PDFViewer />
         </div>
       </section>
     </Layout>
