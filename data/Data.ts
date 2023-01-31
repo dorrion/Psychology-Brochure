@@ -612,3 +612,13 @@ export const Free = [
     tip: `수업 추천도 전공에 따라 추천한거라서 감안해주시면 좋을것 같아요!(한국상담심리학회 자격시험 과목을 반영했습니다)`,
   },
 ];
+
+export const CareerInfo1 = {
+  labels: ['진학', '취업', '자택'],
+  datasets: [
+    {
+      data: [20.6, 55.1, 24.3],
+      backgroundColor: ['#2E4EF9', '#20C770', '#EDEDED'],
+    },
+  ],
+};
