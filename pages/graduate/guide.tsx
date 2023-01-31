@@ -105,22 +105,70 @@ const Guide = () => {
               {
                 id: '0',
                 label: '서울대학교 모집요강',
-                content: <PDFViewer props={0} />,
+                content: (
+                  <>
+                    <h1 className="text-xl mb-2.5">일반대학원, 교육대학원</h1>
+                    <embed
+                      className="w-full  h-[768px]"
+                      src="/pdf/서울대(일,교).pdf"
+                      type="application/pdf"
+                    />
+                  </>
+                ),
               },
               {
                 id: '1',
                 label: '고려대학교 모집요강',
-                content: <PDFViewer props={1} />,
+                content: (
+                  <>
+                    <h1 className="text-xl mb-2.5">일반대학원, 교육대학원</h1>
+                    <embed
+                      className="w-full  h-[768px]"
+                      src="/pdf/고려대(일,교).pdf"
+                      type="application/pdf"
+                    />
+                  </>
+                ),
               },
               {
                 id: '2',
                 label: '연세대학교 모집요강',
-                content: <PDFViewer props={2} />,
+                content: (
+                  <>
+                    <h1 className="text-xl mb-2.5">일반대학원</h1>
+                    <embed
+                      className="w-full  h-[768px] mb-12"
+                      src="/pdf/연세대(일).pdf"
+                      type="application/pdf"
+                    />
+                    <h1 className="text-xl mb-2.5">교육대학원</h1>
+                    <embed
+                      className="w-full  h-[768px]"
+                      src="/pdf/연세대(교).pdf"
+                      type="application/pdf"
+                    />
+                  </>
+                ),
               },
               {
                 id: '3',
                 label: '아주대학교 모집요강',
-                content: <PDFViewer props={3} />,
+                content: (
+                  <>
+                    <h1 className="text-xl mb-2.5">일반대학원</h1>
+                    <embed
+                      className="w-full  h-[768px] mb-12"
+                      src="/pdf/아주대(일).pdf"
+                      type="application/pdf"
+                    />
+                    <h1 className="text-xl mb-2.5">교육대학원</h1>
+                    <embed
+                      className="w-full  h-[768px]"
+                      src="/pdf/아주대(교).pdf"
+                      type="application/pdf"
+                    />
+                  </>
+                ),
               },
             ]}
           />
