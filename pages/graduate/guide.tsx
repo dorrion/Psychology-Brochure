@@ -27,7 +27,7 @@ const Guide = () => {
 
     return (
       <>
-        <ul className="flex flex-shrink-0 border-gray-200">
+        <ul className="flexBox flex-shrink-0 border-gray-200">
           {tabs.map((tab) => (
             <li
               key={tab.id}
