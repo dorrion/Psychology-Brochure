@@ -9,7 +9,7 @@ import { CareerInfo1 } from 'data/Data';
 export default function Home() {
   const DoughnutChart = () => {
     return (
-      <div>
+      <div className="w-64 h-64">
         <Doughnut data={CareerInfo1} />
       </div>
     );
@@ -25,8 +25,10 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <section className="text-gray-600 body-font bg-slate-200 dark:bg-slate-800 ">
-          <DoughnutChart />
+        <section className="text-gray-600 body-font ">
+          <div className="container px-5 py-24 mx-auto flexBox flex-col">
+            <DoughnutChart />
+          </div>
         </section>
       </Layout>
     </>
