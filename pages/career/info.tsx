@@ -10,7 +10,7 @@ export default function Home() {
   const DoughnutChart = () => {
     return (
       <>
-        <div className="w-64 h-64 mx-auto relative mb-40">
+        <div className="w-64 h-64 mx-auto relative">
           <h3 className="text-center text-xl font-bold absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
             진로진학
             <br />
@@ -18,7 +18,7 @@ export default function Home() {
           </h3>
           <Doughnut data={CareerInfo1} />
         </div>
-        <div className="w-64 h-64 mx-auto relative">
+        <div className="mt-20 w-64 h-64 mx-auto relative">
           <h3 className="text-center text-xl font-bold absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
             첫 직업 분야
           </h3>
