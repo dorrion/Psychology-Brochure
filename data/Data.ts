@@ -619,6 +619,7 @@ export const CareerInfo1 = {
     {
       data: [20.6, 55.1, 24.3],
       backgroundColor: ['#2E4EF9', '#20C770', '#EDEDED'],
+      cutout: '70%',
     },
   ],
 };
