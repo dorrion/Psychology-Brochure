@@ -28,12 +28,12 @@ const Guide = () => {
     console.log(tabs);
 
     return (
-      <div className="flex">
-        <ul className="flex-shrink-0 w-56 border-r border-gray-200">
+      <>
+        <ul className="flex flex-shrink-0 border-gray-200">
           {tabs.map((tab) => (
             <li
               key={tab.id}
-              className={`h-12 p-4 text-center cursor-pointer rounded-2xl border ${
+              className={`w-56 h-12 p-4 text-base text-center cursor-pointer rounded-2xl border ${
                 activeTab === tab.id ? 'bg-shadowColor' : ''
               }`}
               onClick={() => setActiveTab(tab.id)}
@@ -45,7 +45,7 @@ const Guide = () => {
         <div className="p-6">
           {tabs.find((tab) => tab.id === activeTab)?.content}
         </div>
-      </div>
+      </>
     );
   };
   return (
@@ -97,10 +97,12 @@ const Guide = () => {
           <GraduateHeader />
           <Tabs
             tabs={[
-              { id: '1', label: 'adf', content: <PDFViewer /> },
-              { id: '2', label: 'adfadf' },
+              { id: '1', label: '서울대학교 모집요강' },
+              { id: '2', label: '고려대학교 모집요강' },
+              { id: '3', label: '연세대학교 모집요강' },
+              { id: '4', label: '아주대학교 모집요강' },
             ]}
-          ></Tabs>
+          />
           <PDFViewer />
         </div>
       </section>
