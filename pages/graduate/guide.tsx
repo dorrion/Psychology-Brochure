@@ -29,12 +29,12 @@ const Guide = () => {
 
     return (
       <div className="flex">
-        <ul className="flex-shrink-0 w-64 border-r border-gray-200">
+        <ul className="flex-shrink-0 w-56 border-r border-gray-200">
           {tabs.map((tab) => (
             <li
               key={tab.id}
-              className={`h-16 p-4 text-center cursor-pointer ${
-                activeTab === tab.id ? 'bg-gray-200' : ''
+              className={`h-12 p-4 text-center cursor-pointer rounded-2xl border ${
+                activeTab === tab.id ? 'bg-shadowColor' : ''
               }`}
               onClick={() => setActiveTab(tab.id)}
             >
