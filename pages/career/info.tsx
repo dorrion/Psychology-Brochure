@@ -4,19 +4,27 @@ import React from 'react';
 import { Doughnut } from 'react-chartjs-2';
 import { Chart, ArcElement } from 'chart.js';
 Chart.register(ArcElement);
-import { CareerInfo1 } from 'data/Data';
+import { CareerInfo1, CareerInfo2 } from 'data/Data';
 
 export default function Home() {
   const DoughnutChart = () => {
     return (
-      <div className="w-64 h-64 mx-auto relative">
-        <h3 className="text-center text-xl font-bold absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-          진로진학
-          <br />
-          현황
-        </h3>
-        <Doughnut data={CareerInfo1} />
-      </div>
+      <>
+        <div className="w-64 h-64 mx-auto relative">
+          <h3 className="text-center text-xl font-bold absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+            진로진학
+            <br />
+            현황
+          </h3>
+          <Doughnut data={CareerInfo1} />
+        </div>
+        <div className="w-64 h-64 mx-auto relative">
+          <h3 className="text-center text-xl font-bold absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+            첫 직업 분야
+          </h3>
+          <Doughnut data={CareerInfo2} />
+        </div>
+      </>
     );
   };
   return (
