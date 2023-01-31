@@ -5,17 +5,6 @@ import Layout from 'components/layout';
 import GraduateHeader from 'components/Graduate/GraduateHeader';
 
 const Guide = () => {
-  const PDFViewer = (props: any) => {
-    return (
-      <iframe
-        src={`/api/pdf${props.props}`}
-        title="pdf-viewer"
-        width="100%"
-        height="768px"
-      />
-    );
-  };
-
   interface Tab {
     id?: string;
     label?: string;
