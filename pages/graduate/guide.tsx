@@ -23,14 +23,15 @@ const Guide = () => {
 
   const Tabs: React.FC<Props> = ({ tabs }) => {
     const [activeTab, setActiveTab] = useState(tabs[0].id);
-    console.log(tabs);
 
     return (
       <>
+        {/* 탭 나열 */}
         <ul className="flexBox flex-shrink-0 border-gray-200">
           {tabs.map((tab) => (
             <li
               key={tab.id}
+              // 선택된 탭이면 배경색 바뀌도록
               className={`m-4 w-56 h-12 p-4 flexBox text-base text-center cursor-pointer rounded-2xl border ${
                 activeTab === tab.id ? 'bg-shadowColor' : ''
               }`}
@@ -41,6 +42,7 @@ const Guide = () => {
           ))}
         </ul>
         <div className="p-6">
+          {/* 현재 선택된 탭의 content 삽입 */}
           {tabs.find((tab) => tab.id === activeTab)?.content}
         </div>
       </>
@@ -95,10 +97,10 @@ const Guide = () => {
           <GraduateHeader />
           <Tabs
             tabs={[
-              { id: '1', label: '서울대학교 모집요강', content: <PDFViewer /> },
-              { id: '2', label: '고려대학교 모집요강' },
-              { id: '3', label: '연세대학교 모집요강' },
-              { id: '4', label: '아주대학교 모집요강' },
+              { id: '0', label: '서울대학교 모집요강', content: <PDFViewer /> },
+              { id: '1', label: '고려대학교 모집요강' },
+              { id: '2', label: '연세대학교 모집요강' },
+              { id: '3', label: '아주대학교 모집요강' },
             ]}
           />
         </div>
