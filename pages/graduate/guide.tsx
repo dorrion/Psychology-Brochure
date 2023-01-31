@@ -5,9 +5,14 @@ import Layout from 'components/layout';
 import GraduateHeader from 'components/Graduate/GraduateHeader';
 
 const Guide = () => {
-  const PDFViewer = () => {
+  const PDFViewer = (props: any) => {
     return (
-      <iframe src="/api/pdf" title="pdf-viewer" width="100%" height="768px" />
+      <iframe
+        src={`/api/pdf${props.props}`}
+        title="pdf-viewer"
+        width="100%"
+        height="768px"
+      />
     );
   };
 
@@ -97,10 +102,26 @@ const Guide = () => {
           <GraduateHeader />
           <Tabs
             tabs={[
-              { id: '0', label: '서울대학교 모집요강', content: <PDFViewer /> },
-              { id: '1', label: '고려대학교 모집요강' },
-              { id: '2', label: '연세대학교 모집요강' },
-              { id: '3', label: '아주대학교 모집요강' },
+              {
+                id: '0',
+                label: '서울대학교 모집요강',
+                content: <PDFViewer props={0} />,
+              },
+              {
+                id: '1',
+                label: '고려대학교 모집요강',
+                content: <PDFViewer props={1} />,
+              },
+              {
+                id: '2',
+                label: '연세대학교 모집요강',
+                content: <PDFViewer props={2} />,
+              },
+              {
+                id: '3',
+                label: '아주대학교 모집요강',
+                content: <PDFViewer props={3} />,
+              },
             ]}
           />
         </div>
