@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import path from 'path';
@@ -10,6 +10,42 @@ const Guide = () => {
   const PDFViewer = () => {
     return (
       <iframe src="/api/pdf" title="pdf-viewer" width="100%" height="768px" />
+    );
+  };
+
+  interface Tab {
+    id?: string;
+    label?: string;
+    content?: React.ReactNode;
+  }
+
+  interface Props {
+    tabs: Tab[];
+  }
+
+  const Tabs: React.FC<Props> = ({ tabs }) => {
+    const [activeTab, setActiveTab] = useState(tabs[0].id);
+    console.log(tabs);
+
+    return (
+      <div className="flex">
+        <ul className="flex-shrink-0 w-64 border-r border-gray-200">
+          {tabs.map((tab) => (
+            <li
+              key={tab.id}
+              className={`h-16 p-4 text-center cursor-pointer ${
+                activeTab === tab.id ? 'bg-gray-200' : ''
+              }`}
+              onClick={() => setActiveTab(tab.id)}
+            >
+              {tab.label}
+            </li>
+          ))}
+        </ul>
+        <div className="p-6">
+          {tabs.find((tab) => tab.id === activeTab)?.content}
+        </div>
+      </div>
     );
   };
   return (
@@ -59,6 +95,12 @@ const Guide = () => {
             />
           </div>
           <GraduateHeader />
+          <Tabs
+            tabs={[
+              { id: '1', label: 'adf', content: <PDFViewer /> },
+              { id: '2', label: 'adfadf' },
+            ]}
+          ></Tabs>
           <PDFViewer />
         </div>
       </section>
@@ -67,16 +109,3 @@ const Guide = () => {
 };
 
 export default Guide;
-
-export async function getStaticProps() {
-  // 커리큘럼
-  const filePath = path.join(process.cwd(), 'data', 'GraduateCrc.json');
-  const CurriData = await fs.readFile(filePath, 'utf8');
-  const objectData = JSON.parse(CurriData);
-
-  return {
-    props: {
-      CurriData: await Promise.all(objectData),
-    },
-  };
-}
