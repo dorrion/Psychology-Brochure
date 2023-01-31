@@ -4,22 +4,13 @@ import React from 'react';
 import { Doughnut } from 'react-chartjs-2';
 import { Chart, ArcElement } from 'chart.js';
 Chart.register(ArcElement);
+import { CareerInfo1 } from 'data/Data';
 
 export default function Home() {
   const DoughnutChart = () => {
-    const data = {
-      labels: ['Label 1', 'Label 2', 'Label 3'],
-      datasets: [
-        {
-          data: [20, 30, 50],
-          backgroundColor: ['red', 'green', 'blue'],
-        },
-      ],
-    };
-
     return (
       <div>
-        <Doughnut data={data} />
+        <Doughnut data={CareerInfo1} />
       </div>
     );
   };
