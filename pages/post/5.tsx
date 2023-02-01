@@ -32,7 +32,8 @@ export default function index({ data }: any) {
             </h1>
           </div>
         </section>
-        <section className="overflow-y-scroll bg-secondaryColor">
+        {/* section별로 overflow-y-scroll 추가해서 세로 넘칠 때 넣기 */}
+        <section className="bg-secondaryColor">
           <div className="container px-5 py-16 mx-auto flex-col flexBox ">
             <h1 className="text-xl font-semibold mb-8">
               학교 근로 관련 꿀팁!🍯
@@ -42,7 +43,7 @@ export default function index({ data }: any) {
             </div>
           </div>
         </section>
-        <section className="overflow-y-scroll">
+        <section>
           <div className="container px-5 py-16 mx-auto flex-col flexBox">
             <h1 className="text-xl font-semibold mb-8">
               기숙사/자취/통학 꿀팁!🍯
@@ -52,7 +53,7 @@ export default function index({ data }: any) {
             </div>
           </div>
         </section>
-        <section className="bg-shadowColor overflow-y-scroll">
+        <section className="bg-shadowColor">
           {/* 스크롤 추가 */}
           <div className="container px-5 py-16 mx-auto flex-col flexBox">
             <h1 className="dark:text-slate-700 text-xl font-semibold mb-8">
