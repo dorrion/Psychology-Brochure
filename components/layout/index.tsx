@@ -1,6 +1,6 @@
 import Header from './header';
 import Footer from './footer';
-import { ScrollToTop } from 'shared/utils/scrollToTop';
+import ScrollToTop from 'shared/utils/scrollToTop';
 // 모든 레이아웃을 넣을거래
 
 type childrenType = {
