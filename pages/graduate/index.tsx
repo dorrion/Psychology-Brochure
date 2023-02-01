@@ -5,7 +5,6 @@ import Layout from 'components/layout';
 import { CurriProps } from 'shared/store/type';
 import TapWrapper from 'components/Graduate/TapWrapper';
 import GraduateHeader from 'components/Graduate/GraduateHeader';
-import loadData from 'shared/utils/loadData';
 
 const Tabs = ({ data }: any) => {
   const CurriData = data;
@@ -61,6 +60,8 @@ const Tabs = ({ data }: any) => {
 };
 
 export default Tabs;
+
+import loadData from 'shared/utils/loadData';
 
 export async function getStaticProps() {
   const data = await loadData({ subfolder: 'Graduate', file: 'Curricularm' });
