@@ -5,8 +5,7 @@ import GraduateHeader from 'components/Graduate/GraduateHeader';
 import Life from 'components/Graduate/Life';
 import { QnAProps } from 'shared/store/type';
 
-export default function main({ data }: any) {
-  const GraduateLife = data;
+export default function main({ GraduateLife }: any) {
   const GraduateLifeList: JSX.Element[] = GraduateLife.map((el: QnAProps) => (
     <Life key={el.id} question={el.question} answer={el.answer} />
   ));
@@ -19,24 +18,7 @@ export default function main({ data }: any) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section className="text-gray-600 body-font  dark:bg-slate-800">
-        <div className="container px-5 py-24 mx-auto flex-row flex-wrap flexBox w-full mb-20">
-          <GraduateHeader />
-          {GraduateLifeList}
-        </div>
-      </section>
+      {GraduateLifeList}
     </Layout>
   );
-}
-
-import loadData from 'shared/utils/loadData';
-
-export async function getStaticProps() {
-  const data = await loadData({ subfolder: 'Graduate', file: 'Life' });
-
-  return {
-    props: {
-      data,
-    },
-  };
 }

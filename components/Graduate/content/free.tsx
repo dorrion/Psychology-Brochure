@@ -4,10 +4,8 @@ import Image from 'next/image';
 import Layout from 'components/layout';
 import { EnrolementProps } from 'shared/store/type';
 import FreeCard from 'components/Graduate/FreeCard';
-import GraduateHeader from 'components/Graduate/GraduateHeader';
 
-const FreePage = ({ data }: any) => {
-  const Free = data;
+const FreePage = ({ Free }: any) => {
   const FreeList = Free.map((el: EnrolementProps, idx: number) => {
     return <FreeCard key={idx} idx={idx} name={el.name} tip={el.tip} />;
   });
@@ -21,26 +19,9 @@ const FreePage = ({ data }: any) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section className="text-gray-600 body-font">
-        <div className="container px-5 py-24 mx-auto">
-          <GraduateHeader />
-          <div className="grid grid-cols-3 gap-4">{FreeList}</div>
-        </div>
-      </section>
+      <div className="grid grid-cols-3 gap-4">{FreeList}</div>
     </Layout>
   );
 };
 
 export default FreePage;
-
-import loadData from 'shared/utils/loadData';
-
-export async function getStaticProps() {
-  const data = await loadData({ subfolder: 'Graduate', file: 'Free' });
-
-  return {
-    props: {
-      data,
-    },
-  };
-}
