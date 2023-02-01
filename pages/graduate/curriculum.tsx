@@ -5,9 +5,8 @@ import Layout from 'components/layout';
 import { CurriProps } from 'shared/store/type';
 import TapWrapper from 'components/Graduate/TapWrapper';
 import GraduateHeader from 'components/Graduate/GraduateHeader';
-import Tab from 'shared/components/Tab';
 
-const Tabs = ({ data }: any) => {
+const CurricularmPage = ({ data }: any) => {
   const CurriData = data;
   const TapWrap = CurriData.map((el: CurriProps) => {
     return (
@@ -53,9 +52,6 @@ const Tabs = ({ data }: any) => {
             />
           </div>
           <GraduateHeader />
-          <div className="p-10">
-            <Tab labels={['Tab 1', 'Tab 2', 'Tab 3']} />
-          </div>
           {TapWrap}
         </div>
       </section>
@@ -63,7 +59,7 @@ const Tabs = ({ data }: any) => {
   );
 };
 
-export default Tabs;
+export default CurricularmPage;
 
 import loadData from 'shared/utils/loadData';
 
