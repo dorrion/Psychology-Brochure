@@ -1,26 +1,24 @@
 import React from 'react';
 import Head from 'next/head';
-import Image from 'next/image';
 import Layout from 'components/layout';
-import { CurriProps } from 'shared/store/type';
-import TapWrapper from 'components/Graduate/TapWrapper';
 import GraduateHeader from 'components/Graduate/GraduateHeader';
+import Tab from 'shared/components/Tab';
+import {
+  Banner1,
+  Banner2,
+  Banner3,
+  Banner4,
+  Banner5,
+  Banner6,
+} from 'components/Graduate/Banners';
+import CurriculumPage from 'components/Graduate/content/curriculum';
+import PreparePage from 'components/Graduate/content/prepare';
+import LifePage from 'components/Graduate/content/life';
+import MajorPage from 'components/Graduate/content/major';
+import FreePage from 'components/Graduate/content/free';
+import GuidePage from 'components/Graduate/content/guide';
 
-const Tabs = ({ data }: any) => {
-  const CurriData = data;
-  const TapWrap = CurriData.map((el: CurriProps) => {
-    return (
-      <TapWrapper
-        key={el.id}
-        major={el.major}
-        freshmen={el.freshmen}
-        junior={el.junior}
-        sophomore={el.sophomore}
-        senior={el.senior}
-      />
-    );
-  });
-
+const Tabs = ({ Curriculum, Prepare, Life, Major, Free }: any) => {
   return (
     <Layout>
       <Head>
@@ -32,27 +30,46 @@ const Tabs = ({ data }: any) => {
       </Head>
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
-          <div className="w-full h-32 bg-shadowColor rounded-lg flex mb-9 relative overflow-hidden">
-            <div className="flex flex-col justify-center ml-8">
-              <h1 className="text-xl font-bold mb-2 dark:text-slate-800">
-                추천 커리큘럼
-              </h1>
-              <h2 className="text-base dark:text-slate-800">
-                세부 전공 별 추천 이수 과목을 알려드려요
-              </h2>
-            </div>
-            {/* 반응형 위해 줄어들면 이미지는 없어지도록 */}
-            <Image
-              className="absolute -bottom-14 right-0 hidden lg:block"
-              src="/images/대학원커리.webp"
-              width={534}
-              height={212}
-              alt="대학원 커리큘럼 이미지"
-              layout="full"
-            />
-          </div>
-          <GraduateHeader />
-          {TapWrap}
+          <Tab
+            tabs={[
+              {
+                id: '0',
+                label: '추천 커리큘럼',
+                banner: <Banner1 />,
+                content: <CurriculumPage Curriculum={Curriculum} />,
+              },
+              {
+                id: '1',
+                label: '대학원 준비',
+                banner: <Banner2 />,
+                content: <PreparePage GraduatePrepareData={Prepare} />,
+              },
+              {
+                id: '2',
+                label: '대학원 생활',
+                banner: <Banner3 />,
+                content: <LifePage GraduateLife={Life} />,
+              },
+              {
+                id: '3',
+                label: '전공별 질문',
+                banner: <Banner4 />,
+                content: <MajorPage GraduateMajor={Major} />,
+              },
+              {
+                id: '4',
+                label: '자유발언',
+                banner: <Banner5 />,
+                content: <FreePage Free={Free} />,
+              },
+              {
+                id: '5',
+                label: '입시요강',
+                banner: <Banner6 />,
+                content: <GuidePage />,
+              },
+            ]}
+          />
         </div>
       </section>
     </Layout>
@@ -64,11 +81,22 @@ export default Tabs;
 import loadData from 'shared/utils/loadData';
 
 export async function getStaticProps() {
-  const data = await loadData({ subfolder: 'Graduate', file: 'Curricularm' });
+  const Curriculum = await loadData({
+    subfolder: 'Graduate',
+    file: 'Curriculum',
+  });
+  const Prepare = await loadData({ subfolder: 'Graduate', file: 'Prepare' });
+  const Life = await loadData({ subfolder: 'Graduate', file: 'Life' });
+  const Major = await loadData({ subfolder: 'Graduate', file: 'Major' });
+  const Free = await loadData({ subfolder: 'Graduate', file: 'Free' });
 
   return {
     props: {
-      data,
+      Curriculum,
+      Prepare,
+      Life,
+      Major,
+      Free,
     },
   };
 }
