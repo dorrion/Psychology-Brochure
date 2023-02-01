@@ -1,13 +1,12 @@
 import Layout from 'components/layout';
 import Head from 'next/head';
 import Image from 'next/image';
-import { promises as fs } from 'fs';
-import path from 'path';
 import Interview from 'components/Graduate/Interview';
 import { QnAProps } from 'shared/store/type';
 import GraduateHeader from 'components/Graduate/GraduateHeader';
 
-export default function prepare({ GraduatePrepareData }: any) {
+export default function prepare({ data }: any) {
+  const GraduatePrepareData = data;
   const InterviewList: JSX.Element[] = GraduatePrepareData.map(
     (QnA: QnAProps) => {
       return (
@@ -54,15 +53,14 @@ export default function prepare({ GraduatePrepareData }: any) {
   );
 }
 
+import loadData from 'shared/utils/loadData';
+
 export async function getStaticProps() {
-  // 살아남기 데이터 경로
-  const filePath = path.join(process.cwd(), 'data', 'GraduateGeneral.json');
-  const GraduatePrepareData = await fs.readFile(filePath, 'utf8');
-  const objectData = JSON.parse(GraduatePrepareData);
+  const data = await loadData({ subfolder: 'Graduate', file: 'Prepare' });
 
   return {
     props: {
-      GraduatePrepareData: await Promise.all(objectData),
+      data,
     },
   };
 }
