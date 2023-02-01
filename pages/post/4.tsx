@@ -169,14 +169,6 @@ export default function index({ data }: any) {
                 label: '비교과 후기',
                 content: (
                   <div className="text-gray-600 body-font">
-                    <section>
-                      <div className="container pb-8 mx-auto flex-col flexBox ">
-                        <h1 className="text-3xl font-bold font-sans text-gray-900 mb-4 text-left">
-                          심리학과에서 노식주
-                        </h1>
-                      </div>
-                    </section>
-                    {/* section별로 overflow-y-scroll 추가해서 세로 넘칠 때 넣기 */}
                     <section className="bg-secondaryColor">
                       <div className="container px-5 py-16 mx-auto flex-col flexBox ">
                         <h1 className="text-xl font-semibold mb-8">
