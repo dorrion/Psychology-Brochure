@@ -2,13 +2,13 @@ import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Layout from 'components/layout';
-import { Free } from 'data/Data';
 import { EnrolementProps } from 'shared/store/type';
 import FreeCard from 'components/Graduate/FreeCard';
 import GraduateHeader from 'components/Graduate/GraduateHeader';
 
-const FreePage = () => {
-  const FreeList = Free.map((el: EnrolementProps, idx) => {
+const FreePage = ({ data }: any) => {
+  const Free = data;
+  const FreeList = Free.map((el: EnrolementProps, idx: number) => {
     return <FreeCard key={idx} idx={idx} name={el.name} tip={el.tip} />;
   });
 
@@ -52,3 +52,15 @@ const FreePage = () => {
 };
 
 export default FreePage;
+
+import loadData from 'shared/utils/loadData';
+
+export async function getStaticProps() {
+  const data = await loadData({ subfolder: 'Graduate', file: 'Free' });
+
+  return {
+    props: {
+      data,
+    },
+  };
+}
