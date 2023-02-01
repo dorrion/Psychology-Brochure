@@ -2,26 +2,12 @@ import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Layout from 'components/layout';
-import { CurriProps } from 'shared/store/type';
-import TapWrapper from 'components/Graduate/TapWrapper';
 import GraduateHeader from 'components/Graduate/GraduateHeader';
 import Tab from 'shared/components/Tab';
 
-const Tabs = ({ data }: any) => {
-  const CurriData = data;
-  const TapWrap = CurriData.map((el: CurriProps) => {
-    return (
-      <TapWrapper
-        key={el.id}
-        major={el.major}
-        freshmen={el.freshmen}
-        junior={el.junior}
-        sophomore={el.sophomore}
-        senior={el.senior}
-      />
-    );
-  });
+import CurricularmPage from 'pages/graduate/curricularm';
 
+const Tabs = ({ Curricularm, Prepare }: any) => {
   return (
     <Layout>
       <Head>
@@ -56,8 +42,16 @@ const Tabs = ({ data }: any) => {
           <div className="p-10">
             <Tab
               tabs={[
-                { id: '0', label: '추천 커리큘럼', content: <div></div> },
-                { id: '1', label: '대학원 준비', content: <div></div> },
+                {
+                  id: '0',
+                  label: '추천 커리큘럼',
+                  content: <CurricularmPage data={Curricularm} />,
+                },
+                {
+                  id: '1',
+                  label: '대학원 준비',
+                  content: <div></div>,
+                },
                 { id: '2', label: '대학원 생활', content: <div></div> },
                 { id: '3', label: '전공별 질문', content: <div></div> },
                 { id: '4', label: '자유발언', content: <div></div> },
@@ -65,7 +59,6 @@ const Tabs = ({ data }: any) => {
               ]}
             />
           </div>
-          {TapWrap}
         </div>
       </section>
     </Layout>
@@ -77,11 +70,16 @@ export default Tabs;
 import loadData from 'shared/utils/loadData';
 
 export async function getStaticProps() {
-  const data = await loadData({ subfolder: 'Graduate', file: 'Curricularm' });
+  const Curricularm = await loadData({
+    subfolder: 'Graduate',
+    file: 'Curricularm',
+  });
+  const Prepare = await loadData({ subfolder: 'Graduate', file: 'Prepare' });
 
   return {
     props: {
-      data,
+      Curricularm,
+      Prepare,
     },
   };
 }
