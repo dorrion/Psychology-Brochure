@@ -1,11 +1,17 @@
 import React from 'react';
 import Head from 'next/head';
-import Image from 'next/image';
 import Layout from 'components/layout';
 import GraduateHeader from 'components/Graduate/GraduateHeader';
 import Tab from 'shared/components/Tab';
-import { Banner1 } from 'components/Graduate/Banners';
-import CurriculumPage from 'pages/graduate/curriculum';
+import {
+  Banner1,
+  Banner2,
+  Banner3,
+  Banner4,
+  Banner5,
+  Banner6,
+} from 'components/Graduate/Banners';
+import CurriculumPage from 'components/Graduate/content/curriculum';
 
 const Tabs = ({ Curricularm, Prepare }: any) => {
   return (
@@ -19,7 +25,7 @@ const Tabs = ({ Curricularm, Prepare }: any) => {
       </Head>
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
-          <GraduateHeader />
+          {/* <GraduateHeader /> */}
           <div className="p-10">
             <Tab
               tabs={[
@@ -27,17 +33,38 @@ const Tabs = ({ Curricularm, Prepare }: any) => {
                   id: '0',
                   label: '추천 커리큘럼',
                   banner: <Banner1 />,
-                  content: <CurriculumPage data={Curricularm} />,
+                  content: <CurriculumPage CurriData={Curricularm} />,
                 },
                 {
                   id: '1',
                   label: '대학원 준비',
+                  banner: <Banner2 />,
                   content: <div></div>,
                 },
-                { id: '2', label: '대학원 생활', content: <div></div> },
-                { id: '3', label: '전공별 질문', content: <div></div> },
-                { id: '4', label: '자유발언', content: <div></div> },
-                { id: '5', label: '입시요강', content: <div></div> },
+                {
+                  id: '2',
+                  label: '대학원 생활',
+                  banner: <Banner3 />,
+                  content: <div></div>,
+                },
+                {
+                  id: '3',
+                  label: '전공별 질문',
+                  banner: <Banner4 />,
+                  content: <div></div>,
+                },
+                {
+                  id: '4',
+                  label: '자유발언',
+                  banner: <Banner5 />,
+                  content: <div></div>,
+                },
+                {
+                  id: '5',
+                  label: '입시요강',
+                  banner: <Banner6 />,
+                  content: <div></div>,
+                },
               ]}
             />
           </div>
@@ -57,6 +84,8 @@ export async function getStaticProps() {
     file: 'Curricularm',
   });
   const Prepare = await loadData({ subfolder: 'Graduate', file: 'Prepare' });
+  const Life = await loadData({ subfolder: 'Graduate', file: 'Life' });
+  const Free = await loadData({ subfolder: 'Graduate', file: 'Free' });
 
   return {
     props: {
