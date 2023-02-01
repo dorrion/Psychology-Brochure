@@ -25,12 +25,15 @@ export default function index({ data }: any) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <section className="text-gray-600 body-font bg-secondaryColor">
-        <div className="container px-5 py-24 mx-auto flex-col flexBox ">
-          <h1 className="text-6xl sm:text-3xl font-bold font-sans text-gray-900 mb-4 text-left">
+      <section>
+        <div className="container pt-40 sm:pt-28 pb-8 mx-auto flex-col flexBox ">
+          <h1 className="text-3xl font-bold font-sans text-gray-900 mb-4 text-left">
             심리학과에서 공부하기
           </h1>
+        </div>
+      </section>
+      <section className="text-gray-600 body-font bg-secondaryColor">
+        <div className="container px-5 py-24 mx-auto flex-col flexBox ">
           <h1 className="text-xl font-semibold mb-8">
             수강신청 성공하는 꿀팁!🍯
           </h1>
