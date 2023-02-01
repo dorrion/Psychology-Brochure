@@ -1,13 +1,12 @@
 import Layout from 'components/layout';
 import Head from 'next/head';
 import Image from 'next/image';
-import { promises as fs } from 'fs';
-import path from 'path';
 import Major from 'components/Graduate/Major';
 import { MajorProps } from 'shared/store/type';
 import GraduateHeader from 'components/Graduate/GraduateHeader';
 
-export default function prepare({ GraduateMajorData }: any) {
+export default function prepare({ data }: any) {
+  const GraduateMajorData = data;
   const MajorQnAList: JSX.Element[] = GraduateMajorData.map(
     (el: MajorProps) => {
       return <Major key={el.id} major={el.major} explain={el.explain} id={0} />;
@@ -52,15 +51,14 @@ export default function prepare({ GraduateMajorData }: any) {
   );
 }
 
+import loadData from 'shared/utils/loadData';
+
 export async function getStaticProps() {
-  // 살아남기 데이터 경로
-  const filePath = path.join(process.cwd(), 'data', 'GraduateMajor.json');
-  const GraduateMajorData = await fs.readFile(filePath, 'utf8');
-  const objectData = JSON.parse(GraduateMajorData);
+  const data = await loadData({ subfolder: 'Graduate', file: 'Major' });
 
   return {
     props: {
-      GraduateMajorData: await Promise.all(objectData),
+      data,
     },
   };
 }
