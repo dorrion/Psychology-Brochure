@@ -4,7 +4,7 @@ import { EnrolementProps } from 'shared/store/type';
 import FiveCard from 'components/Home/5/Five';
 
 export default function index({ data }: any) {
-  const Love = data?.map((el: EnrolementProps) => {
+  const FreeTalk = data?.map((el: EnrolementProps) => {
     return <FiveCard key={el.name} name={el.name} tip={el.tip} />;
   });
   return (
@@ -28,7 +28,7 @@ export default function index({ data }: any) {
         <section className="bg-secondaryColor">
           <div className="container px-5 py-16 mx-auto flex-col flexBox ">
             <div className="w-full h-72 flex flex-col flex-wrap items-center p-4">
-              {Love}
+              {FreeTalk}
             </div>
           </div>
         </section>
