@@ -39,11 +39,9 @@ const FreePage = ({ data }: any) => {
               width={534}
               height={212}
               alt="대학원 커리큘럼 이미지"
-              layout="full"
             />
           </div>
           <GraduateHeader />
-
           <div className="grid grid-cols-3 gap-4">{FreeList}</div>
         </div>
       </section>
