@@ -30,7 +30,7 @@ const Tab: FC<Props> = ({ tabs }) => {
             }`}
             onClick={() => setActiveTab(tab.id)}
           >
-            {/* 여기에 배너 바뀌고 */}
+            {/* 탭 라벨 */}
             {tab.label}
             <p
               className={`mx-4 w-px h-2.5 bg-shadowColor ${
