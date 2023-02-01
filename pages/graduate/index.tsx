@@ -5,6 +5,7 @@ import Layout from 'components/layout';
 import { CurriProps } from 'shared/store/type';
 import TapWrapper from 'components/Graduate/TapWrapper';
 import GraduateHeader from 'components/Graduate/GraduateHeader';
+import Tab from 'shared/components/Tab';
 
 const Tabs = ({ data }: any) => {
   const CurriData = data;
@@ -52,6 +53,18 @@ const Tabs = ({ data }: any) => {
             />
           </div>
           <GraduateHeader />
+          <div className="p-10">
+            <Tab
+              tabs={[
+                { id: '0', label: '추천 커리큘럼', content: <div></div> },
+                { id: '1', label: '대학원 준비', content: <div></div> },
+                { id: '2', label: '대학원 생활', content: <div></div> },
+                { id: '3', label: '전공별 질문', content: <div></div> },
+                { id: '4', label: '자유발언', content: <div></div> },
+                { id: '5', label: '입시요강', content: <div></div> },
+              ]}
+            />
+          </div>
           {TapWrap}
         </div>
       </section>
