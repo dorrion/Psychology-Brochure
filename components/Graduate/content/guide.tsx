@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
 import Head from 'next/head';
-import Image from 'next/image';
-import Layout from 'components/layout';
-import GraduateHeader from 'components/Graduate/GraduateHeader';
 
 const Guide = () => {
   interface Tab {
