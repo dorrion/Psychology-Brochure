@@ -21,7 +21,8 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "postcss.config.js"
+    "postcss.config.js",
+    "lib/gtag.ts"
   ],
   "exclude": ["node_modules"]
 }
