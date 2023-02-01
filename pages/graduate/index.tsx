@@ -30,48 +30,46 @@ const Tabs = ({ Curriculum, Prepare, Life, Major, Free }: any) => {
       </Head>
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
-          <div className="p-10">
-            <Tab
-              tabs={[
-                {
-                  id: '0',
-                  label: '추천 커리큘럼',
-                  banner: <Banner1 />,
-                  content: <CurriculumPage Curriculum={Curriculum} />,
-                },
-                {
-                  id: '1',
-                  label: '대학원 준비',
-                  banner: <Banner2 />,
-                  content: <PreparePage GraduatePrepareData={Prepare} />,
-                },
-                {
-                  id: '2',
-                  label: '대학원 생활',
-                  banner: <Banner3 />,
-                  content: <LifePage GraduateLife={Life} />,
-                },
-                {
-                  id: '3',
-                  label: '전공별 질문',
-                  banner: <Banner4 />,
-                  content: <MajorPage GraduateMajor={Major} />,
-                },
-                {
-                  id: '4',
-                  label: '자유발언',
-                  banner: <Banner5 />,
-                  content: <FreePage Free={Free} />,
-                },
-                {
-                  id: '5',
-                  label: '입시요강',
-                  banner: <Banner6 />,
-                  content: <GuidePage />,
-                },
-              ]}
-            />
-          </div>
+          <Tab
+            tabs={[
+              {
+                id: '0',
+                label: '추천 커리큘럼',
+                banner: <Banner1 />,
+                content: <CurriculumPage Curriculum={Curriculum} />,
+              },
+              {
+                id: '1',
+                label: '대학원 준비',
+                banner: <Banner2 />,
+                content: <PreparePage GraduatePrepareData={Prepare} />,
+              },
+              {
+                id: '2',
+                label: '대학원 생활',
+                banner: <Banner3 />,
+                content: <LifePage GraduateLife={Life} />,
+              },
+              {
+                id: '3',
+                label: '전공별 질문',
+                banner: <Banner4 />,
+                content: <MajorPage GraduateMajor={Major} />,
+              },
+              {
+                id: '4',
+                label: '자유발언',
+                banner: <Banner5 />,
+                content: <FreePage Free={Free} />,
+              },
+              {
+                id: '5',
+                label: '입시요강',
+                banner: <Banner6 />,
+                content: <GuidePage />,
+              },
+            ]}
+          />
         </div>
       </section>
     </Layout>
