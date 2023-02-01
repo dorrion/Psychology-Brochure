@@ -5,6 +5,8 @@ import Layout from 'components/layout';
 import { ProgramProps } from 'shared/store/type';
 import { DownArrow, UpArrow } from 'components/icon';
 import ProgramCard from 'components/Home/4/ProgramCard';
+import { EnrolementProps } from 'shared/store/type';
+import FiveCard from 'components/Home/5/Five';
 
 export default function index({ data }: any) {
   // 강의형
@@ -62,6 +64,21 @@ export default function index({ data }: any) {
         period={el.period}
       />
     );
+  });
+
+  // 파란학기
+  const Blue = data[3]?.map((el: EnrolementProps) => {
+    return <FiveCard key={el.name} name={el.name} tip={el.tip} />;
+  });
+
+  // 대외활동
+  const Outside = data[4]?.map((el: EnrolementProps) => {
+    return <FiveCard key={el.name} name={el.name} tip={el.tip} />;
+  });
+
+  // 토익
+  const Toeic = data[5]?.map((el: EnrolementProps) => {
+    return <FiveCard key={el.name} name={el.name} tip={el.tip} />;
   });
 
   interface Tab {
@@ -151,14 +168,47 @@ export default function index({ data }: any) {
                 id: '1',
                 label: '비교과 후기',
                 content: (
-                  <>
-                    <h1 className="text-xl mb-2.5">일반대학원, 교육대학원</h1>
-                    <embed
-                      className="w-full  h-[768px]"
-                      src="/pdf/고려대(일,교).pdf"
-                      type="application/pdf"
-                    />
-                  </>
+                  <div className="text-gray-600 body-font">
+                    <section>
+                      <div className="container pt-40 sm:pt-28 pb-8 mx-auto flex-col flexBox ">
+                        <h1 className="text-3xl font-bold font-sans text-gray-900 mb-4 text-left">
+                          심리학과에서 노식주
+                        </h1>
+                      </div>
+                    </section>
+                    {/* section별로 overflow-y-scroll 추가해서 세로 넘칠 때 넣기 */}
+                    <section className="bg-secondaryColor">
+                      <div className="container px-5 py-16 mx-auto flex-col flexBox ">
+                        <h1 className="text-xl font-semibold mb-8">
+                          파란학기 관련 꿀팁!🍯
+                        </h1>
+                        <div className="w-full h-40 flex flex-col flex-wrap items-center p-4">
+                          {Blue}
+                        </div>
+                      </div>
+                    </section>
+                    <section>
+                      <div className="container px-5 py-16 mx-auto flex-col flexBox">
+                        <h1 className="text-xl font-semibold mb-8">
+                          대외활동 꿀팁!🍯
+                        </h1>
+                        <div className="w-full h-72 flex flex-col flex-wrap items-center p-4 bg-fixed">
+                          {Outside}
+                        </div>
+                      </div>
+                    </section>
+                    <section className="bg-shadowColor">
+                      {/* 스크롤 추가 */}
+                      <div className="container px-5 py-16 mx-auto flex-col flexBox">
+                        <h1 className="dark:text-slate-700 text-xl font-semibold mb-8">
+                          토익사관학교 관련 꿀팁!🍯
+                        </h1>
+                        <div className="w-full h-[700px] flex flex-col flex-wrap items-center p-4">
+                          {Toeic}
+                        </div>
+                      </div>
+                    </section>
+                  </div>
                 ),
               },
             ]}
