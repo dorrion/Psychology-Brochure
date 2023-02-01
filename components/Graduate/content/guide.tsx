@@ -54,41 +54,6 @@ const Guide = () => {
       </Head>
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
-          <div className="w-full h-32 bg-shadowColor rounded-lg flex mb-9 relative">
-            <div className="flex flex-col justify-center ml-8">
-              <h1 className="text-xl font-bold mb-2 dark:text-slate-800">
-                대학원 입시요강
-              </h1>
-              <h2 className="text-base dark:text-slate-800">
-                대학별 모집요강을 안내드려요
-              </h2>
-            </div>
-            {/* 반응형 위해 줄어들면 이미지는 없어지도록 */}
-            <Image
-              className="absolute bottom-0 right-36 hidden lg:block"
-              src="/images/대학원입시요강1.webp"
-              width={242}
-              height={186}
-              alt="대학원 커리큘럼 이미지"
-              layout="full"
-            />
-            <Image
-              className="absolute -bottom-24 right-4 rotate-30 hidden lg:block"
-              src="/images/대학원입시요강2.webp"
-              width={242}
-              height={186}
-              alt="대학원 커리큘럼 이미지"
-              layout="full"
-            />
-            <Image
-              className="absolute -bottom-24 right-72 -rotate-45 hidden lg:block"
-              src="/images/대학원입시요강2.webp"
-              width={242}
-              height={186}
-              alt="대학원 커리큘럼 이미지"
-              layout="full"
-            />
-          </div>
           <GraduateHeader />
           <Tabs
             tabs={[

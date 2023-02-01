@@ -21,25 +21,6 @@ export default function main({ data }: any) {
       </Head>
       <section className="text-gray-600 body-font  dark:bg-slate-800">
         <div className="container px-5 py-24 mx-auto flex-row flex-wrap flexBox w-full mb-20">
-          <div className="w-full h-32 bg-shadowColor rounded-lg flex mb-9 relative overflow-hidden">
-            <div className="flex flex-col justify-center ml-8">
-              <h1 className="text-xl font-bold mb-2 dark:text-slate-800">
-                대학원 생활
-              </h1>
-              <h2 className="text-base dark:text-slate-800">
-                세부 전공 별 대학원 생활에 대한 정보를 알려드려요
-              </h2>
-            </div>
-            {/* 반응형 위해 줄어들면 이미지는 없어지도록 */}
-            <Image
-              className="absolute -bottom-9 -right-14 hidden lg:block"
-              src="/images/대학원생활.webp"
-              width={641}
-              height={270}
-              alt="대학원 커리큘럼 이미지"
-              layout="full"
-            />
-          </div>
           <GraduateHeader />
           {GraduateLifeList}
         </div>

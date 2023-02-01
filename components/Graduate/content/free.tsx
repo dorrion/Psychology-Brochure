@@ -23,24 +23,6 @@ const FreePage = ({ data }: any) => {
       </Head>
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
-          <div className="w-full h-32 bg-shadowColor rounded-lg flex mb-9 relative overflow-hidden">
-            <div className="flex flex-col justify-center ml-8">
-              <h1 className="text-xl font-bold mb-2 dark:text-slate-800">
-                자유 발언
-              </h1>
-              <h2 className="text-base dark:text-slate-800">
-                선배님들의 추가 조언을 전해드려요
-              </h2>
-            </div>
-            {/* 반응형 위해 줄어들면 이미지는 없어지도록 */}
-            <Image
-              className="absolute -bottom-14 right-0 hidden lg:block"
-              src="/images/대학원커리.webp"
-              width={534}
-              height={212}
-              alt="대학원 커리큘럼 이미지"
-            />
-          </div>
           <GraduateHeader />
           <div className="grid grid-cols-3 gap-4">{FreeList}</div>
         </div>
