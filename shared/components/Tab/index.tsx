@@ -1,8 +1,10 @@
 import React, { FC } from 'react';
 import { useState } from 'react';
+
 interface Tab {
   id?: string;
   label?: string;
+  banner?: React.ReactNode;
   content?: React.ReactNode;
 }
 
@@ -12,8 +14,11 @@ interface Props {
 
 const Tab: FC<Props> = ({ tabs }) => {
   const [activeTab, setActiveTab] = useState(tabs[0].id);
+
   return (
     <>
+      {/* 배너 */}
+      {tabs.find((tab) => tab.id === activeTab)?.banner}
       {/* 탭 나열 */}
       <ul className="flexBox flex-shrink-0 border-gray-200">
         {tabs.map((tab) => (
