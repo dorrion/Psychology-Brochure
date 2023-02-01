@@ -26,13 +26,13 @@ export default function index({ data }: any) {
       </Head>
       <div className="text-gray-600 body-font">
         <section>
-          <div className="container pt-28 pb-8 mx-auto flex-col flexBox ">
-            <h1 className="text-6xl sm:text-3xl font-bold font-sans text-gray-900 mb-4 text-left">
+          <div className="container pt-40 sm:pt-28 pb-8 mx-auto flex-col flexBox ">
+            <h1 className="text-3xl font-bold font-sans text-gray-900 mb-4 text-left">
               심리학과에서 노식주
             </h1>
           </div>
         </section>
-        <section className=" bg-secondaryColor">
+        <section className="overflow-y-scroll bg-secondaryColor">
           <div className="container px-5 py-16 mx-auto flex-col flexBox ">
             <h1 className="text-xl font-semibold mb-8">
               학교 근로 관련 꿀팁!🍯
