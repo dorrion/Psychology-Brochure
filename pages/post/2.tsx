@@ -1,11 +1,11 @@
 import Head from 'next/head';
-import Layout from 'components/layout';
-import { SchoolMoneyList, SuburbsMoneyList } from 'data/Data';
-import MoneyCard from 'components/Home/2/MoneyCard';
 import { useState } from 'react';
+import Layout from 'components/layout';
+import MoneyCard from 'components/Home/2/MoneyCard';
 import { DownArrow, UpArrow } from 'components/icon';
+import { MoneyProps } from 'shared/store/type';
 
-export default function index() {
+export default function index({ data }: any) {
   // 교내 더보기&접기 상태 저장
   const [isSchoolMoreView, setIsSchoolMoreView] = useState<Boolean>(false);
   const onClickMoreViewButton = () => {
@@ -20,15 +20,11 @@ export default function index() {
 
   // 더보기 버튼이 True일 때는 모두 보여주기
   // 더보기 버튼이 False일 때는 3개만 slice 해서 보여주기
-  let SchoolMoney = isSchoolMoreView
-    ? SchoolMoneyList
-    : SchoolMoneyList.slice(0, 3);
-  let SuburbsMoney = isSuburbsMoreView
-    ? SuburbsMoneyList
-    : SuburbsMoneyList.slice(0, 3);
+  let SchoolMoney = isSchoolMoreView ? data[0] : data[0].slice(0, 3);
+  let SuburbsMoney = isSuburbsMoreView ? data[1] : data[1].slice(0, 3);
 
   // 교내 장학
-  const school = SchoolMoney?.map((el) => {
+  const school = SchoolMoney?.map((el: MoneyProps) => {
     return (
       <MoneyCard
         key={el.name}
@@ -40,7 +36,7 @@ export default function index() {
     );
   });
   // 교외 장학
-  const suburbs = SuburbsMoney?.map((el) => {
+  const suburbs = SuburbsMoney?.map((el: MoneyProps) => {
     return (
       <MoneyCard
         key={el.name}
@@ -84,4 +80,16 @@ export default function index() {
       </section>
     </Layout>
   );
+}
+
+import loadData from 'shared/utils/loadData';
+
+export async function getStaticProps() {
+  const data = await loadData({ subfolder: 'Home', file: 'Money' });
+
+  return {
+    props: {
+      data,
+    },
+  };
 }

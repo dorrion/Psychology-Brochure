@@ -1,13 +1,10 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import { promises as fs } from 'fs';
-import path from 'path';
-
 import Layout from 'components/layout';
 import SurvivalWrapper from 'components/Home/SurvivalWrapper';
 import { SurvivalProps } from 'shared/store/type';
 
-export default function Home({ HomeData }: any) {
+export default function Home({ data }: any) {
+  const HomeData = data;
   const TipList: JSX.Element[] = HomeData.map((tip: SurvivalProps) => (
     <SurvivalWrapper
       key={tip.tipId}
@@ -51,15 +48,14 @@ export default function Home({ HomeData }: any) {
   );
 }
 
+import loadData from 'shared/utils/loadData';
+
 export async function getStaticProps() {
-  // 살아남기 데이터 경로
-  const filePath = path.join(process.cwd(), 'data', 'HomeData.json');
-  const HomeData = await fs.readFile(filePath, 'utf8');
-  const objectData = JSON.parse(HomeData);
+  const data = await loadData({ subfolder: 'Home', file: 'HomeData' });
 
   return {
     props: {
-      HomeData: await Promise.all(objectData),
+      data,
     },
   };
 }

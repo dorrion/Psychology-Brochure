@@ -2,11 +2,11 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Layout from 'components/layout';
 import { CarrerProps } from 'shared/store/type';
-import { CareerInterview } from 'data/Data';
 import InterviewWrapper from 'components/Career/InterviewWrapper';
 import Link from 'next/link';
 
-export default function Home() {
+export default function Home({ data }: any) {
+  const CareerInterview = data;
   const CarrerList: JSX.Element[] = CareerInterview.map((tip: CarrerProps) => (
     <InterviewWrapper
       key={tip.tipId}
@@ -88,4 +88,16 @@ export default function Home() {
       </Layout>
     </>
   );
+}
+
+import loadData from 'shared/utils/loadData';
+
+export async function getStaticProps() {
+  const data = await loadData({ subfolder: 'Career', file: 'Interview' });
+
+  return {
+    props: {
+      data,
+    },
+  };
 }

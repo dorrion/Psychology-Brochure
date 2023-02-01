@@ -1,14 +1,13 @@
 import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-import path from 'path';
-import { promises as fs } from 'fs';
 import Layout from 'components/layout';
 import { CurriProps } from 'shared/store/type';
 import TapWrapper from 'components/Graduate/TapWrapper';
 import GraduateHeader from 'components/Graduate/GraduateHeader';
 
-const Tabs = ({ CurriData }: any) => {
+const Tabs = ({ data }: any) => {
+  const CurriData = data;
   const TapWrap = CurriData.map((el: CurriProps) => {
     return (
       <TapWrapper
@@ -62,15 +61,14 @@ const Tabs = ({ CurriData }: any) => {
 
 export default Tabs;
 
+import loadData from 'shared/utils/loadData';
+
 export async function getStaticProps() {
-  // 커리큘럼
-  const filePath = path.join(process.cwd(), 'data', 'GraduateCrc.json');
-  const CurriData = await fs.readFile(filePath, 'utf8');
-  const objectData = JSON.parse(CurriData);
+  const data = await loadData({ subfolder: 'Graduate', file: 'Curricularm' });
 
   return {
     props: {
-      CurriData: await Promise.all(objectData),
+      data,
     },
   };
 }

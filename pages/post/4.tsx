@@ -1,11 +1,12 @@
 import Head from 'next/head';
-import Layout from 'components/layout';
-import { Lecture, Seminar, Camp } from 'data/Data';
-import ProgramCard from 'components/Home/4/ProgramCard';
 import { useState } from 'react';
-import { DownArrow, UpArrow } from 'components/icon';
+import Layout from 'components/layout';
 
-export default function index() {
+import { ProgramProps } from 'shared/store/type';
+import { DownArrow, UpArrow } from 'components/icon';
+import ProgramCard from 'components/Home/4/ProgramCard';
+
+export default function index({ data }: any) {
   // 강의형
   const [isLectureMoreView, setIsLectureMoreView] = useState<Boolean>(false);
   const onClickMoreViewButton = () => {
@@ -18,19 +19,13 @@ export default function index() {
     setIsSeminarMoreView(!isSeminarMoreView);
   };
 
-  // 캠프형
-  const [isCampMoreView, setIsCampMoreView] = useState<Boolean>(false);
-  const onClickCampMoreViewButton = () => {
-    setIsCampMoreView(!isCampMoreView);
-  };
-
   // 더보기 버튼이 True일 때는 모두 보여주기
   // 더보기 버튼이 False일 때는 3개만 slice 해서 보여주기
-  let LectureList = isLectureMoreView ? Lecture : Lecture.slice(0, 3);
-  let SeminarList = isSeminarMoreView ? Seminar : Seminar.slice(0, 3);
+  let LectureList = isLectureMoreView ? data[0] : data[0].slice(0, 3);
+  let SeminarList = isSeminarMoreView ? data[1] : data[1].slice(0, 3);
 
   // 강의형
-  const lecture = LectureList?.map((el) => {
+  const lecture = LectureList?.map((el: ProgramProps) => {
     return (
       <ProgramCard
         key={el.name}
@@ -43,7 +38,7 @@ export default function index() {
     );
   });
   // 세미나형
-  const seminar = SeminarList?.map((el) => {
+  const seminar = SeminarList?.map((el: ProgramProps) => {
     return (
       <ProgramCard
         key={el.name}
@@ -56,7 +51,7 @@ export default function index() {
     );
   });
   // 캠프, 연수형
-  const camp = Camp?.map((el) => {
+  const camp = data[2]?.map((el: ProgramProps) => {
     return (
       <ProgramCard
         key={el.name}
@@ -105,4 +100,16 @@ export default function index() {
       </section>
     </Layout>
   );
+}
+
+import loadData from 'shared/utils/loadData';
+
+export async function getStaticProps() {
+  const data = await loadData({ subfolder: 'Home', file: 'Program' });
+
+  return {
+    props: {
+      data,
+    },
+  };
 }
