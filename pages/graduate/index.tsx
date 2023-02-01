@@ -12,8 +12,13 @@ import {
   Banner6,
 } from 'components/Graduate/Banners';
 import CurriculumPage from 'components/Graduate/content/curriculum';
+import PreparePage from 'components/Graduate/content/prepare';
+import LifePage from 'components/Graduate/content/life';
+import MajorPage from 'components/Graduate/content/major';
+import FreePage from 'components/Graduate/content/free';
+import GuidePage from 'components/Graduate/content/guide';
 
-const Tabs = ({ Curricularm, Prepare }: any) => {
+const Tabs = ({ Curricularm, Prepare, Life, Major, Free }: any) => {
   return (
     <Layout>
       <Head>
@@ -25,7 +30,6 @@ const Tabs = ({ Curricularm, Prepare }: any) => {
       </Head>
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
-          {/* <GraduateHeader /> */}
           <div className="p-10">
             <Tab
               tabs={[
@@ -39,31 +43,31 @@ const Tabs = ({ Curricularm, Prepare }: any) => {
                   id: '1',
                   label: '대학원 준비',
                   banner: <Banner2 />,
-                  content: <div></div>,
+                  content: <PreparePage GraduatePrepareData={Prepare} />,
                 },
                 {
                   id: '2',
                   label: '대학원 생활',
                   banner: <Banner3 />,
-                  content: <div></div>,
+                  content: <LifePage GraduateLife={Life} />,
                 },
                 {
                   id: '3',
                   label: '전공별 질문',
                   banner: <Banner4 />,
-                  content: <div></div>,
+                  content: <MajorPage GraduateMajor={Major} />,
                 },
                 {
                   id: '4',
                   label: '자유발언',
                   banner: <Banner5 />,
-                  content: <div></div>,
+                  content: <FreePage Free={Free} />,
                 },
                 {
                   id: '5',
                   label: '입시요강',
                   banner: <Banner6 />,
-                  content: <div></div>,
+                  content: <GuidePage />,
                 },
               ]}
             />
@@ -85,12 +89,16 @@ export async function getStaticProps() {
   });
   const Prepare = await loadData({ subfolder: 'Graduate', file: 'Prepare' });
   const Life = await loadData({ subfolder: 'Graduate', file: 'Life' });
+  const Major = await loadData({ subfolder: 'Graduate', file: 'Major' });
   const Free = await loadData({ subfolder: 'Graduate', file: 'Free' });
 
   return {
     props: {
       Curricularm,
       Prepare,
+      Life,
+      Major,
+      Free,
     },
   };
 }
