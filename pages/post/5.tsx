@@ -1,19 +1,19 @@
 import Head from 'next/head';
 import Layout from 'components/layout';
 import { EnrolementProps } from 'shared/store/type';
-import EnrolementCard from 'components/Home/6/EnrolementCard';
+import FiveCard from 'components/Home/5/Five';
 
 export default function index({ data }: any) {
   const Work = data[0]?.map((el: EnrolementProps) => {
-    return <EnrolementCard key={el.name} name={el.name} tip={el.tip} />;
+    return <FiveCard key={el.name} name={el.name} tip={el.tip} />;
   });
 
   const House = data[1]?.map((el: EnrolementProps) => {
-    return <EnrolementCard key={el.name} name={el.name} tip={el.tip} />;
+    return <FiveCard key={el.name} name={el.name} tip={el.tip} />;
   });
 
   const Rice = data[2]?.map((el: EnrolementProps) => {
-    return <EnrolementCard key={el.name} name={el.name} tip={el.tip} />;
+    return <FiveCard key={el.name} name={el.name} tip={el.tip} />;
   });
   return (
     <Layout>
@@ -41,7 +41,7 @@ export default function index({ data }: any) {
           <h1 className="text-xl font-semibold mb-8">
             기숙사/자취/통학 꿀팁!🍯
           </h1>
-          <div className="w-full h-96 flex flex-col flex-wrap items-center p-4 bg-fixed">
+          <div className="w-full h-screen flex flex-col flex-wrap items-center p-4 bg-fixed">
             {House}
           </div>
         </div>
@@ -51,7 +51,7 @@ export default function index({ data }: any) {
           <h1 className="dark:text-slate-700 text-xl font-semibold mb-8">
             나만의 맛집리스트!🍯
           </h1>
-          <div className="w-full h-96 flex flex-col flex-wrap items-center p-4 bg-fixed">
+          <div className="w-full h-96 flex flex-col flex-wrap items-center p-4">
             {Rice}
           </div>
         </div>
