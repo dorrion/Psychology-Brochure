@@ -24,38 +24,42 @@ export default function index({ data }: any) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <section className="text-gray-600 body-font bg-secondaryColor">
-        <div className="container px-5 py-24 mx-auto flex-col flexBox ">
-          <h1 className="text-6xl sm:text-3xl font-bold font-sans text-gray-900 mb-4 text-left">
-            심리학과에서 노식주
-          </h1>
-          <h1 className="text-xl font-semibold mb-8">학교 근로 관련 꿀팁!🍯</h1>
-          <div className="w-full h-96 flex flex-col flex-wrap items-center p-4 bg-fixed">
-            {Work}
+      <div className="text-gray-600 body-font">
+        <section className=" bg-secondaryColor">
+          <div className="container px-5 py-24 mx-auto flex-col flexBox ">
+            <h1 className="text-6xl sm:text-3xl font-bold font-sans text-gray-900 mb-4 text-left">
+              심리학과에서 노식주
+            </h1>
+            <h1 className="text-xl font-semibold mb-8">
+              학교 근로 관련 꿀팁!🍯
+            </h1>
+            <div className="w-full h-96 flex flex-col flex-wrap items-center p-4">
+              {Work}
+            </div>
           </div>
-        </div>
-      </section>
-      <section className="text-gray-600 body-font">
-        <div className="container px-5 py-24 mx-auto flex-col flexBox ">
-          <h1 className="text-xl font-semibold mb-8">
-            기숙사/자취/통학 꿀팁!🍯
-          </h1>
-          <div className="w-full h-screen flex flex-col flex-wrap items-center p-4 bg-fixed">
-            {House}
+        </section>
+        <section className="overflow-y-auto">
+          <div className="container px-5 py-24 mx-auto flex-col flexBox ">
+            <h1 className="text-xl font-semibold mb-8">
+              기숙사/자취/통학 꿀팁!🍯
+            </h1>
+            <div className="w-full h-96 flex flex-col flex-wrap items-center p-4 bg-fixed">
+              {House}
+            </div>
           </div>
-        </div>
-      </section>
-      <section className="text-gray-600 body-font bg-shadowColor">
-        <div className="container px-5 py-24 mx-auto flex-col flexBox ">
-          <h1 className="dark:text-slate-700 text-xl font-semibold mb-8">
-            나만의 맛집리스트!🍯
-          </h1>
-          <div className="w-full h-96 flex flex-col flex-wrap items-center p-4">
-            {Rice}
+        </section>
+        <section className="bg-shadowColor overflow-y-auto">
+          {/* 스크롤 추가 */}
+          <div className="container px-5 py-24 mx-auto flex-col flexBox">
+            <h1 className="dark:text-slate-700 text-xl font-semibold mb-8">
+              나만의 맛집리스트!🍯
+            </h1>
+            <div className="w-full h-96 flex flex-col flex-wrap items-center p-4">
+              {Rice}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </Layout>
   );
 }
