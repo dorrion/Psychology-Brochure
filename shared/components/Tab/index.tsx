@@ -25,13 +25,18 @@ const Tab: FC<Props> = ({ tabs }) => {
             }`}
             onClick={() => setActiveTab(tab.id)}
           >
+            {/* 여기에 배너 바뀌고 */}
             {tab.label}
-            <p className="mx-4 w-px h-2.5 bg-shadowColor" />
+            <p
+              className={`mx-4 w-px h-2.5 bg-shadowColor ${
+                tab.id === '5' && 'hidden'
+              }`}
+            />
           </li>
         ))}
       </ul>
       <div className="p-6">
-        {/* 현재 선택된 탭의 content 삽입 */}
+        {/* 여기에 내용 삽입 */}
         {tabs.find((tab) => tab.id === activeTab)?.content}
       </div>
     </>
