@@ -1,18 +1,18 @@
 import Head from 'next/head';
 import Layout from 'components/layout';
-import { Enrolement, Study, Search } from 'data/Data';
+import { EnrolementProps } from 'shared/store/type';
 import EnrolementCard from 'components/Home/6/EnrolementCard';
 
-export default function index() {
-  const Enrole = Enrolement?.map((el) => {
+export default function index({ data }: any) {
+  const Enrole = data[0]?.map((el: EnrolementProps) => {
     return <EnrolementCard key={el.name} name={el.name} tip={el.tip} />;
   });
 
-  const StudyTip = Study?.map((el) => {
+  const StudyTip = data[1]?.map((el: EnrolementProps) => {
     return <EnrolementCard key={el.name} name={el.name} tip={el.tip} />;
   });
 
-  const SearchTip = Search?.map((el) => {
+  const SearchTip = data[2]?.map((el: EnrolementProps) => {
     return <EnrolementCard key={el.name} name={el.name} tip={el.tip} />;
   });
   return (
@@ -58,4 +58,16 @@ export default function index() {
       </section>
     </Layout>
   );
+}
+
+import loadData from 'shared/utils/loadData';
+
+export async function getStaticProps() {
+  const data = await loadData({ subfolder: 'Home', file: 'Study' });
+
+  return {
+    props: {
+      data,
+    },
+  };
 }
