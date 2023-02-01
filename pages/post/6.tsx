@@ -1,19 +1,20 @@
 import Head from 'next/head';
 import Layout from 'components/layout';
 import { EnrolementProps } from 'shared/store/type';
-import EnrolementCard from 'components/Home/6/EnrolementCard';
+
+import FiveCard from 'components/Home/5/Five';
 
 export default function index({ data }: any) {
   const Enrole = data[0]?.map((el: EnrolementProps) => {
-    return <EnrolementCard key={el.name} name={el.name} tip={el.tip} />;
+    return <FiveCard key={el.name} name={el.name} tip={el.tip} />;
   });
 
   const StudyTip = data[1]?.map((el: EnrolementProps) => {
-    return <EnrolementCard key={el.name} name={el.name} tip={el.tip} />;
+    return <FiveCard key={el.name} name={el.name} tip={el.tip} />;
   });
 
   const SearchTip = data[2]?.map((el: EnrolementProps) => {
-    return <EnrolementCard key={el.name} name={el.name} tip={el.tip} />;
+    return <FiveCard key={el.name} name={el.name} tip={el.tip} />;
   });
   return (
     <Layout>
