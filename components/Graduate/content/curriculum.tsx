@@ -2,8 +2,8 @@ import React from 'react';
 import { CurriProps } from 'shared/store/type';
 import TapWrapper from 'components/Graduate/TapWrapper';
 
-const CurricularmPage = ({ CurriData }: any) => {
-  return CurriData.map((el: CurriProps) => {
+const CurricularmPage = ({ Curriculum }: any) => {
+  return Curriculum.map((el: CurriProps) => {
     return (
       <TapWrapper
         key={el.id}
