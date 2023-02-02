@@ -111,8 +111,15 @@ export interface BridgeProps {
   head: string;
   desc: string[];
 }
+
 export interface MultiProps {
   head: string;
   desc: string[];
   and: string;
+}
+
+export interface GlobalProps {
+  head: string;
+  desc: string[];
+  and: string[];
 }
