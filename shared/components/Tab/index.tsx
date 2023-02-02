@@ -22,24 +22,17 @@ const Tab: FC<Props> = ({ tabs }) => {
       {/* 탭 나열 */}
       <ul className="flexBox flex-wrap flex-shrink-0 border-gray-200">
         {tabs.map((tab) => (
-          <>
-            <li
-              key={tab.id}
-              // 선택된 탭이면 배경색 바뀌도록
-              className={`p-4 flex flex-wrap items-center text-base justify-center ${
-                activeTab === tab.id ? 'text-secondaryColor' : ''
-              }`}
-              onClick={() => setActiveTab(tab.id)}
-            >
-              {/* 탭 라벨 */}
-              {tab.label}
-            </li>
-            <p
-              className={`w-px h-2.5 bg-shadowColor ${
-                tab.id === '5' && 'hidden'
-              }`}
-            />
-          </>
+          <li
+            key={tab.id}
+            // 선택된 탭이면 배경색 바뀌도록
+            className={`p-4 flex flex-wrap items-center text-base justify-center  ${
+              activeTab === tab.id ? 'text-secondaryColor' : ''
+            } ${tab.id === '5' ? '' : 'border-r'}`}
+            onClick={() => setActiveTab(tab.id)}
+          >
+            {/* 탭 라벨 */}
+            {tab.label}
+          </li>
         ))}
       </ul>
       <div className="p-6">

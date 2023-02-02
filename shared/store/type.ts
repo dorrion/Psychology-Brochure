@@ -105,3 +105,9 @@ export interface EnrolementProps {
   name: string;
   tip: string;
 }
+
+export interface BridgeProps {
+  image?: string;
+  head: string;
+  desc: string[];
+}
