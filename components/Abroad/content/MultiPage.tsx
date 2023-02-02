@@ -19,9 +19,24 @@ const MultiPage = ({ Multi }: any) => {
   return (
     <>
       {/* 파란사다리 특징 */}
-      <section>
+      <section className="mb-10">
         <h1 className="text-xl font-medium mb-5">파란사다리 특징</h1>
         {feature}
+      </section>
+      <section className="mb-24">
+        <h1 className="text-xl font-medium mb-5">미국 2개교 자매대 정보</h1>
+        <div className="flexBox">
+          <a href="https://oia.ajou.ac.kr/oia/outgoing/degree-info.do?mode=view&articleNo=112823&article.offset=0&articleLimit=10">
+            <div className="w-96 h-28 flexBox hover:border border-secondaryColor rounded-lg">
+              <h2>SUNY-Stony Brook University</h2>
+            </div>
+          </a>
+          <a href="https://oia.ajou.ac.kr/oia/outgoing/degree-info.do?mode=view&articleNo=112826&article.offset=0&articleLimit=10">
+            <div className="w-96 h-28 flexBox hover:border border-secondaryColor rounded-lg">
+              <h2>Illinois Institute of Technology</h2>
+            </div>
+          </a>
+        </div>
       </section>
       <Footer
         description="복수학위 선발 및 진행 정보와 선배님들의 후기가 궁금하다면?"
