@@ -20,7 +20,7 @@ const MultiPage = ({ Multi }: any) => {
     <>
       {/* 파란사다리 특징 */}
       <section className="mb-10">
-        <h1 className="text-xl font-medium mb-5">파란사다리 특징</h1>
+        <h1 className="text-xl font-medium mb-5">복수학위 특징</h1>
         {feature}
       </section>
       <section className="mb-24">
