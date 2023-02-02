@@ -10,7 +10,7 @@ import {
   Banner5,
   Banner6,
 } from 'components/Abroad/Banners';
-import CurriculumPage from 'components/Graduate/content/curriculum';
+import BridgePage from 'components/Abroad/content/BridgePage';
 import PreparePage from 'components/Graduate/content/prepare';
 import LifePage from 'components/Graduate/content/life';
 import MajorPage from 'components/Graduate/content/major';
@@ -35,7 +35,7 @@ const Tabs = ({ Curriculum, Prepare, Life, Major, Free }: any) => {
                 id: '0',
                 label: '파란사다리',
                 banner: <Banner1 />,
-                content: <CurriculumPage Curriculum={Curriculum} />,
+                content: <BridgePage />,
               },
               {
                 id: '1',
