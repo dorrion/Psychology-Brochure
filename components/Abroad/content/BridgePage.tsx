@@ -4,26 +4,30 @@ import Footer from 'components/Abroad/Footer';
 const BridgePage = ({ Bridge }: any) => {
   const feature = Bridge[0].map((el: BridgeProps, idx: number) => {
     return (
-      <>
-        <div key={idx} className="mb-5">
-          <h2 className="text-base font-medium">{el.head}</h2>
-          {el.desc.map((de) => {
-            return <p className="text-sm font-light">{de}</p>;
-          })}
-        </div>
-      </>
+      <div key={idx} className="mb-5">
+        <h2 className="text-base font-medium">{el.head}</h2>
+        {el.desc.map((de, i) => {
+          return (
+            <p key={i} className="text-sm font-light">
+              {de}
+            </p>
+          );
+        })}
+      </div>
     );
   });
   const university = Bridge[1].map((el: BridgeProps, idx: number) => {
     return (
-      <>
-        <div key={idx} className="mb-5">
-          <h2 className="text-base font-medium">{el.head}</h2>
-          {el.desc.map((de) => {
-            return <p className="text-sm font-light">{de}</p>;
-          })}
-        </div>
-      </>
+      <div key={idx} className="mb-5">
+        <h2 className="text-base font-medium">{el.head}</h2>
+        {el.desc.map((de, i) => {
+          return (
+            <p key={i} className="text-sm font-light">
+              {de}
+            </p>
+          );
+        })}
+      </div>
     );
   });
   return (
