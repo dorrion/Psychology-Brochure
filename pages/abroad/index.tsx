@@ -13,8 +13,9 @@ import {
 import BridgePage from 'components/Abroad/content/BridgePage';
 import MultiPage from 'components/Abroad/content/MultiPage';
 import ShortPage from 'components/Abroad/content/ShortPage';
+import GlobalPage from 'components/Abroad/content/GlobalPage';
 
-const Tabs = ({ Bridge, Multi, Short }: any) => {
+const Tabs = ({ Bridge, Multi, Short, Global }: any) => {
   return (
     <Layout>
       <Head>
@@ -56,7 +57,7 @@ const Tabs = ({ Bridge, Multi, Short }: any) => {
                 id: '4',
                 label: '글로벌인턴쉽',
                 banner: <Banner5 />,
-                content: <BridgePage Bridge={Bridge} />,
+                content: <GlobalPage Global={Global} />,
               },
               {
                 id: '5',
@@ -89,12 +90,17 @@ export async function getStaticProps() {
     subfolder: 'Abroad',
     file: 'Short',
   });
+  const Global = await loadData({
+    subfolder: 'Abroad',
+    file: 'Global',
+  });
 
   return {
     props: {
       Bridge,
       Multi,
       Short,
+      Global,
     },
   };
 }

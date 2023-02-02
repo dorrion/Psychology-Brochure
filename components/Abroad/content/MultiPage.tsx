@@ -4,15 +4,17 @@ import Footer from 'components/Abroad/Footer';
 const MultiPage = ({ Multi }: any) => {
   const feature = Multi.map((el: MultiProps, idx: number) => {
     return (
-      <>
-        <div key={idx} className="mb-5">
-          <h2 className="text-base font-medium">{el.head}</h2>
-          {el.desc.map((de) => {
-            return <p className="text-sm font-light">{de}</p>;
-          })}
-          <p className="text-secondaryColor text-sm font-light">{el.and}</p>
-        </div>
-      </>
+      <div key={idx} className="mb-5">
+        <h2 className="text-base font-medium">{el.head}</h2>
+        {el.desc.map((de, i) => {
+          return (
+            <p key={i} className="text-sm font-light">
+              {de}
+            </p>
+          );
+        })}
+        <p className="text-secondaryColor text-sm font-light">{el.and}</p>
+      </div>
     );
   });
 
