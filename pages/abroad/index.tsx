@@ -11,13 +11,9 @@ import {
   Banner6,
 } from 'components/Abroad/Banners';
 import BridgePage from 'components/Abroad/content/BridgePage';
-import PreparePage from 'components/Graduate/content/prepare';
-import LifePage from 'components/Graduate/content/life';
-import MajorPage from 'components/Graduate/content/major';
-import FreePage from 'components/Graduate/content/free';
-import GuidePage from 'components/Graduate/content/guide';
+import MultiPage from 'components/Abroad/content/MultiPage';
 
-const Tabs = ({ Bridge, Prepare, Life, Major, Free }: any) => {
+const Tabs = ({ Bridge, Multi }: any) => {
   return (
     <Layout>
       <Head>
@@ -41,31 +37,31 @@ const Tabs = ({ Bridge, Prepare, Life, Major, Free }: any) => {
                 id: '1',
                 label: '교환학생',
                 banner: <Banner2 />,
-                content: <PreparePage GraduatePrepareData={Prepare} />,
+                content: <BridgePage Bridge={Bridge} />,
               },
               {
                 id: '2',
                 label: '복수학위',
                 banner: <Banner3 />,
-                content: <LifePage GraduateLife={Life} />,
+                content: <MultiPage Multi={Multi} />,
               },
               {
                 id: '3',
                 label: '단기해외연수',
                 banner: <Banner4 />,
-                content: <MajorPage GraduateMajor={Major} />,
+                content: <BridgePage Bridge={Bridge} />,
               },
               {
                 id: '4',
                 label: '글로벌인턴쉽',
                 banner: <Banner5 />,
-                content: <FreePage Free={Free} />,
+                content: <BridgePage Bridge={Bridge} />,
               },
               {
                 id: '5',
                 label: '선배님의 조언',
                 banner: <Banner6 />,
-                content: <GuidePage />,
+                content: <BridgePage Bridge={Bridge} />,
               },
             ]}
           />
@@ -84,11 +80,15 @@ export async function getStaticProps() {
     subfolder: 'Abroad',
     file: 'Bridge',
   });
+  const Multi = await loadData({
+    subfolder: 'Abroad',
+    file: 'Multi',
+  });
 
   return {
     props: {
       Bridge,
-
+      Multi,
     },
   };
 }

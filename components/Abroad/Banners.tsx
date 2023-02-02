@@ -20,6 +20,21 @@ export const Banner1 = () => {
 
 export const Banner2 = () => {
   return (
+    <div className="w-full h-32 bg-interview-100 rounded-lg flex mb-9 relative ">
+      <div className="flex flex-col justify-center ml-8">
+        <h1 className="text-xl font-bold mb-2 dark:text-slate-800">교환학생</h1>
+        <h2 className="text-base dark:text-slate-800">
+          {`교환학생 프로그램이란 본교와 학술교류협정이 체결된 외국대학 및 기관과 학생을 상호 교환하는 프로그램이다. 
+교환학생은 본교에 등록금을 납부하고 한학기 간 해외 자매대에서 수학할 수 있다. 외국의 문화와 교육제도를 체험할 수 있으며, 
+해외대학에서 수강한 학점을 본교로 이관 가능하다. 아주대학교는 현재 전 세계 약 67개국 326개교 및 4개 기관과 교류협정을 맺고 다양한 프로그램을 진행하고 있다.`}
+        </h2>
+      </div>
+    </div>
+  );
+};
+
+export const Banner3 = () => {
+  return (
     <>
       <div className="w-full h-32 bg-interview-100 rounded-lg flex mb-9 relative ">
         <div className="flex flex-col justify-center ml-8">
@@ -35,7 +50,7 @@ export const Banner2 = () => {
   );
 };
 
-export const Banner3 = () => {
+export const Banner4 = () => {
   return (
     <div className="w-full h-32 bg-interview-100 rounded-lg flex mb-9 relative ">
       <div className="flex flex-col justify-center ml-8">
@@ -52,7 +67,7 @@ export const Banner3 = () => {
   );
 };
 
-export const Banner4 = () => {
+export const Banner5 = () => {
   return (
     <div className="w-full h-32 bg-interview-100 rounded-lg flex mb-9 relative ">
       <div className="flex flex-col justify-center ml-8">
@@ -63,21 +78,6 @@ export const Banner4 = () => {
           {`우리대학 학생들에게 보다 다양하고 도전적인 해외 체험기회를 제공하기 위하여, 
 전 세계 약 20여 개국의 기업에 학생들을 인턴십으로 파견하는 프로그램이다. (파견기간은 기업에 따라 최소 4주에서 12개월까지 다양함)
 현장실습 참여 학생에게는 전공과 관련된 해외산업현장에서 현장 감각을 익히고 진로를 탐색할 수 있는 기회를 제공한다.`}
-        </h2>
-      </div>
-    </div>
-  );
-};
-
-export const Banner5 = () => {
-  return (
-    <div className="w-full h-32 bg-interview-100 rounded-lg flex mb-9 relative ">
-      <div className="flex flex-col justify-center ml-8">
-        <h1 className="text-xl font-bold mb-2 dark:text-slate-800">교환학생</h1>
-        <h2 className="text-base dark:text-slate-800">
-          {`교환학생 프로그램이란 본교와 학술교류협정이 체결된 외국대학 및 기관과 학생을 상호 교환하는 프로그램이다. 
-교환학생은 본교에 등록금을 납부하고 한학기 간 해외 자매대에서 수학할 수 있다. 외국의 문화와 교육제도를 체험할 수 있으며, 
-해외대학에서 수강한 학점을 본교로 이관 가능하다. 아주대학교는 현재 전 세계 약 67개국 326개교 및 4개 기관과 교류협정을 맺고 다양한 프로그램을 진행하고 있다.`}
         </h2>
       </div>
     </div>
