@@ -17,7 +17,7 @@ import MajorPage from 'components/Graduate/content/major';
 import FreePage from 'components/Graduate/content/free';
 import GuidePage from 'components/Graduate/content/guide';
 
-const Tabs = ({ Curriculum, Prepare, Life, Major, Free }: any) => {
+const Tabs = ({ Bridge, Prepare, Life, Major, Free }: any) => {
   return (
     <Layout>
       <Head>
@@ -35,7 +35,7 @@ const Tabs = ({ Curriculum, Prepare, Life, Major, Free }: any) => {
                 id: '0',
                 label: '파란사다리',
                 banner: <Banner1 />,
-                content: <BridgePage />,
+                content: <BridgePage Bridge={Bridge} />,
               },
               {
                 id: '1',
@@ -80,22 +80,15 @@ export default Tabs;
 import loadData from 'shared/utils/loadData';
 
 export async function getStaticProps() {
-  const Curriculum = await loadData({
-    subfolder: 'Graduate',
-    file: 'Curriculum',
+  const Bridge = await loadData({
+    subfolder: 'Abroad',
+    file: 'Bridge',
   });
-  const Prepare = await loadData({ subfolder: 'Graduate', file: 'Prepare' });
-  const Life = await loadData({ subfolder: 'Graduate', file: 'Life' });
-  const Major = await loadData({ subfolder: 'Graduate', file: 'Major' });
-  const Free = await loadData({ subfolder: 'Graduate', file: 'Free' });
 
   return {
     props: {
-      Curriculum,
-      Prepare,
-      Life,
-      Major,
-      Free,
+      Bridge,
+
     },
   };
 }
