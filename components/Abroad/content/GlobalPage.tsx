@@ -2,7 +2,6 @@ import { GlobalProps } from 'shared/store/type';
 import Footer from 'components/Abroad/Footer';
 
 const GlobalPage = ({ Global }: any) => {
-  console.log(Global);
   const program = Global.map((el: GlobalProps, idx: number) => {
     return (
       <div key={idx} className="mb-5">
