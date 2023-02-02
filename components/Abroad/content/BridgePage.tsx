@@ -35,6 +35,7 @@ const BridgePage = ({ Bridge }: any) => {
       <section>
         {/* 파란사다리 파견대학 */}
         <h1 className="text-xl font-medium mb-5">파란사다리 파견대학</h1>
+        {university}
       </section>
     </>
   );
