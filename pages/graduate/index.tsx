@@ -1,7 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
 import Layout from 'components/layout';
-import GraduateHeader from 'components/Graduate/GraduateHeader';
 import Tab from 'shared/components/Tab';
 import {
   Banner1,
