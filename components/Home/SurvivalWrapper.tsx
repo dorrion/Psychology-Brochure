@@ -12,9 +12,9 @@ export default function SurvivalWrapper({
 }: SurvivalProps) {
   return (
     <>
-      {/* 기본적으로 1/2 640px부터 1/4 768부터 1/8*/}
-      <div className="w-1/2 sm:w-1/4 md:w-1/8 p-2">
-        <div className="h-[300px] md:h-[350px] dark:bg-slate-700 bg-gray-50 overflow-hidden relative">
+      {/* 기본적으로 1/2 768px부터 1/3 1024부터 1/4*/}
+      <div className="w-1/2 md:w-1/3 lg:w-1/4 p-2">
+        <div className="h-[285px] dark:bg-slate-700 bg-gray-50 overflow-hidden relative">
           <Link href="/post/[id]" as={`/post/${tipId}`}>
             {homeImg === '/images/홈졸업.webp' ? (
               // The Largest Contentful Paint 해결
