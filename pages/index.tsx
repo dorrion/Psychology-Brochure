@@ -27,14 +27,14 @@ export default function Home({ data }: any) {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <section className="text-gray-600 body-font bg-slate-200 dark:bg-slate-800">
+        <section className="body-font bg-slate-200 dark:bg-slate-800">
           <div className="container px-5 py-24 mx-auto ">
             <div className="flex-col flex-wrap flexBox w-full mb-20">
               <div className="w-full lg:w-1/2 flexBox flex-col mb-6 lg:mb-0 text-center">
-                <h1 className="sm:text-4xl text-2xl font-bold title-font mb-1.5 text-gray-900 dark:text-gray-100">
+                <h1 className="text-6xl font-black mb-1.5 text-gray-900 dark:text-gray-100">
                   심리학과에서 살아남기
                 </h1>
-                <p className="w-full leading-relaxed font-light text-gray-500">
+                <p className="text-lg font-light w-full leading-relaxed">
                   아주대학교 심리학과 학생들에게 유용한 정보를 소개합니다.
                 </p>
               </div>
