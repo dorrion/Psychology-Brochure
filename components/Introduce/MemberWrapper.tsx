@@ -21,7 +21,7 @@ export default function MemberWrapper({
             />
           </div>
           <div className="w-full my-4">
-            <h2 className="mb-3 title-font font-medium text-xl text-gray-900 dark:text-slate-100">
+            <h2 className="mb-3 font-medium text-xl text-gray-900 dark:text-slate-100">
               {name}
             </h2>
 

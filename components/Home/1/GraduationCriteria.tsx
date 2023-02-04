@@ -72,8 +72,7 @@ export default function GraduationCriteria() {
               <div className="flex-col">
                 <div className="flex justify-center items-center">
                   <div className="w-2.5 h-2.5 rounded-full flex-shrink-0  bg-customBlue "></div>
-                  <h2 className="text-gray-900 ml-1 text-xl title-font font-bold">
-                    {' '}
+                  <h2 className="text-gray-900 ml-1 text-xl font-bold">
                     전공 42학점
                   </h2>
                 </div>
@@ -105,7 +104,7 @@ export default function GraduationCriteria() {
               <div className="flex-col">
                 <div className="flex justify-center items-center">
                   <div className="w-2.5 h-2.5 rounded-full flex-shrink-0  bg-customGreen  "></div>
-                  <h2 className="text-gray-900 ml-1 text-xl title-font font-bold">
+                  <h2 className="text-gray-900 ml-1 text-xl  font-bold">
                     {' '}
                     교양필수 32학점
                   </h2>
@@ -154,7 +153,7 @@ export default function GraduationCriteria() {
               <div className="flex-col">
                 <div className="flex justify-center items-center">
                   <div className="w-2.5 h-2.5 rounded-full flex-shrink-0  bg-[#FFCC00]   "></div>
-                  <h2 className="text-gray-900 ml-1 text-xl title-font font-bold">
+                  <h2 className="text-gray-900 ml-1 text-xl  font-bold">
                     {' '}
                     기타 46학점
                   </h2>

@@ -8,7 +8,7 @@ export default function MajorWrapper({ spring, fall }: SemesterType) {
         <div className="container px-5 py-4 mx-auto">
           <div className="flex flex-wrap -m-12">
             <div className="p-12 md:w-1/2 flex flex-col items-start">
-              <h2 className="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">
+              <h2 className="sm:text-3xl text-2xl font-medium text-gray-900 mt-4 mb-4">
                 1학기
               </h2>
               <div className="leading-relaxed mb-8">
@@ -21,7 +21,7 @@ export default function MajorWrapper({ spring, fall }: SemesterType) {
               </div>
             </div>
             <div className="p-12 md:w-1/2 flex flex-col items-start">
-              <h2 className="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">
+              <h2 className="sm:text-3xl text-2xl font-medium text-gray-900 mt-4 mb-4">
                 2학기
               </h2>
               <div className="leading-relaxed mb-8">
