@@ -5,15 +5,15 @@ const MultiPage = ({ Multi }: any) => {
   const feature = Multi.map((el: MultiProps, idx: number) => {
     return (
       <div key={idx} className="mb-5">
-        <h2 className="text-base font-medium">{el.head}</h2>
+        <h2 className="text-xl font-normal">{el.head}</h2>
         {el.desc.map((de, i) => {
           return (
-            <p key={i} className="text-sm font-light">
+            <p key={i} className="text-lg font-extralight">
               {de}
             </p>
           );
         })}
-        <p className="text-secondaryColor text-sm font-light">{el.and}</p>
+        <p className="text-secondaryColor text-lg font-extralight">{el.and}</p>
       </div>
     );
   });
@@ -22,11 +22,11 @@ const MultiPage = ({ Multi }: any) => {
     <>
       {/* 파란사다리 특징 */}
       <section className="mb-10">
-        <h1 className="text-xl font-medium mb-5">복수학위 특징</h1>
+        <h1 className="text-2xl font-medium mb-5">복수학위 특징</h1>
         {feature}
       </section>
       <section className="mb-24">
-        <h1 className="text-xl font-medium mb-5">미국 2개교 자매대 정보</h1>
+        <h1 className="text-2xl font-medium mb-5">미국 2개교 자매대 정보</h1>
         <div className="flexBox">
           <a href="https://oia.ajou.ac.kr/oia/outgoing/degree-info.do?mode=view&articleNo=112823&article.offset=0&articleLimit=10">
             <div className="w-96 h-28 flexBox hover:border border-secondaryColor rounded-lg">

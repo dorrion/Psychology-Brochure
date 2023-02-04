@@ -11,15 +11,15 @@ export default function Interview({ question, answer }: QnAProps) {
         <div className="w-14 h-14 circle bg-interview-500" />
         <div className="w-14 h-14 circle bg-interview-600" /> */}
         <div className={`w-14 h-14 circle bg-interview-${ans.color}`}>
-          <div className="text-slate-50 text-xs">{ans.name}</div>
+          <div className="text-slate-50 text-xl font-normal">{ans.name}</div>
         </div>
-        <div className="ml-6">{ans.content}</div>
+        <div className="text-lg font-extralight ml-6">{ans.content}</div>
       </div>
     );
   });
   return (
     <div className="text-left mb-40">
-      <h1 className="text-xl font-bold">{question}</h1>
+      <h1 className="text-2xl font-medium">{question}</h1>
       {AnswerList}
     </div>
   );

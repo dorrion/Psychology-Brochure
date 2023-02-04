@@ -19,7 +19,7 @@ export default function index({ data }: any) {
       <div className="text-gray-600 body-font">
         <section>
           <div className="container pt-40 sm:pt-28 pb-8 mx-auto flex-col flexBox ">
-            <h1 className="text-3xl font-bold font-sans text-gray-900 mb-4 text-left">
+            <h1 className="text-5xl font-bold font-sans text-gray-900 mb-4 text-left">
               Free Talk
             </h1>
           </div>

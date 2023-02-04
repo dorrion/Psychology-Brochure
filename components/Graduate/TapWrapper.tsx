@@ -12,15 +12,21 @@ export default function TapWrapper({
   return (
     <>
       <section className="text-gray-600 body-font overflow-hidden">
-        <h1 className="sm:text-3xl text-2xl title-font font-bold text-gray-900 mt-4 mb-4">
-          {major}
-        </h1>
+        <h1 className="text-4xl font-bold text-gray-900 mt-4 mb-4">{major}</h1>
         <Tab.Group defaultIndex={0}>
           <Tab.List className="dark:text-slate-400">
-            <Tab className="mr-14 text-sm ui-selected:selective">1학년</Tab>
-            <Tab className="mr-14 text-sm ui-selected:selective">2학년</Tab>
-            <Tab className="mr-14 text-sm ui-selected:selective">3학년</Tab>
-            <Tab className="mr-14 text-sm ui-selected:selective">4학년</Tab>
+            <Tab className="mr-4 md:mr-14 text-lg font-medium ui-selected:selective">
+              1학년
+            </Tab>
+            <Tab className="mr-4 md:mr-14 text-lg font-medium ui-selected:selective">
+              2학년
+            </Tab>
+            <Tab className="mr-4 md:mr-14 text-lg font-medium ui-selected:selective">
+              3학년
+            </Tab>
+            <Tab className="mr-4 md:mr-14 text-lg font-medium ui-selected:selective">
+              4학년
+            </Tab>
           </Tab.List>
           <Tab.Panels>
             <Tab.Panel>

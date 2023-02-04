@@ -21,7 +21,7 @@ export default function MoneyCard({
         {category}
       </div>
       <h2 className="text-base font-bold mt-5">{name}</h2>
-      <h3 className="text-xs mt-1.5">{description}</h3>
+      <h3 className="text-base mt-1.5">{description}</h3>
       <p className="w-40 h-px bg-shadowColor my-4" />
       <h3 className="text-md font-medium">{benefit}</h3>
     </div>

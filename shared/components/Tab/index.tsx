@@ -25,7 +25,7 @@ const Tab: FC<Props> = ({ tabs }) => {
           <li
             key={tab.id}
             // 선택된 탭이면 배경색 바뀌도록
-            className={`py-px px-4 flexBox flex-wrap text-base  ${
+            className={`py-px px-4 flexBox flex-wrap text-xl font-normal ${
               activeTab === tab.id ? 'text-secondaryColor' : ''
             } ${tab.id === '5' ? '' : 'border-r'}`}
             onClick={() => setActiveTab(tab.id)}

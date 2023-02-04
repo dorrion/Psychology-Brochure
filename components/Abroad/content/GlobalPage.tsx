@@ -5,10 +5,10 @@ const GlobalPage = ({ Global }: any) => {
   const program = Global.map((el: GlobalProps, idx: number) => {
     return (
       <div key={idx} className="mb-5">
-        <h2 className="text-base font-medium">{el.head}</h2>
+        <h2 className="text-xl font-medium">{el.head}</h2>
         {el.desc.map((de, i) => {
           return (
-            <p key={i} className="text-sm font-light">
+            <p key={i} className="text-lg font-extralight">
               {de}
             </p>
           );
@@ -16,7 +16,10 @@ const GlobalPage = ({ Global }: any) => {
         {el.and &&
           el.and.map((ae, i) => {
             return (
-              <p key={i} className="text-secondaryColor text-sm font-light">
+              <p
+                key={i}
+                className="text-secondaryColor text-lg font-extralight"
+              >
                 {ae}
               </p>
             );

@@ -5,30 +5,30 @@ const ShortPage = ({ Short }: any) => {
   const program = Short[0].map((el: MultiProps, idx: number) => {
     return (
       <div key={idx} className="mb-5">
-        <h2 className="text-base font-medium">{el.head}</h2>
+        <h2 className="text-xl font-medium">{el.head}</h2>
         {el.desc.map((de, i) => {
           return (
-            <p key={i} className="text-sm font-light">
+            <p key={i} className="text-lg font-extralight">
               {de}
             </p>
           );
         })}
-        <p className="text-secondaryColor text-sm font-light">{el.and}</p>
+        <p className="text-secondaryColor text-lg font-extralight">{el.and}</p>
       </div>
     );
   });
   const step = Short[1].map((el: MultiProps, idx: number) => {
     return (
       <div key={idx} className="mb-5">
-        <h2 className="text-sm font-medium">{el.head}</h2>
+        <h2 className="text-lg font-medium">{el.head}</h2>
         {el.desc.map((de, i) => {
           return (
-            <p key={i} className="text-sm font-light">
+            <p key={i} className="text-lg font-extralight">
               {de}
             </p>
           );
         })}
-        <p className="text-secondaryColor text-sm font-light">{el.and}</p>
+        <p className="text-secondaryColor text-lg font-extralight">{el.and}</p>
       </div>
     );
   });
@@ -36,15 +36,15 @@ const ShortPage = ({ Short }: any) => {
     <>
       {/* 단기해외연수 프로그램 소개 */}
       <section>
-        <h1 className="text-xl font-medium mb-5">단기해외연수 프로그램 소개</h1>
+        <h1 className="text-2xl font-medium mb-5">단기해외연수 프로그램 소개</h1>
         {program}
       </section>
       <section className="mb-20">
         {/* 단기해외연수 지원방법 및 절차 */}
-        <h1 className="text-xl font-medium mb-5">
+        <h1 className="text-2xl font-medium mb-5">
           단기해외연수 지원방법 및 절차
         </h1>
-        <h1 className="text-lg font-medium">지원 방법</h1>
+        <h1 className="text-xl font-medium">지원 방법</h1>
         {step}
       </section>
       <Footer

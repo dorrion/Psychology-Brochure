@@ -20,7 +20,7 @@ function PageNotFound() {
             <div className="w-[35rem] h-[35rem] inline-flex items-center justify-center rounded-full bg-slate-100 mb-5 flex-shrink-0">
               <Image src={Ing} alt="제작 중입니다" width={500} height={500} />
             </div>
-            <h1 className="sm:text-3xl text-2xl font-bold title-font mb-4 text-gray-900">
+            <h1 className="sm:text-5xl text-2xl font-bold  mb-4 text-gray-900">
               공사 중입니다! 돌아가주세요!
             </h1>
           </div>
