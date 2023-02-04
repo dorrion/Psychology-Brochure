@@ -47,6 +47,18 @@ module.exports = {
       rotate: {
         30: '30deg',
       },
+      // figma에서 쓰던 font size 추가
+      fontSize: {
+        '6xl': '36px',
+        '5xl': '30px',
+        '4xl': '24px',
+        '3xl': '20px',
+        '2xl': '18px',
+        xl: '15px',
+        lg: '13px',
+        base: '12px',
+        sm: '10px',
+      },
     },
   },
   plugins: [
