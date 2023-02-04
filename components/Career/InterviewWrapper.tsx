@@ -24,7 +24,7 @@ export default function InterviewWrapper({
 
             <div className="p-4 mb-4 md:mb-12">
               <h1 className="text-2xl font-normal text-gray-900">{title}</h1>
-              <p className="hidden sm:block whitespace-pre text-base font-extralight text-gray-600 leading-relaxed mb-3">
+              <p className="hidden sm:block whitespace-pre-wrap text-base font-extralight text-gray-600 leading-relaxed mb-3">
                 {subtitle}
               </p>
             </div>
