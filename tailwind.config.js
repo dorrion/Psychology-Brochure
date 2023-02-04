@@ -92,10 +92,16 @@ module.exports = {
         base: [
           '0.75rem',
           {
-            lineHeight: '17px',
+            lineHeight: '1.063rem',
           },
         ],
-        sm: '10px',
+        // 10px
+        sm: [
+          '0.625rem',
+          {
+            lineHeight: '0.875rem',
+          },
+        ],
       },
     },
   },
