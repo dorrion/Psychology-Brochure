@@ -8,11 +8,11 @@ export default function MemberWrapper({
   role,
 }: MemberProps) {
   return (
-    <div className=" h-full flex flex-col items-center text-center">
-      <div className="bg-soil w-48 h-48  rounded-full">
+    <div className=" h-full flex flex-row sm:flex-col items-center text-center">
+      <div className="bg-soil w-48 flexBox rounded-full">
         <Image
           src={profileImg!}
-          className="flex-shrink-0 rounded-lg w-full h-full object-cover object-center mb-4"
+          className="flex-shrink-0 rounded-lg w-full object-cover object-center"
           alt="team"
           width={200}
           height={200}
