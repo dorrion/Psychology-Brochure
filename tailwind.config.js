@@ -60,13 +60,18 @@ module.exports = {
         '5xl': [
           '1.875rem',
           {
-            lineHeight: '52px',
+            lineHeight: '2.688rem',
           },
         ],
         // 24px
         '4xl': '24px',
         // 20px
-        '3xl': '20px',
+        '3xl': [
+          '1.25rem',
+          {
+            lineHeight: '1.813rem',
+          },
+        ],
         // 18px
         '2xl': [
           '1.125rem',
