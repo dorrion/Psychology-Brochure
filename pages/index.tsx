@@ -30,8 +30,8 @@ export default function Home({ data }: any) {
         <section className="text-gray-600 body-font bg-slate-200 dark:bg-slate-800">
           <div className="container px-5 py-24 mx-auto ">
             <div className="flex-col flex-wrap flexBox w-full mb-20">
-              <div className="lg:w-1/2 w-full flexBox flex-col mb-6 lg:mb-0 text-center">
-                <h1 className="sm:text-4xl text-2xl font-bold title-font mb-2 text-gray-900 dark:text-gray-100">
+              <div className="w-full lg:w-1/2 flexBox flex-col mb-6 lg:mb-0 text-center">
+                <h1 className="sm:text-4xl text-2xl font-bold title-font mb-1.5 text-gray-900 dark:text-gray-100">
                   심리학과에서 살아남기
                 </h1>
                 <p className="w-full leading-relaxed font-light text-gray-500">
