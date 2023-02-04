@@ -12,7 +12,7 @@ export default function TapWrapper({
   return (
     <>
       <section className="text-gray-600 body-font overflow-hidden">
-        <h1 className="sm:text-3xl text-2xl font-bold text-gray-900 mt-4 mb-4">
+        <h1 className="sm:text-5xl text-2xl font-bold text-gray-900 mt-4 mb-4">
           {major}
         </h1>
         <Tab.Group defaultIndex={0}>

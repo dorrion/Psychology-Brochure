@@ -29,7 +29,7 @@ export default function Introduce({ MemberData }: any) {
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-12 mx-auto">
           <div className="flex-col flex-wrap w-full mb-20">
-            <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">
+            <h2 className="mt-6 text-center text-5xl font-bold tracking-tight text-gray-900">
               구르는 감자단 소개
             </h2>
             <p className="mt-2 text-center text-sm text-gray-600">
@@ -38,11 +38,11 @@ export default function Introduce({ MemberData }: any) {
           </div>
 
           <section>
-            <p className="text-3xl font-semibold text-left">
-              <span className="text-3xl font-semibold text-left text-neutral-800 dark:text-slate-100">
+            <p className="text-5xl font-semibold text-left">
+              <span className="text-5xl font-semibold text-left text-neutral-800 dark:text-slate-100">
                 About{' '}
               </span>
-              <span className="text-3xl font-semibold text-left text-[#8eb695]">
+              <span className="text-5xl font-semibold text-left text-[#8eb695]">
                 Us
               </span>
             </p>
@@ -81,8 +81,8 @@ export default function Introduce({ MemberData }: any) {
             </p>
           </section>
           <section className="mt-24">
-            <p className="text-3xl font-semibold text-left">
-              <span className="text-3xl font-semibold text-left text-neutral-800  dark:text-slate-100">
+            <p className="text-5xl font-semibold text-left">
+              <span className="text-5xl font-semibold text-left text-neutral-800  dark:text-slate-100">
                 License
               </span>
             </p>
@@ -108,8 +108,8 @@ export default function Introduce({ MemberData }: any) {
             <p>*이메일 : ajoupsybrochure@gmail.com</p>
           </section>
           <section className="mt-24">
-            <p className="text-3xl font-semibold text-left">
-              <span className="text-3xl font-semibold text-left text-neutral-800 dark:text-slate-100">
+            <p className="text-5xl font-semibold text-left">
+              <span className="text-5xl font-semibold text-left text-neutral-800 dark:text-slate-100">
                 Our Members
               </span>
             </p>

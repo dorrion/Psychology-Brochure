@@ -6,7 +6,7 @@ export default function Interview({ major, explain }: any) {
       return (
         <div key={idx} className="flex items-center mt-4">
           <div className={`w-14 h-14 circle bg-interview-${ans.color}`}>
-            <div className="text-slate-50 text-xs">{ans.name}</div>
+            <div className="text-slate-50 text-base">{ans.name}</div>
           </div>
           <div className="ml-6">{ans.content}</div>
         </div>

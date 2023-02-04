@@ -13,13 +13,13 @@ export default function GraduationCriteria() {
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="text-center mb-20">
-            <h1 className="text-6xl sm:text-3xl font-bold font-sans text-gray-900 mb-4">
+            <h1 className="text-6xl sm:text-5xl font-bold font-sans text-gray-900 mb-4">
               심리학과 졸업하기
             </h1>
-            <p className="text-lg font-bold leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
+            <p className="text-2xl font-bold leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
               Summary
             </p>
-            <p className="text-lg leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
+            <p className="text-2xl leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
               심리학과 졸업요건
             </p>
           </div>
@@ -30,7 +30,7 @@ export default function GraduationCriteria() {
               </div>
               <div>
                 <p>최소 이수 학점</p>
-                <p className="text-lg font-bold">120학점</p>
+                <p className="text-2xl font-bold">120학점</p>
               </div>
             </div>
             <div className="p-4 md:w-1/4  flex-col text-center justify-center items-center">
@@ -39,7 +39,7 @@ export default function GraduationCriteria() {
               </div>
               <div>
                 <p>최소 평점</p>
-                <p className="text-lg font-bold">평점 2.0</p>
+                <p className="text-2xl font-bold">평점 2.0</p>
               </div>
             </div>
             <div className="p-4 md:w-1/4  flex-col text-center justify-center items-center">
@@ -48,7 +48,7 @@ export default function GraduationCriteria() {
               </div>
               <div>
                 <p>공인어학점수</p>
-                <p className="text-lg font-bold">730 Toeic</p>
+                <p className="text-2xl font-bold">730 Toeic</p>
               </div>
             </div>
             <div className="p-4 md:w-1/4  flex-col text-center justify-center items-center">
@@ -57,7 +57,7 @@ export default function GraduationCriteria() {
               </div>
               <div>
                 <p>최소 이수 학기</p>
-                <p className="text-lg font-bold">6학기</p>
+                <p className="text-2xl font-bold">6학기</p>
               </div>
             </div>
           </div>
@@ -143,7 +143,7 @@ export default function GraduationCriteria() {
                   <p className="leading-relaxed text-sm mb-1.5">
                     자기주도진로탐색 - 0학점
                   </p>
-                  <p className="leading-relaxed text-xs mb-1.5">
+                  <p className="leading-relaxed text-base mb-1.5">
                     *복수전공 및 부전공은 자신의 제 1전공 기준으로 이수
                   </p>
                 </div>

@@ -44,7 +44,7 @@ const ShortPage = ({ Short }: any) => {
         <h1 className="text-xl font-medium mb-5">
           단기해외연수 지원방법 및 절차
         </h1>
-        <h1 className="text-lg font-medium">지원 방법</h1>
+        <h1 className="text-2xl font-medium">지원 방법</h1>
         {step}
       </section>
       <Footer

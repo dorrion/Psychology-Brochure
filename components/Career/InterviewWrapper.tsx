@@ -23,7 +23,7 @@ export default function InterviewWrapper({
             />
 
             <div className="p-4 mb-4 md:mb-12">
-              <h1 className="text-lg font-medium text-gray-900 mb-3">
+              <h1 className="text-2xl font-medium text-gray-900 mb-3">
                 {title}
               </h1>
               <p className="whitespace-pre text-gray-600 leading-relaxed mb-3">

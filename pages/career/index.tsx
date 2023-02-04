@@ -66,7 +66,7 @@ export default function Home({ data }: any) {
                       className="w-40 h-9 border border-slate-100  flexBox
                    hover:bg-slate-800 hover:scale-110 transition-transform ease-in-out duration-100"
                     >
-                      <h2 className="px-5 text-xs text-slate-100">
+                      <h2 className="px-5 text-base text-slate-100">
                         취업 정보 바로가기
                       </h2>
                     </button>

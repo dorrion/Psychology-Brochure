@@ -22,7 +22,7 @@ export default function career() {
         <div className="list">
           <h1 className="text-2xl font-bold">전공 선택</h1>
           {checkedList.length * 3 === 15 ? (
-            <h2 className="text-lg my-2">
+            <h2 className="text-2xl my-2">
               👏전공 선택 과목을 모두 들으셨습니다!
             </h2>
           ) : (

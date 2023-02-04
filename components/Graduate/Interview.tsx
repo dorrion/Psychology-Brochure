@@ -11,7 +11,7 @@ export default function Interview({ question, answer }: QnAProps) {
         <div className="w-14 h-14 circle bg-interview-500" />
         <div className="w-14 h-14 circle bg-interview-600" /> */}
         <div className={`w-14 h-14 circle bg-interview-${ans.color}`}>
-          <div className="text-slate-50 text-xs">{ans.name}</div>
+          <div className="text-slate-50 text-base">{ans.name}</div>
         </div>
         <div className="ml-6">{ans.content}</div>
       </div>

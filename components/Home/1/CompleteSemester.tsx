@@ -10,7 +10,7 @@ export default function CompleteSemester() {
             <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
               <div className="w-52 h-52 circle  bg-customYellow">
                 <h1 className="text-8xl text-white font-bold text-center">6</h1>
-                <h1 className="text-3xl text-white font-bold text-center">
+                <h1 className="text-5xl text-white font-bold text-center">
                   학기
                 </h1>
               </div>

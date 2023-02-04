@@ -33,7 +33,7 @@ export default function ProgramCard({
         {category}
       </div>
       <h2 className="text-base font-bold mt-5">{name}</h2>
-      <h3 className="text-xs mt-1.5 whitespace-pre-wrap">{description}</h3>
+      <h3 className="text-base mt-1.5 whitespace-pre-wrap">{description}</h3>
 
       {/* 영역, 모집시기는 왼쪽 정렬 */}
       <div className="absolute bottom-4 left-4">
