@@ -30,11 +30,11 @@ export default function Home({ data }: any) {
         <section className="text-gray-600 body-font bg-slate-200 dark:bg-slate-800">
           <div className="container px-5 py-24 mx-auto ">
             <div className="flex-col flex-wrap flexBox w-full mb-20">
-              <div className="lg:w-1/2 w-full flexBox flex-col mb-6 lg:mb-0 ">
-                <h1 className="text-center sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900 dark:text-gray-100">
+              <div className="lg:w-1/2 w-full flexBox flex-col mb-6 lg:mb-0 text-center">
+                <h1 className="sm:text-4xl text-2xl font-bold title-font mb-2 text-gray-900 dark:text-gray-100">
                   심리학과에서 살아남기
                 </h1>
-                <p className="text-center w-full leading-relaxed text-gray-500">
+                <p className="w-full leading-relaxed font-light text-gray-500">
                   아주대학교 심리학과 학생들에게 유용한 정보를 소개합니다.
                 </p>
               </div>
