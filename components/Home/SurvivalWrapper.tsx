@@ -42,8 +42,10 @@ export default function SurvivalWrapper({
                   {category}
                 </h2>
               )}
-              <h1 className="text-2xl font-normal text-gray-900">{title}</h1>
-              <p className="text-base font-light text-gray-600 leading-relaxed mb-3">
+              <h1 className="text-2xl font-normal text-gray-900">
+                {title}
+              </h1>
+              <p className="hidden sm:block text-base font-light text-gray-600 leading-relaxed mb-3">
                 {subtitle}
               </p>
             </div>
