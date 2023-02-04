@@ -49,40 +49,48 @@ module.exports = {
       },
       // figma에서 쓰던 font size 추가
       fontSize: {
+        // 36px
         '6xl': [
-          '36px',
+          '2.25rem',
           {
-            lineHeight: '52px',
+            lineHeight: '3.25rem',
           },
         ],
+        // 30px
         '5xl': [
-          '30px',
+          '1.875rem',
           {
             lineHeight: '52px',
           },
         ],
+        // 24px
         '4xl': '24px',
+        // 20px
         '3xl': '20px',
+        // 18px
         '2xl': [
-          '18px',
+          '1.125rem',
           {
-            lineHeight: '26px',
+            lineHeight: '1.625rem',
           },
         ],
+        // 15px
         xl: [
-          '15px',
+          '0.938rem',
           {
-            lineHeight: '22px',
+            lineHeight: '1.375rem',
           },
         ],
+        // 13px
         lg: [
-          '13px',
+          '0.813rem',
           {
-            lineHeight: '19px',
+            lineHeight: '1.188rem',
           },
         ],
+        // 12px
         base: [
-          '12px',
+          '0.75rem',
           {
             lineHeight: '17px',
           },
