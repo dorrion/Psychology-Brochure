@@ -64,7 +64,12 @@ module.exports = {
           },
         ],
         // 24px
-        '4xl': '24px',
+        '4xl': [
+          '1.5rem',
+          {
+            lineHeight: '2.188rem',
+          },
+        ],
         // 20px
         '3xl': [
           '1.25rem',
