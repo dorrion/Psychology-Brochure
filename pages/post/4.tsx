@@ -184,7 +184,7 @@ export default function index({ data }: any) {
                         <h1 className="text-xl font-semibold mb-8">
                           대외활동 꿀팁!🍯
                         </h1>
-                        <div className="w-full h-72 flex flex-col flex-wrap items-center p-4 bg-fixed">
+                        <div className="overflow-y-auto w-full h-72 flex flex-col flex-wrap items-center p-4 bg-fixed">
                           {Outside}
                         </div>
                       </div>
@@ -195,7 +195,7 @@ export default function index({ data }: any) {
                         <h1 className="dark:text-slate-700 text-xl font-semibold mb-8">
                           토익사관학교 관련 꿀팁!🍯
                         </h1>
-                        <div className="w-full h-[700px] flex flex-col flex-wrap items-center p-4">
+                        <div className="overflow-y-auto w-full h-[700px] flex flex-col flex-wrap items-center p-4">
                           {Toeic}
                         </div>
                       </div>

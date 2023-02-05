@@ -38,7 +38,7 @@ export default function index({ data }: any) {
             <h1 className="text-xl font-semibold mb-8">
               자고로 연애란 말이다🍯
             </h1>
-            <div className="w-full h-72 flex flex-col flex-wrap items-center p-4">
+            <div className="overflow-y-auto w-full h-72 flex flex-col flex-wrap items-center p-4">
               {Love}
             </div>
           </div>
@@ -48,7 +48,7 @@ export default function index({ data }: any) {
             <h1 className="text-xl font-semibold mb-8">
               어떻게 인싸가 될 수 있냐면~ 🍯
             </h1>
-            <div className="w-full  h-72  flex flex-col flex-wrap items-center p-4 bg-fixed">
+            <div className="overflow-y-auto w-full  h-72  flex flex-col flex-wrap items-center p-4 bg-fixed">
               {Friend}
             </div>
           </div>
@@ -59,7 +59,7 @@ export default function index({ data }: any) {
             <h1 className="dark:text-slate-700 text-xl font-semibold mb-8">
               아직 가보지않은 친구들을 위한 MT 즐기기 꿀팁!🍯
             </h1>
-            <div className="w-full  h-72  flex flex-col flex-wrap items-center p-4">
+            <div className="overflow-y-auto w-full h-72 flex flex-col flex-wrap items-center p-4">
               {MT}
             </div>
           </div>
