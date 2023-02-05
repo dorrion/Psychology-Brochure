@@ -26,7 +26,7 @@ const Tabs = ({ Bridge, Multi, Short, Global }: any) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <section className="text-gray-600 body-font">
-        <div className="container px-5 py-12 mx-auto">
+        <div className="container px-5 mx-auto">
           <Tab
             tabs={[
               {
