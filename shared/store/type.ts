@@ -123,3 +123,12 @@ export interface GlobalProps {
   desc: string[];
   and: string[];
 }
+
+export interface JobQnAProps {
+  id: number;
+  name: string;
+  question: string;
+  answer: string;
+  color: number;
+  interview: string[];
+}
