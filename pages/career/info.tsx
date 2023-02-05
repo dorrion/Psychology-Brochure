@@ -3,6 +3,7 @@ import Layout from 'components/layout';
 import React from 'react';
 
 import StatusChart from 'components/Career/StatusChart';
+import FirstJobChart from 'components/Career/FirstJobChart';
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <section className="text-gray-600 body-font ">
           <div className="container px-5 py-24 mx-auto flexBox flex-col">
             <StatusChart />
+            <FirstJobChart />
           </div>
         </section>
       </Layout>
