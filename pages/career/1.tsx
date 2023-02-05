@@ -41,8 +41,8 @@ export default function Home({ AirForce }: any) {
 
         <section className="text-gray-600 body-font">
           {/* 프로필 */}
-          <div className="container py-12 mx-auto flex flex-col">
-            <section className="flexBox">
+          <div className="container px-5 py-12 mx-auto flex flex-col">
+            <section className="flexBox flex-col sm:flex-row">
               <Image
                 className="w-60 h-60 circle"
                 src="/images/취업공군프로필.webp"
@@ -52,7 +52,7 @@ export default function Home({ AirForce }: any) {
                 priority={true}
               />
               {/* 소개란 */}
-              <div className="ml-12">
+              <div className="ml-12 mt-5 sm:mt-0">
                 <h2 className="text-2xl font-light">
                   "대한민국 영공을 수호하는 강력한 힘"
                 </h2>
