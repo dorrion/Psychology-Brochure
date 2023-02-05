@@ -1,11 +1,17 @@
 import Head from 'next/head';
+import dynamic from 'next/dynamic';
 import Layout from 'components/layout';
-import React from 'react';
-
-import StatusChart from 'components/Career/StatusChart';
-import FirstJobChart from 'components/Career/FirstJobChart';
-
-export default function Home() {
+import React, { Suspense } from 'react';
+export default function Info() {
+  const StatusChart = dynamic(() => import('components/Career/StatusChart'), {
+    ssr: false,
+  });
+  const FirstJobChart = dynamic(
+    () => import('components/Career/FirstJobChart'),
+    {
+      ssr: false,
+    },
+  );
   return (
     <>
       <Layout>
@@ -19,8 +25,11 @@ export default function Home() {
 
         <section className="text-gray-600 body-font ">
           <div className="container px-5 py-24 mx-auto flexBox flex-col">
-            <StatusChart />
-            <FirstJobChart />
+            <Suspense fallback={<div>Loading...</div>}>
+              <StatusChart />
+              <FirstJobChart />
+              
+            </Suspense>
           </div>
         </section>
       </Layout>
