@@ -22,7 +22,7 @@ const StatusChart: React.FC = () => {
           data={data} // 데이터
           cx="50%" // 중심 x
           cy="50%" // 중심 y
-          innerRadius={80} // 속 크기
+          innerRadius={70} // 속 크기
           outerRadius={100} // 겉 크기
           paddingAngle={0} // 영역 사이의 공간
           dataKey="value" // 각 영역에 대한 데이터 필드
