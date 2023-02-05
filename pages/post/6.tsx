@@ -37,7 +37,7 @@ export default function index({ data }: any) {
           <h1 className="text-xl font-semibold mb-8">
             수강신청 성공하는 꿀팁!🍯
           </h1>
-          <div className="w-full h-96 flex flex-col flex-wrap items-center p-4 bg-fixed">
+          <div className="overflow-y-auto w-full h-96 flex flex-col flex-wrap items-center p-4 bg-fixed">
             {Enrole}
           </div>
         </div>
@@ -45,7 +45,7 @@ export default function index({ data }: any) {
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-12 mx-auto flex-col flexBox ">
           <h1 className="text-xl font-semibold mb-8">학과 공부 꿀팁!🍯</h1>
-          <div className="w-full h-96 flex flex-col flex-wrap items-center p-4 bg-fixed">
+          <div className="overflow-y-auto w-full h-96 flex flex-col flex-wrap items-center p-4 bg-fixed">
             {StudyTip}
           </div>
         </div>
@@ -55,7 +55,7 @@ export default function index({ data }: any) {
           <h1 className="dark:text-slate-700 text-xl font-semibold mb-8">
             논문 검색 꿀팁!🍯
           </h1>
-          <div className="w-full h-96 flex flex-col flex-wrap items-center p-4 bg-fixed">
+          <div className="overflow-y-auto w-full h-96 flex flex-col flex-wrap items-center p-4 bg-fixed">
             {SearchTip}
           </div>
         </div>

@@ -27,7 +27,7 @@ export default function index({ data }: any) {
         {/* section별로 overflow-y-scroll 추가해서 세로 넘칠 때 넣기 */}
         <section className="bg-secondaryColor">
           <div className="container px-5 py-16 mx-auto flex-col flexBox ">
-            <div className="w-full h-72 flex flex-col flex-wrap items-center p-4">
+            <div className="overflow-y-auto w-full h-96 flex flex-col flex-wrap items-center p-4">
               {FreeTalk}
             </div>
           </div>

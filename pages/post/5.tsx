@@ -38,7 +38,7 @@ export default function index({ data }: any) {
             <h1 className="text-xl font-semibold mb-8">
               학교 근로 관련 꿀팁!🍯
             </h1>
-            <div className="w-full h-40 flex flex-col flex-wrap items-center p-4">
+            <div className="overflow-y-auto w-full h-48 flex flex-col flex-wrap items-center p-4">
               {Work}
             </div>
           </div>
@@ -48,7 +48,7 @@ export default function index({ data }: any) {
             <h1 className="text-xl font-semibold mb-8">
               기숙사/자취/통학 꿀팁!🍯
             </h1>
-            <div className="w-full h-[1000px] flex flex-col flex-wrap items-center p-4 bg-fixed">
+            <div className="overflow-y-auto  w-full h-[1000px] flex flex-col flex-wrap items-center p-4 bg-fixed">
               {House}
             </div>
           </div>
@@ -59,7 +59,7 @@ export default function index({ data }: any) {
             <h1 className="dark:text-slate-700 text-xl font-semibold mb-8">
               나만의 맛집리스트!🍯
             </h1>
-            <div className="w-full h-[800px] flex flex-col flex-wrap items-center p-4">
+            <div className="overflow-y-auto w-full h-[800px] flex flex-col flex-wrap items-center p-4">
               {Rice}
             </div>
           </div>
