@@ -1,13 +1,16 @@
+import dynamic from 'next/dynamic';
 import Summary from './Summary';
-import Donut from 'shared/components/chart/donut';
 
 export default function GraduationCriteria() {
+  const CreditChart = dynamic(() => import('./CreditChart'), {
+    ssr: false,
+  });
   return (
     <>
       {' '}
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
-          <div className="text-center mb-20">
+          <div className="text-center mb-14">
             <h1 className="text-6xl sm:text-5xl font-bold font-sans text-gray-900 mb-4">
               심리학과 졸업하기
             </h1>
@@ -19,13 +22,11 @@ export default function GraduationCriteria() {
             </p>
           </div>
           <Summary />
-          <article className="flex-col flexBox text-center mt-32">
-            <div className="w-1/2">
-              <h1 className="my-8 text-2xl font-black">Detail</h1>
-              <Donut />
-            </div>
+          <article className="flex-col flexBox text-center mt-24">
+            <h1 className="my-8 text-2xl font-black">Detail</h1>
+            <CreditChart />
           </article>
-          <article className="flex flex-grow flex-wrap sm:-m-4 -mx-4 -mb-10 py-32 md:space-y-0 space-y-6">
+          <article className="flex flex-grow flex-wrap sm:-m-4 -mx-4 -mb-10 py-16 md:space-y-0 space-y-6">
             <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
               <div className="flex-col">
                 <div className="flex justify-center items-center">
