@@ -33,6 +33,47 @@ const ExchangePage = ({ Exchange }: any) => {
     );
   });
 
+  const ExProgram = Exchange[2].map((el: GlobalProps, idx: number) => {
+    return (
+      <div key={idx} className="mb-5">
+        <h2 className="text-xl font-normal">{el.head}</h2>
+        {el.desc.map((de, i) => {
+          return (
+            <p key={i} className="text-lg font-extralight">
+              {de}
+            </p>
+          );
+        })}
+        {el.and &&
+          el.and.map((ae, i) => {
+            return (
+              <p
+                key={i}
+                className="text-secondaryColor text-lg font-extralight"
+              >
+                {ae}
+              </p>
+            );
+          })}
+      </div>
+    );
+  });
+  const ISFPProgram = Exchange[3].map((el: GlobalProps, idx: number) => {
+    return (
+      <div key={idx} className="mb-5">
+        <h2 className="text-xl font-normal">{el.head}</h2>
+        {el.desc.map((de, i) => {
+          return (
+            <p key={i} className="text-lg font-extralight">
+              {de}
+            </p>
+          );
+        })}
+        <p className="text-secondaryColor text-lg font-extralight">{el.and}</p>
+      </div>
+    );
+  });
+
   return (
     <>
       <section className="mb-10">
@@ -50,7 +91,13 @@ const ExchangePage = ({ Exchange }: any) => {
             label: '자매대 교환학생 프로그램',
             content: (
               <>
-                {' '}
+                {ExProgram}
+                <h2 className="text-xl font-normal">선발방법 및 시기</h2>
+                <h3 className="text-lg font-normal mt-5">선발방법</h3>
+                <p className="text-lg font-extralight">
+                  1차 서류전형 - 2차 면접전형
+                </p>
+                <h3 className="text-lg font-normal mt-5">선발시기</h3>
                 <ExTable />
               </>
             ),
@@ -58,7 +105,7 @@ const ExchangePage = ({ Exchange }: any) => {
           {
             id: '1',
             label: 'ISFP 교환학생 프로그램',
-            content: <></>,
+            content: <>{ISFPProgram}</>,
           },
         ]}
       />
