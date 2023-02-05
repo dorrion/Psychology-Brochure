@@ -16,7 +16,7 @@ export default function index() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <section className="text-gray-600 body-font">
-        <div className="container px-5 py-24 mx-auto">
+        <div className="container px-5 py-12 mx-auto">
           <GraduationCriteria />
           <div className="bg-gray-200 dark:bg-slate-700">
             <GPA />

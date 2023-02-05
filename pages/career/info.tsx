@@ -24,7 +24,7 @@ export default function Info() {
         </Head>
 
         <section className="text-gray-600 body-font ">
-          <div className="container px-5 py-24 mx-auto flexBox flex-col">
+          <div className="container px-5 py-12 mx-auto flexBox flex-col">
             <StatusChart />
             <FirstJobChart />
           </div>

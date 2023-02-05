@@ -2,7 +2,7 @@ export default function CompleteSemester() {
   return (
     <>
       <section className="text-gray-600 body-font">
-        <div className="container px-5 py-24 mx-auto flexBox flex-col">
+        <div className="container px-5 py-12 mx-auto flexBox flex-col">
           <h1 className="text-4xl font-bold  text-center">이수학기</h1>
           <h2 className="text-xl font-medium">:조기 졸업</h2>
           {/* 원 3개 */}

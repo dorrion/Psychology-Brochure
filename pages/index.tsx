@@ -28,7 +28,7 @@ export default function Home({ data }: any) {
         </Head>
 
         <section className="body-font bg-slate-200 dark:bg-slate-800">
-          <div className="container px-5 py-24 mx-auto ">
+          <div className="container px-5 py-12 mx-auto ">
             <div className="flex-col flex-wrap flexBox w-full mb-20">
               <div className="w-full lg:w-1/2 flexBox flex-col mb-6 lg:mb-0 text-center">
                 <h1 className="text-6xl font-black mb-1.5 text-gray-900 dark:text-gray-100">
