@@ -38,7 +38,7 @@ export default function index({ data }: any) {
             <h1 className="text-xl font-semibold mb-8">
               학교 근로 관련 꿀팁!🍯
             </h1>
-            <div className="overflow-y-auto w-full h-40 flex flex-col flex-wrap items-center p-4">
+            <div className="overflow-y-auto w-full h-48 flex flex-col flex-wrap items-center p-4">
               {Work}
             </div>
           </div>
