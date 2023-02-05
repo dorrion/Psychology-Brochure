@@ -2,7 +2,20 @@ import Head from 'next/head';
 import Layout from 'components/layout';
 import Image from 'next/image';
 
-export default function Home({ data }: any) {
+export default function Home({ AirForce }: any) {
+  console.log(AirForce);
+  const AirForceCurri = AirForce[0].map((el: CurriProps) => {
+    return (
+      <TapWrapper
+        key={el.id}
+        major={el.major}
+        freshmen={el.freshmen}
+        junior={el.junior}
+        sophomore={el.sophomore}
+        senior={el.senior}
+      />
+    );
+  });
   return (
     <>
       <Layout>
@@ -16,32 +29,42 @@ export default function Home({ data }: any) {
 
         <section className="text-gray-600 body-font">
           {/* 프로필 */}
-          <div className="container py-12 mx-auto flex flexBox">
-            <Image
-              className="w-60 h-60 circle"
-              src="/images/취업공군프로필.webp"
-              width={250}
-              height={250}
-              alt="대학원 커리큘럼 이미지"
-            />
-            {/* 소개란 */}
-            <div className="ml-12">
-              <h2 className="text-2xl font-light">
-                "대한민국 영공을 수호하는 강력한 힘"
-              </h2>
+          <div className="container py-12 mx-auto flex flex-col flexBox">
+            <section className="flex">
+              <Image
+                className="w-60 h-60 circle"
+                src="/images/취업공군프로필.webp"
+                width={250}
+                height={250}
+                alt="대학원 커리큘럼 이미지"
+              />
+              {/* 소개란 */}
+              <div className="ml-12">
+                <h2 className="text-2xl font-light">
+                  "대한민국 영공을 수호하는 강력한 힘"
+                </h2>
 
-              <h1 className="text-5xl font-black mb-5">참새</h1>
-              <div className="flex">
-                <p className="text-base font-extrabold">직업군</p>
-                <p className="text-base font-extralight ml-3.5">
-                  교육/법률/사회복지/경찰/소방직 및 군인
-                </p>
+                <h1 className="text-5xl font-black mb-5">참새</h1>
+                <div className="flex">
+                  <p className="text-base font-extrabold">직업군</p>
+                  <p className="text-base font-extralight ml-3.5">
+                    교육/법률/사회복지/경찰/소방직 및 군인
+                  </p>
+                </div>
+                <div className="flex">
+                  <p className="text-base font-extrabold">직업명</p>
+                  <p className="text-base font-extralight ml-3.5">공군 장교</p>
+                </div>
               </div>
-              <div className="flex">
-                <p className="text-base font-extrabold">직업명</p>
-                <p className="text-base font-extralight ml-3.5">공군 장교</p>
-              </div>
-            </div>
+            </section>
+            <section className="mt-40">
+              <h1 className="text-5xl font-black">공군 장교 추천 커리큘럼</h1>
+              {AirForceCurri}
+            </section>
+            <section className="mt-40">
+              <h1 className="text-5xl font-black">공군 장교 취업 이야기</h1>
+              {AirForceCurri}
+            </section>
           </div>
         </section>
       </Layout>
@@ -50,13 +73,18 @@ export default function Home({ data }: any) {
 }
 
 import loadData from 'shared/utils/loadData';
+import TapWrapper from 'components/Graduate/TapWrapper';
+import { CurriProps } from 'shared/store/type';
 
 export async function getStaticProps() {
-  const data = await loadData({ subfolder: 'Career', file: 'Interview' });
+  const AirForce = await loadData({
+    subfolder: 'Career',
+    file: 'AirForce',
+  });
 
   return {
     props: {
-      data,
+      AirForce,
     },
   };
 }
