@@ -49,27 +49,6 @@ const FirstJobChart: React.FC = () => {
           fontWeight="bold"
         />
       </Pie>
-      {/* 범례 */}
-      {/* 아이콘 동그라미로 */}
-      {/* height 위치 때문에 영역 벗어난 것. Chart Height 증가하고, Legend 위치 시킴 */}
-      <Legend
-        iconType="circle"
-        iconSize={11}
-        height={200}
-        layout="vertical"
-        formatter={(value, entry) => {
-          const { payload } = entry;
-          return (
-            <>
-              <span className="font-black">{payload?.value!}</span>
-              <div className="flex-col flex">
-                {/* 숫자 표시 */}
-                <p className="text-lg font-medium">{value}</p>
-              </div>
-            </>
-          );
-        }}
-      />
       {/* hover시 data 나옴 */}
       <Tooltip />
     </PieChart>
