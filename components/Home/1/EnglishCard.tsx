@@ -4,9 +4,18 @@ export default function EnglishCard({ english, score }: EnglishProps) {
   const Toefl = () => {
     return (
       <>
-        <p className="-my-0.5 text-base font-black text-center">PBT 534</p>
-        <p className="-my-0.5 text-base font-black text-center">CBT 200</p>
-        <p className="-my-0.5 text-base font-black text-center">IBT 72</p>
+        <p className="text-lg text-center -my-1.5">
+          <span className="font-normal">PBT</span>
+          <span className="font-black"> 534</span>
+        </p>
+        <p className="text-lg text-center -my-1.5">
+          <span className="font-normal">CBT</span>
+          <span className="font-black"> 200</span>
+        </p>
+        <p className="text-lg text-center -my-1.5">
+          <span className="font-normal">IBT</span>
+          <span className="font-black"> 72</span>
+        </p>
       </>
     );
   };
@@ -14,25 +23,38 @@ export default function EnglishCard({ english, score }: EnglishProps) {
   const Gtelp = () => {
     return (
       <>
-        <p className="-my-0.5 text-base font-black text-center">Level 2 67</p>
-        <p className="-my-0.5 text-base font-black text-center">Level 3 89</p>
+        <p className="text-lg text-center">
+          <span className="font-normal">Level 2</span>
+          <span className="font-black"> 67</span>
+        </p>
+        <p className="text-lg text-center">
+          <span className="font-normal">Level 3</span>
+          <span className="font-black"> 89</span>
+        </p>
       </>
     );
   };
 
   return (
-    <div className="w-20 h-32 rounded flex-col flexBox bg-slate-200 mr-4">
-      <div className="h-10 flexBox">
-        <p className="-my-1 text-base font-medium text-center">{english}</p>
+    <div className="w-20 h-32 rounded flex-col flex flexBox bg-slate-200 m-2 relative">
+      <div
+        className={`absolute text-xl font-medium text-center ${
+          english === 'TOEIC Speaking' ? 'top-3' : 'top-7'
+        }`}
+      >
+        {english}
       </div>
-      <div className="h-0.5 w-10 my-2 bg-slate-300 rounded" />
-      {english === 'TOEFL' ? (
-        <Toefl />
-      ) : english === 'G-TELP' ? (
-        <Gtelp />
-      ) : (
-        <p className="text-2xl font-black text-center">{score}</p>
-      )}
+      {/* 선 중앙에 고정 */}
+      <div className="absolute h-0.5 w-10 left-5 top-16 bg-slate-300 rounded " />
+      <div className="absolute bottom-4">
+        {english === 'TOEFL' ? (
+          <Toefl />
+        ) : english === 'G-TELP' ? (
+          <Gtelp />
+        ) : (
+          <p className="text-3xl font-black text-center">{score}</p>
+        )}
+      </div>
     </div>
   );
 }

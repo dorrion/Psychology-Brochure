@@ -15,14 +15,16 @@ export default function index() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <GraduationCriteria />
-      <div className="bg-gray-200 dark:bg-slate-700">
-        <GPA />
-      </div>
-      <div className="bg-slate-100 dark:bg-slate-700">
-        <English />
-        <CompleteSemester />
-      </div>
+      <section className="text-gray-600 body-font">
+        <div className="container px-5 py-24 mx-auto">
+          <GraduationCriteria />
+          <div className="bg-gray-200 dark:bg-slate-700">
+            <GPA />
+          </div>
+          <English />
+          <CompleteSemester />
+        </div>
+      </section>
     </Layout>
   );
 }
