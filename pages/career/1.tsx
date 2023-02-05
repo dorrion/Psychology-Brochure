@@ -1,9 +1,11 @@
 import Head from 'next/head';
-import Layout from 'components/layout';
 import Image from 'next/image';
+import Layout from 'components/layout';
+import TapWrapper from 'components/Graduate/TapWrapper';
+import { CurriProps, JobQnAProps } from 'shared/store/type';
+import JobInterview from 'components/Career/JobInterview';
 
 export default function Home({ AirForce }: any) {
-  console.log(AirForce);
   const AirForceCurri = AirForce[0].map((el: CurriProps) => {
     return (
       <TapWrapper
@@ -16,6 +18,16 @@ export default function Home({ AirForce }: any) {
       />
     );
   });
+
+  const AirForceInterview = AirForce[1].map((el: JobQnAProps) => (
+    <JobInterview
+      key={el.id}
+      name={el.name}
+      color={el.color}
+      interview={el.interview}
+    />
+  ));
+
   return (
     <>
       <Layout>
@@ -37,6 +49,7 @@ export default function Home({ AirForce }: any) {
                 width={250}
                 height={250}
                 alt="대학원 커리큘럼 이미지"
+                priority={true}
               />
               {/* 소개란 */}
               <div className="ml-12">
@@ -63,7 +76,7 @@ export default function Home({ AirForce }: any) {
             </section>
             <section className="mt-40">
               <h1 className="text-5xl font-black">공군 장교 취업 이야기</h1>
-              {AirForceCurri}
+              {AirForceInterview}
             </section>
           </div>
         </section>
@@ -73,8 +86,6 @@ export default function Home({ AirForce }: any) {
 }
 
 import loadData from 'shared/utils/loadData';
-import TapWrapper from 'components/Graduate/TapWrapper';
-import { CurriProps } from 'shared/store/type';
 
 export async function getStaticProps() {
   const AirForce = await loadData({
