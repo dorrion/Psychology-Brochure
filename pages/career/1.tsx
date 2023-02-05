@@ -42,7 +42,7 @@ export default function Home({ AirForce }: any) {
         <section className="text-gray-600 body-font">
           {/* 프로필 */}
           <div className="container py-12 mx-auto flex flex-col">
-            <section className="flex">
+            <section className="flexBox">
               <Image
                 className="w-60 h-60 circle"
                 src="/images/취업공군프로필.webp"

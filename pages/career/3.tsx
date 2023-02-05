@@ -42,7 +42,7 @@ export default function Home({ WebProgrammer }: any) {
         <section className="text-gray-600 body-font">
           {/* 프로필 */}
           <div className="container py-12 mx-auto flex flex-col">
-            <section className="flex">
+            <section className="flexBox">
               <Image
                 className="w-60 h-60 circle"
                 src="/images/취업그래픽디자인프로필.webp"
@@ -57,7 +57,7 @@ export default function Home({ WebProgrammer }: any) {
                   "그동안 해왔던 것들은 배신하지 않는다"
                 </h2>
 
-                <h1 className="text-5xl font-black mb-5">김별명</h1>
+                <h1 className="text-5xl font-black mb-5">익명</h1>
                 <div className="flex">
                   <p className="text-base font-extrabold">직업군</p>
                   <p className="text-base font-extralight ml-3.5">
