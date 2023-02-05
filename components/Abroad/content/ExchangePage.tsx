@@ -109,7 +109,81 @@ const ExchangePage = ({ Exchange }: any) => {
           },
         ]}
       />
+      <section className="mb-10">
+        <h1 className="text-2xl font-medium mb-5">교환학생 장학금</h1>
+        <h2 className="text-xl font-medium">
+          교환학생 지원 장학금(GLOBAL EXCHANGE SCHOLARSHIP)
+        </h2>
+        <h2 className="text-xl font-normal text-secondaryColor">
+          ※ 교내 장학금 공통 조건: 2022-2학기 재학, 직전학기 12학점 이상 및
+          평점평균 2.0 이상, 초과학기(학적유지자) 제외
+        </h2>
+        <h2 className="text-xl font-normal text-secondaryColor">
+          ※ 각종 파견 장학(교내장학, 교외장학)간 중복수혜 불가 (중복지원은 가능)
+        </h2>
+        <ExTabs
+          tabs={[
+            {
+              id: '0',
+              label: 'AJOU TOP Exchange 장학',
+              content: (
+                <>
+                  {ExProgram}
+                  <h2 className="text-xl font-normal">선발방법 및 시기</h2>
+                  <h3 className="text-lg font-normal mt-5">선발방법</h3>
+                  <p className="text-lg font-extralight">
+                    1차 서류전형 - 2차 면접전형
+                  </p>
+                  <h3 className="text-lg font-normal mt-5">선발시기</h3>
+                  <ExTable />
+                </>
+              ),
+            },
+            {
+              id: '1',
+              label: '글로벌 교환학생 장학',
+              content: <>{ISFPProgram}</>,
+            },
+            {
+              id: '2',
+              label: 'Ajou Global Creator 장학',
+              content: <>{ISFPProgram}</>,
+            },
+          ]}
+        />
+      </section>
+      <section className="mb-10">
+        <h1 className="text-2xl font-medium mb-5">교외 장학금</h1>
+        <h2 className="text-xl font-normal text-secondaryColor">
+          ※ 각종 파견 장학(교내장학, 교외장학)간 중복수혜 불가 (중복지원은 가능)
+        </h2>
 
+        <ExTabs
+          tabs={[
+            {
+              id: '0',
+              label: 'AESM-DUO Scholarship',
+              content: (
+                <>
+                  {ExProgram}
+                  <h2 className="text-xl font-normal">선발방법 및 시기</h2>
+                  <h3 className="text-lg font-normal mt-5">선발방법</h3>
+                  <p className="text-lg font-extralight">
+                    1차 서류전형 - 2차 면접전형
+                  </p>
+                  <h3 className="text-lg font-normal mt-5">선발시기</h3>
+                  <ExTable />
+                </>
+              ),
+            },
+            {
+              id: '1',
+              label: '미래에셋 장학금',
+              content: <>{ISFPProgram}</>,
+            },
+          ]}
+        />
+      </section>
       <Footer
         description="글로벌인턴쉽 선발 및 진행 정보, 기업 정보와 선배님들의 후기가 궁금하다면?"
         link="https://www.ajou.ac.kr/oia/outgoing/global-process.do"
