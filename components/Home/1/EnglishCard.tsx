@@ -36,7 +36,7 @@ export default function EnglishCard({ english, score }: EnglishProps) {
   };
 
   return (
-    <div className="w-20 h-32 rounded flex-col flex flexBox bg-slate-200 m-4 relative">
+    <div className="w-20 h-32 rounded flex-col flex flexBox bg-slate-200 m-2 relative">
       <div
         className={`absolute text-xl font-medium text-center ${
           english === 'TOEIC Speaking' ? 'top-3' : 'top-7'
