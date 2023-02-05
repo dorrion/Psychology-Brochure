@@ -21,7 +21,7 @@ const ExTabs: React.FC<Props> = ({ tabs }) => {
           <li
             key={tab.id}
             // 선택된 탭이면 배경색 바뀌도록
-            className={`m-4 w-1/2 h-12 p-4 flexBox border-secondaryColor text-xl font-medium text-center cursor-pointer rounded-2xl border
+            className={`m-4 w-1/2 h-12 p-4 flexBox border-secondaryColor text-lg font-medium text-center cursor-pointer rounded-2xl border
             hover:bg-secondaryColor hover:text-slate-50
             ${activeTab === tab.id ? 'bg-secondaryColor text-slate-50' : ''}`}
             onClick={() => setActiveTab(tab.id)}
