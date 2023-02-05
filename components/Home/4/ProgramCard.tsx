@@ -33,11 +33,14 @@ export default function ProgramCard({
         {category}
       </div>
       <h2 className="text-base font-bold mt-5">{name}</h2>
-      <h3 className="text-xs mt-1.5 whitespace-pre-wrap">{description}</h3>
+      <h3 className="text-base mt-1.5 whitespace-pre-wrap">{description}</h3>
 
       {/* 영역, 모집시기는 왼쪽 정렬 */}
       <div className="absolute bottom-4 left-4">
         <div className="flex">
+          {/* 이유는 알 수 없지만 이렇게 앞에서 언급해야 색깔이 보이는 에러가 있는 것 같음. */}
+          <p className="text-secondaryColor" />
+          <p className="text-interview-200" />
           <h3 className={`text-sm text-${color}`}>영역 </h3>
           <h3 className="text-sm">{area}</h3>
         </div>

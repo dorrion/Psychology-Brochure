@@ -4,9 +4,9 @@ export default function EnglishCard({ english, score }: EnglishProps) {
   const Toefl = () => {
     return (
       <>
-        <p className="-my-0.5 text-xs font-black text-center">PBT 534</p>
-        <p className="-my-0.5 text-xs font-black text-center">CBT 200</p>
-        <p className="-my-0.5 text-xs font-black text-center">IBT 72</p>
+        <p className="-my-0.5 text-base font-black text-center">PBT 534</p>
+        <p className="-my-0.5 text-base font-black text-center">CBT 200</p>
+        <p className="-my-0.5 text-base font-black text-center">IBT 72</p>
       </>
     );
   };
@@ -14,8 +14,8 @@ export default function EnglishCard({ english, score }: EnglishProps) {
   const Gtelp = () => {
     return (
       <>
-        <p className="-my-0.5 text-xs font-black text-center">Level 2 67</p>
-        <p className="-my-0.5 text-xs font-black text-center">Level 3 89</p>
+        <p className="-my-0.5 text-base font-black text-center">Level 2 67</p>
+        <p className="-my-0.5 text-base font-black text-center">Level 3 89</p>
       </>
     );
   };

@@ -1,13 +1,10 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import { promises as fs } from 'fs';
-import path from 'path';
-
 import Layout from 'components/layout';
 import SurvivalWrapper from 'components/Home/SurvivalWrapper';
 import { SurvivalProps } from 'shared/store/type';
 
-export default function Home({ HomeData }: any) {
+export default function Home({ data }: any) {
+  const HomeData = data;
   const TipList: JSX.Element[] = HomeData.map((tip: SurvivalProps) => (
     <SurvivalWrapper
       key={tip.tipId}
@@ -30,18 +27,17 @@ export default function Home({ HomeData }: any) {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <section className="text-gray-600 body-font bg-slate-200 dark:bg-slate-800">
+        <section className="body-font bg-slate-200 dark:bg-slate-800">
           <div className="container px-5 py-24 mx-auto ">
             <div className="flex-col flex-wrap flexBox w-full mb-20">
-              <div className="lg:w-1/2 w-full mb-6 lg:mb-0 ">
-                <h1 className="text-center sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900 dark:text-gray-100">
+              <div className="w-full lg:w-1/2 flexBox flex-col mb-6 lg:mb-0 text-center">
+                <h1 className="text-6xl font-black mb-1.5 text-gray-900 dark:text-gray-100">
                   심리학과에서 살아남기
                 </h1>
-                {/* <div className="h-1 w-20 my-2 mx-auto bg-indigo-500 rounded"></div> */}
+                <p className="text-2xl font-light w-full leading-relaxed">
+                  아주대학교 심리학과 학생들에게 유용한 정보를 소개합니다.
+                </p>
               </div>
-              <p className="text-center lg:w-1/2 w-full leading-relaxed text-gray-500">
-                아주대학교 심리학과 학생들에게 유용한 정보를 소개합니다.
-              </p>
             </div>
             <div className="flex flex-wrap -m-4">{TipList}</div>
           </div>
@@ -51,15 +47,14 @@ export default function Home({ HomeData }: any) {
   );
 }
 
+import loadData from 'shared/utils/loadData';
+
 export async function getStaticProps() {
-  // 살아남기 데이터 경로
-  const filePath = path.join(process.cwd(), 'data', 'HomeData.json');
-  const HomeData = await fs.readFile(filePath, 'utf8');
-  const objectData = JSON.parse(HomeData);
+  const data = await loadData({ subfolder: 'Home', file: 'HomeData' });
 
   return {
     props: {
-      HomeData: await Promise.all(objectData),
+      data,
     },
   };
 }

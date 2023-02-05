@@ -6,7 +6,7 @@ export default function donut() {
   return (
     <div className="relative">
       <Doughnut data={expData} />
-      <p className="text-6xl font-bold absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
+      <p className="text-2xl font-bold absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
         120학점
       </p>
     </div>

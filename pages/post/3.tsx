@@ -14,11 +14,13 @@ export default function index() {
       </Head>
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto flex flex-col">
-          <h1 className="text-6xl sm:text-3xl font-bold font-sans text-gray-900 mb-4 text-left">
+          <h1 className="text-6xl sm:text-5xl font-bold font-sans text-gray-900 mb-4 text-left">
             심리학과 메일 쓰기
           </h1>
           <div className="w-full mx-auto flexBox flex-col">
-            <h2 className="text-lg font-bold mb-16">공식적인 메일 작성 요소</h2>
+            <h2 className="text-2xl font-bold mb-16">
+              공식적인 메일 작성 요소
+            </h2>
             <div className="flex">
               {/* 제목 */}
               <div className="flex ">
@@ -60,7 +62,7 @@ export default function index() {
       </section>
       <section className="text-gray-600 body-font bg-gray-200 dark:bg-slate-700">
         <div className="container px-5 py-24 mx-auto flex flex-col">
-          <h2 className="font-bold text-lg">메일 작성 CONCEPT : Simple</h2>
+          <h2 className="font-bold text-2xl">메일 작성 CONCEPT : Simple</h2>
           <h3 className="text-base">
             메일은 간결하게, 본인의 신원과 메일의 목적을 명확하게 제시할 것.
           </h3>

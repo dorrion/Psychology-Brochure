@@ -1,19 +1,20 @@
 import Head from 'next/head';
 import Layout from 'components/layout';
-import { Enrolement, Study, Search } from 'data/Data';
-import EnrolementCard from 'components/Home/6/EnrolementCard';
+import { EnrolementProps } from 'shared/store/type';
 
-export default function index() {
-  const Enrole = Enrolement?.map((el) => {
-    return <EnrolementCard key={el.name} name={el.name} tip={el.tip} />;
+import FiveCard from 'components/Home/5/Five';
+
+export default function index({ data }: any) {
+  const Enrole = data[0]?.map((el: EnrolementProps) => {
+    return <FiveCard key={el.name} name={el.name} tip={el.tip} />;
   });
 
-  const StudyTip = Study?.map((el) => {
-    return <EnrolementCard key={el.name} name={el.name} tip={el.tip} />;
+  const StudyTip = data[1]?.map((el: EnrolementProps) => {
+    return <FiveCard key={el.name} name={el.name} tip={el.tip} />;
   });
 
-  const SearchTip = Search?.map((el) => {
-    return <EnrolementCard key={el.name} name={el.name} tip={el.tip} />;
+  const SearchTip = data[2]?.map((el: EnrolementProps) => {
+    return <FiveCard key={el.name} name={el.name} tip={el.tip} />;
   });
   return (
     <Layout>
@@ -24,12 +25,15 @@ export default function index() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <section className="text-gray-600 body-font bg-secondaryColor">
-        <div className="container px-5 py-24 mx-auto flex-col flexBox ">
-          <h1 className="text-6xl sm:text-3xl font-bold font-sans text-gray-900 mb-4 text-left">
+      <section>
+        <div className="container pt-40 sm:pt-28 pb-8 mx-auto flex-col flexBox ">
+          <h1 className="text-5xl font-bold font-sans text-gray-900 mb-4 text-left">
             심리학과에서 공부하기
           </h1>
+        </div>
+      </section>
+      <section className="text-gray-600 body-font bg-secondaryColor">
+        <div className="container px-5 py-24 mx-auto flex-col flexBox ">
           <h1 className="text-xl font-semibold mb-8">
             수강신청 성공하는 꿀팁!🍯
           </h1>
@@ -58,4 +62,16 @@ export default function index() {
       </section>
     </Layout>
   );
+}
+
+import loadData from 'shared/utils/loadData';
+
+export async function getStaticProps() {
+  const data = await loadData({ subfolder: 'Home', file: 'Study' });
+
+  return {
+    props: {
+      data,
+    },
+  };
 }
