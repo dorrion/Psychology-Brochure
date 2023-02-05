@@ -73,11 +73,15 @@ export default function Home({ WebProgrammer }: any) {
               </div>
             </section>
             <section className="mt-40">
-              <h1 className="text-5xl font-black">신용분석가 추천 커리큘럼</h1>
+              <h1 className="text-5xl font-black">
+                그래픽스 엔지니어 추천 커리큘럼
+              </h1>
               {WebProgrammerCurri}
             </section>
             <section className="mt-40">
-              <h1 className="text-5xl font-black">신용분석가 취업 이야기</h1>
+              <h1 className="text-5xl font-black">
+                그래픽스 엔지니어 취업 이야기
+              </h1>
               {WebProgrammerInterview}
             </section>
           </div>
