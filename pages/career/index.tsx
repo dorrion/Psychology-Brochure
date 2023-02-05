@@ -76,7 +76,7 @@ export default function Home({ data }: any) {
             </div>
           </div>
           {/* 취업 인터뷰 */}
-          <div className="container px-5 py-24 mx-auto relative">
+          <div className="container px-5 py-12 mx-auto relative">
             <h1 className="text-5xl mb-4 font-medium">취업 인터뷰</h1>
             <p className="mb-8 text-base font-extralight text-gray-500">
               심리학과 졸업생들의 취업 이야기. 취업과 관련된 다양한 궁금증을

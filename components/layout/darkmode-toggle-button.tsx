@@ -18,6 +18,7 @@ export default function DarkmodeToggleButton() {
         dark:hover:text-yellow-300
         "
         type="button"
+        aria-label="다크모드 버튼"
         onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
       >
         {theme === 'dark' ? <Lunar /> : <Sun />}

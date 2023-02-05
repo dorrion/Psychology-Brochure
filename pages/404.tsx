@@ -15,7 +15,7 @@ function PageNotFound() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <section className="text-gray-600 body-font">
-        <div className="container px-5 py-24 mx-auto">
+        <div className="container px-5 py-12 mx-auto">
           <div className="flexBox flex-col">
             <div className="w-[35rem] h-[35rem] inline-flex items-center justify-center rounded-full bg-slate-100 mb-5 flex-shrink-0">
               <Image src={Ing} alt="제작 중입니다" width={500} height={500} />
