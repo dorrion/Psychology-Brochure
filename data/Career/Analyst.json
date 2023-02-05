@@ -1,0 +1,176 @@
+[
+  [
+    {
+      "id": 2,
+      "job": "신용분석가",
+      "freshmen": {
+        "spring": {
+          "majorRequired": [
+            {
+              "name": "심리학개론",
+              "engName": "Introduction to Psychology",
+              "explain": "심리학의 과학적 측면과 심리학을 전공하는데 필수적인 기초 개념, 연구절차, 연구영역과 적용범위에 관한 개괄적인 지식 을 습득한다."
+            },
+            {
+              "name": "심리통계와 데이터분석",
+              "engName": "Experimental Design and Analysis",
+              "explain": "본 과목은 학생들에게 심리학에서 널리 사용되고 있는 실험 설계에 대한 지식을 습득함을 목적으로 한다."
+            }
+          ],
+          "minorRequired": [
+            { "name": "경제원론1, 행정학개론, 사회학개론, 정치학개론" },
+            { "name": "데이터분석기초, 아주희망, 영어1, 영역별교양" }
+          ]
+        },
+        "fall": {
+          "majorRequired": [
+            {
+              "name": "심리학개론",
+              "engName": "Introduction to Psychology",
+              "explain": "심리학의 과학적 측면과 심리학을 전공하는데 필수적인 기초 개념, 연구절차, 연구영역과 적용범위에 관한 개괄적인 지식 을 습득한다."
+            },
+            {
+              "name": "심리통계2",
+              "engName": "Survey Data Analysis",
+              "explain": "본 과목은 학생들에게 심리학에서 실험법과 함께 널리 사용 되고 있는 현장연구에서 수집한 자료에 대한 분석법에 대한 지식 습득을 목적으로 한다."
+            },
+            {
+              "name": "심리학연구법",
+              "engName": "Research Methods in Psychology",
+              "explain": "사례연구, 질문지법, 관찰법, 실험법 등 심리학의 다양한 연 구방법들의 기본논리와 원리를 학습하고 그것을 적용하는 방법과 실습을 익힌다."
+            }
+          ],
+          "minorRequired": [
+            { "name": "경제원론1, 행정학개론, 사회학개론, 정치학개론" },
+            { "name": "데이터분석기초, 아주인성, 영어2, 글쓰기, 영역별교양" }
+          ]
+        }
+      },
+      "sophomore": {
+        "spring": {
+          "majorRequired": [
+            {
+              "name": "생리심리학 및 실험",
+              "engName": "Theories & Experiments in Physiological Psychology",
+              "explain": "감각과정, 지각 반응기제 등을 중심으로 기초적 뇌의 해주 학적, 생리학적 연구방법 등을 습득한다"
+            },
+            {
+              "name": "인지심리학 및 실험",
+              "engName": "Theories & Experiments in Cognitive Psychology",
+              "explain": "물리적, 사회적 정보를 적극적으로 처리하고 새로운 형태와 범주로 전환시키는 과정을 정보처리론적 입장에서 다룬다."
+            },
+            {
+              "name": "이상심리학 및 실험",
+              "engName": "Abnormal Psychology and Practicums",
+              "explain": "생활주기의 전 과정에 드러나는 이상행동의 원인, 증상, 분 류 등을 다룬다"
+            }
+          ],
+          "majorChoice": [
+            {
+              "name": "데이터 분석 방법과 적용",
+              "engName": "Data Analysis and Its Application",
+              "explain": "연구기관과 공,사기업에서 가장 일반적으로 사용되는 엑셀 (excel)을 이용한 자료의 분석방법을 습득하고, 사회과학의 주 연구대상인 비실험적 자료의 접근, 획득에 대한 방법 및 지식을 습득 한 후, 수강생 본인이 정한 연구주제를 직접 구 한 자료를 이용하여 분석하고, 그 결과를 간결하고 이해하 기 쉽게 표와 도표로 시각화하여 발표하는 과정을 체험하도 록 한다."
+            }
+          ],
+          "minorRequired": [
+            { "name": "경제원론1, 행정학개론, 사회학개론, 정치학개론" },
+            { "name": "영역별교양" }
+          ]
+        },
+        "fall": {
+          "majorRequired": [
+            {
+              "name": "사회심리학 및 실험",
+              "engName": "Theories & Experiments in Social Psychology",
+              "explain": "사회적 상황에서의 인간의 행동과 사고과정에 관한 여러 이 론들과 실험연구들을 고찰한다."
+            },
+            {
+              "name": "데이터 분석 방법과 적용",
+              "engName": "Data Analysis and Its Application",
+              "explain": "연구기관과 공,사기업에서 가장 일반적으로 사용되는 엑셀 (excel)을 이용한 자료의 분석방법을 습득하고, 사회과학의 주 연구대상인 비실험적 자료의 접근, 획득에 대한 방법 및 지식을 습득 한 후, 수강생 본인이 정한 연구주제를 직접 구 한 자료를 이용하여 분석하고, 그 결과를 간결하고 이해하 기 쉽게 표와 도표로 시각화하여 발표하는 과정을 체험하도 록 한다."
+            }
+          ],
+          "minorRequired": [{ "name": "자기주도 진로탐색" }]
+        }
+      },
+      "junior": {
+        "spring": {
+          "majorRequired": [
+            {
+              "name": "조직심리학 및 실습(캡스톤 디자인)",
+              "engName": "Organizational Psychology & Practicums (Capstone Design)",
+              "explain": "경영관리 중 인간요인과 관련된 주제들을 다룬다."
+            }
+          ],
+          "majorChoice": [
+            {
+              "name": "프로그래밍 기초",
+              "engName": "Programming",
+              "explain": "프로그램의 간단한 코딩 방법을 배운다."
+            }
+          ]
+        }
+      },
+      "senior": {
+        "spring": {
+          "majorChoice": [
+            {
+              "name": "프로그래밍 프로젝트",
+              "engName": "Programming project",
+              "explain": "프로그래밍과 관련된 프로젝트를 진행한다."
+            }
+          ]
+        }
+      }
+    }
+  ],
+  [
+    {
+      "id": 2,
+      "name": "김별명",
+      "color": 200,
+      "interview": [
+        {
+          "question": "어떤 대외활동을 하셨나요?",
+          "answer": "소학회 활동"
+        },
+        {
+          "question": "산업대학원을 진학하거나 마케팅 혹은 경영기획 쪽 취업을 희망하면 어떤 걸 우선순위로 두고 준비해야할까요?",
+          "answer": "it기반 지식은 기본으로 깔고 가야하니 통계와 그걸 활용할 수 있는 언어를 공부해야합니다."
+        },
+        {
+          "question": "취업을 위한 안정적인 학점은 어느 정도인가요? 대체로 어느정도의 학점을 가지고 계시는지 궁금합니다.",
+          "answer": "3"
+        },
+        {
+          "question": "심리와 무슨 전공을 많이 병행하는지 궁금합니다.",
+          "answer": "컴퓨터공학, 디지털미디어"
+        },
+        {
+          "question": "꼭 취업을 위해 복수전공을 해야하나요?",
+          "answer": "네"
+        },
+        {
+          "question": "복수전공에 대한 이점/단점에 대해 작성해주세요!",
+          "answer": "본전공 진행시와는 다르게 아주 외로운 싸움이 됩니다. 도움 받을 사람도 많지 않고 같이 할 친구들도 없었습니다. 지옥에 빠질때 누구 한명이랑 같이 빠지는걸 추천합니다."
+        },
+        {
+          "question": "심리학과와 직무와의 연계는 어느정도인가요? 주로 어떤 직무를 지원하시는지 알고 싶습니다!",
+          "answer": "통계적 지식 외에는 거의 연관성이 없습니다."
+        },
+        {
+          "question": "취업을 위한 스터디에는 보통 어떤 스터디가 있나요? 추천해주세요!",
+          "answer": "데이터분석 관련 스터디를 참여하면 좋을거 같습니다."
+        },
+        {
+          "question": "취업과 관련하여 이야기 해주고 싶은 것들을 작성해주세요!",
+          "answer": "취업은 결국 자신의 경쟁력으로 결정됩니다. 자신의 경쟁력이 떨어진다면 내가 어렵게 생각하던 분야라도 과감하게 도전할 필요도 있습니다."
+        },
+        {
+          "question": "자유롭게 하고싶은 말",
+          "answer": "고생 많으십니다. 졸업생과 재학생의 교류의장이 되면 좋을거 같습니다."
+        }
+      ]
+    }
+  ]
+]
