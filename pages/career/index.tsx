@@ -5,7 +5,7 @@ import { CarrerProps } from 'shared/store/type';
 import InterviewWrapper from 'components/Career/InterviewWrapper';
 import Link from 'next/link';
 
-export default function Home({ CareerInterview, JobCurriculum }: any) {
+export default function Home({ CareerInterview }: any) {
   const CarrerList: JSX.Element[] = CareerInterview.map((tip: CarrerProps) => (
     <InterviewWrapper
       key={tip.tipId}
@@ -92,16 +92,14 @@ export default function Home({ CareerInterview, JobCurriculum }: any) {
 import loadData from 'shared/utils/loadData';
 
 export async function getStaticProps() {
-  const CareerInterview = await loadData({ subfolder: 'Career', file: 'Interview' });
-  const JobCurriculum = await loadData({
+  const CareerInterview = await loadData({
     subfolder: 'Career',
-    file: 'JobCurriculum',
+    file: 'Interview',
   });
 
   return {
     props: {
       CareerInterview,
-      JobCurriculum,
     },
   };
 }
