@@ -21,7 +21,6 @@ export default function index() {
           <div className="bg-gray-200 dark:bg-slate-700">
             <GPA />
           </div>
-
           <English />
           <CompleteSemester />
         </div>
