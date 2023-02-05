@@ -26,43 +26,53 @@ const FirstJobChart: React.FC = () => {
   ];
 
   return (
-    <>
-      <PieChart width={350} height={350}>
-        <Pie
-          data={data} // 데이터
-          cx="50%" // 중심 x
-          cy="50%" // 중심 y
-          innerRadius={70} // 속 크기
-          outerRadius={100} // 겉 크기
-          paddingAngle={0} // 영역 사이의 공간
-          dataKey="value" // 각 영역에 대한 데이터 필드
-          label // 차트 영역에서 value 튀어나오게 함
-        >
-          {/* 데이터의 Index에 따라 다른 색깔로 채움. */}
-          {data.map((entry, index) => (
-            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-          ))}
-          <Label
-            value="첫 직업 분야"
-            position="center"
-            fill="#333333"
-            fontSize={20}
-            fontWeight="bold"
-          />
-        </Pie>
-        {/* 범례 */}
-        {/* 아이콘 동그라미로 */}
-        <Legend
-          iconType="circle"
-          iconSize={11}
-          height={18}
-          width={400}
-          layout="vertical"
+    <PieChart width={350} height={500}>
+      <Pie
+        data={data} // 데이터
+        cx="50%" // 중심 x
+        cy="50%" // 중심 y
+        innerRadius={70} // 속 크기
+        outerRadius={100} // 겉 크기
+        paddingAngle={0} // 영역 사이의 공간
+        dataKey="value" // 각 영역에 대한 데이터 필드
+        label // 차트 영역에서 value 튀어나오게 함
+      >
+        {/* 데이터의 Index에 따라 다른 색깔로 채움. */}
+        {data.map((entry, index) => (
+          <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+        ))}
+        <Label
+          value="첫 직업 분야"
+          position="center"
+          fill="#333333"
+          fontSize={20}
+          fontWeight="bold"
         />
-        {/* hover시 data 나옴 */}
-        <Tooltip />
-      </PieChart>
-    </>
+      </Pie>
+      {/* 범례 */}
+      {/* 아이콘 동그라미로 */}
+      {/* height 위치 때문에 영역 벗어난 것. Chart Height 증가하고, Legend 위치 시킴 */}
+      <Legend
+        iconType="circle"
+        iconSize={11}
+        height={200}
+        layout="vertical"
+        formatter={(value, entry) => {
+          const { payload } = entry;
+          return (
+            <>
+              <span className="font-black">{payload?.value!}</span>
+              <div className="flex-col flex">
+                {/* 숫자 표시 */}
+                <p className="text-lg font-medium">{value}</p>
+              </div>
+            </>
+          );
+        }}
+      />
+      {/* hover시 data 나옴 */}
+      <Tooltip />
+    </PieChart>
   );
 };
 
