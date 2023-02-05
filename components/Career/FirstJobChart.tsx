@@ -26,7 +26,7 @@ const FirstJobChart: React.FC = () => {
   ];
 
   return (
-    <div>
+    <>
       <PieChart width={350} height={350}>
         <Pie
           data={data} // 데이터
@@ -52,12 +52,17 @@ const FirstJobChart: React.FC = () => {
         </Pie>
         {/* 범례 */}
         {/* 아이콘 동그라미로 */}
-        <Legend iconType="circle" iconSize={11} height={18}
-        width={400} layout="vertical" />
+        <Legend
+          iconType="circle"
+          iconSize={11}
+          height={18}
+          width={400}
+          layout="vertical"
+        />
         {/* hover시 data 나옴 */}
         <Tooltip />
       </PieChart>
-    </div>
+    </>
   );
 };
 
