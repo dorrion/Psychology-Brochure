@@ -26,32 +26,60 @@ const FirstJobChart: React.FC = () => {
   ];
 
   return (
-    <PieChart width={350} height={500}>
-      <Pie
-        data={data} // 데이터
-        cx="50%" // 중심 x
-        cy="50%" // 중심 y
-        innerRadius={70} // 속 크기
-        outerRadius={100} // 겉 크기
-        paddingAngle={0} // 영역 사이의 공간
-        dataKey="value" // 각 영역에 대한 데이터 필드
-        label // 차트 영역에서 value 튀어나오게 함
-      >
-        {/* 데이터의 Index에 따라 다른 색깔로 채움. */}
-        {data.map((entry, index) => (
-          <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-        ))}
-        <Label
-          value="첫 직업 분야"
-          position="center"
-          fill="#333333"
-          fontSize={20}
-          fontWeight="bold"
-        />
-      </Pie>
-      {/* hover시 data 나옴 */}
-      <Tooltip />
-    </PieChart>
+    <>
+      <PieChart width={350} height={350}>
+        <Pie
+          data={data} // 데이터
+          cx="50%" // 중심 x
+          cy="50%" // 중심 y
+          innerRadius={70} // 속 크기
+          outerRadius={100} // 겉 크기
+          paddingAngle={0} // 영역 사이의 공간
+          dataKey="value" // 각 영역에 대한 데이터 필드
+          label // 차트 영역에서 value 튀어나오게 함
+        >
+          {/* 데이터의 Index에 따라 다른 색깔로 채움. */}
+          {data.map((entry, index) => (
+            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+          ))}
+          <Label
+            value="첫 직업 분야"
+            position="center"
+            fill="#333333"
+            fontSize={20}
+            fontWeight="bold"
+          />
+        </Pie>
+        {/* hover시 data 나옴 */}
+        <Tooltip />
+      </PieChart>
+      <div className="flex-wrap flex">
+        {data.map((el, index) => {
+          return (
+            <div key={index} className="w-1/2 flex flex-col">
+              <div className="flex items-center">
+                {/* <div className="bg-[#20C770] bg-[#FFCC00] bg-[#2E4EF9] bg-[#909090] bg-[#C3C3C3] bg-[#D9D9D9] " />
+                <div className="text-[#20C770] text-[#FFCC00] text-[#2E4EF9] text-[#909090] text-[#C3C3C3] text-[#D9D9D9] " /> */}
+                <span
+                  className={
+                    `w-2.5 h-2.5 circle ` +
+                    `bg-[${COLORS[index % COLORS.length]}]`
+                  }
+                />
+                <span
+                  className={`text-3xl font-black ml-2 text-[${
+                    COLORS[index % COLORS.length]
+                  }]`}
+                >
+                  {el.value}
+                </span>
+              </div>
+              <div className="text-xl font-light">{el.name}</div>
+            </div>
+          );
+        })}
+      </div>
+    </>
   );
 };
 
