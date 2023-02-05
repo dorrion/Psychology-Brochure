@@ -37,3 +37,6 @@ next-env.d.ts
 
 # 환경변수
 .env
+
+# package-lock.json
+package-lock.json
