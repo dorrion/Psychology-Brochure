@@ -32,7 +32,7 @@ export default function Header() {
               도구
             </Link>
           </nav>
-            <DarkmodeToggleButton />
+          <DarkmodeToggleButton />
         </div>
       </header>
     </>
