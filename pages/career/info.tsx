@@ -34,9 +34,15 @@ export default function Info() {
           <div className="container px-5 py-12 mx-auto flexBox flex-col">
             <StatusChart />
             <FirstJobChart />
-            <h1>평균초봉</h1>
+          </div>
+        </section>
+
+        <section>
+          <div className="container px-5 py-12 mx-auto flex-col">
+            <h1 className="text-4xl font-black text-left mb-4">평균초봉</h1>
             <AverageSalaryChart />
-            <h1>평균초봉</h1>
+            <h1 className="text-4xl font-black text-left mb-4">취업 기업군</h1>
+            <AverageSalaryChart />
           </div>
         </section>
       </Layout>
