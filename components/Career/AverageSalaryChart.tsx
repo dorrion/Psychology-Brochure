@@ -1,48 +1,54 @@
 import React, { PureComponent } from 'react';
-import {
-  AreaChart,
-  Area,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  ResponsiveContainer,
-} from 'recharts';
+import { Area, Line, XAxis, YAxis, Tooltip, ComposedChart } from 'recharts';
 
-// 인원는 퍼센트
 // name은 월급
+// people는 인원수
+// per는 퍼센트
 const data = [
   {
     name: '100만원미만',
-    인원: 13,
-    percent: 0.01,
+    people: 13,
+    per: 1,
   },
   {
     name: '100~200만원',
-    인원: 134,
-    percent: 0.11,
+    people: 134,
+    per: 11,
   },
   {
     name: '200~300만원',
-    인원: 435,
-    percent: 0.36,
+    people: 435,
+    per: 36,
   },
   {
     name: '300~400만원',
-    인원: 407,
-    percent: 0.34,
+    people: 407,
+    per: 34,
   },
   {
     name: '400만원 이상',
-    인원: 223,
-    percent: 0.19,
+    people: 223,
+    per: 19,
   },
 ];
 
-export default class Example extends PureComponent {
+// active : hover 상태 / payload 관련 값 / label 초봉 이름
+const CustomTooltip = ({ active, payload, label }: any) => {
+  if (active) {
+    return (
+      <div className="bg-white rounded-lg shadow-md p-3">
+        <p className="text-xl font-normal">{label}</p>
+        <p className="text-4xl font-black">{`${payload[0].payload.per}%`}</p>
+      </div>
+    );
+  }
+  return null;
+};
+
+export default class AverageSalaryChart extends PureComponent {
   render() {
     return (
-      <AreaChart
+      <ComposedChart
         width={1024}
         height={522}
         data={data}
@@ -53,12 +59,31 @@ export default class Example extends PureComponent {
           bottom: 0,
         }}
       >
-        <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="name" />
-        <YAxis dataKey="인원" />
-        <Tooltip />
-        <Area type="monotone" dataKey="인원" stroke="#8296FF" fill="#8296FF" />
-      </AreaChart>
+        <YAxis />
+        <Area
+          type="monotone"
+          dataKey="people"
+          stroke="#8296FF"
+          fill={`url(#gradient)`}
+        />
+        {/* 그라데이션  */}
+        <defs>
+          <linearGradient id="gradient" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="5%" stopColor="#8296FF" />
+            <stop offset="95%" stopColor="white" />
+          </linearGradient>
+        </defs>
+
+        {/* 스트로크와 동그라미 */}
+        <Line
+          type="monotone"
+          dataKey="people"
+          stroke="#2E4EF9"
+          dot={{ r: 4, fill: '#2E4EF9' }}
+        />
+        <Tooltip content={<CustomTooltip />} />
+      </ComposedChart>
     );
   }
 }
