@@ -9,8 +9,8 @@ const CurricularmPage = ({ Curriculum }: any) => {
         key={el.id}
         major={el.major}
         freshmen={el.freshmen}
-        junior={el.junior}
         sophomore={el.sophomore}
+        junior={el.junior}
         senior={el.senior}
       />
     );

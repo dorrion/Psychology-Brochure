@@ -36,13 +36,13 @@ export default function TapWrapper({
               />
             </Tab.Panel>
             <Tab.Panel>
-              <SemesterWrapper spring={junior?.spring} fall={junior?.fall} />
-            </Tab.Panel>
-            <Tab.Panel>
               <SemesterWrapper
                 spring={sophomore?.spring}
                 fall={sophomore?.fall}
               />
+            </Tab.Panel>
+            <Tab.Panel>
+              <SemesterWrapper spring={junior?.spring} fall={junior?.fall} />
             </Tab.Panel>
             <Tab.Panel>
               <SemesterWrapper spring={senior?.spring} fall={senior?.fall} />
