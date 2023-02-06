@@ -115,6 +115,20 @@ const ExchangePage = ({ Exchange }: any) => {
       </div>
     );
   });
+  const Creator = Exchange[6].map((el: GlobalProps, idx: number) => {
+    return (
+      <div key={idx} className="mb-5">
+        <h2 className="text-xl font-normal">{el.head}</h2>
+        {el.desc.map((de, i) => {
+          return (
+            <p key={i} className="text-lg font-extralight">
+              {de}
+            </p>
+          );
+        })}
+      </div>
+    );
+  });
 
   return (
     <>
@@ -178,7 +192,7 @@ const ExchangePage = ({ Exchange }: any) => {
             {
               id: '2',
               label: 'Ajou Global Creator 장학',
-              content: <>{ISFPProgram}</>,
+              content: <>{Creator}</>,
             },
           ]}
         />
