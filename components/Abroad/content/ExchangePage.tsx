@@ -90,6 +90,32 @@ const ExchangePage = ({ Exchange }: any) => {
     );
   });
 
+  const Global = Exchange[5].map((el: GlobalProps, idx: number) => {
+    return (
+      <div key={idx} className="mb-5">
+        <h2 className="text-xl font-normal">{el.head}</h2>
+        {el.desc.map((de, i) => {
+          return (
+            <p key={i} className="text-lg font-extralight">
+              {de}
+            </p>
+          );
+        })}
+        {el.and &&
+          el.and.map((ae, i) => {
+            return (
+              <p
+                key={i}
+                className="text-secondaryColor text-lg font-extralight"
+              >
+                {ae}
+              </p>
+            );
+          })}
+      </div>
+    );
+  });
+
   return (
     <>
       <section className="mb-10">
@@ -147,7 +173,7 @@ const ExchangePage = ({ Exchange }: any) => {
             {
               id: '1',
               label: '글로벌 교환학생 장학',
-              content: <>{ISFPProgram}</>,
+              content: <>{Global}</>,
             },
             {
               id: '2',
