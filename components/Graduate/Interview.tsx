@@ -18,7 +18,7 @@ export default function Interview({ question, answer }: QnAProps) {
     );
   });
   return (
-    <div className="text-left mb-40">
+    <div className="text-left mb-14">
       <h1 className="text-2xl font-medium">{question}</h1>
       {AnswerList}
     </div>

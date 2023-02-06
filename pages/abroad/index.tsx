@@ -15,8 +15,9 @@ import MultiPage from 'components/Abroad/content/MultiPage';
 import ShortPage from 'components/Abroad/content/ShortPage';
 import GlobalPage from 'components/Abroad/content/GlobalPage';
 import ExchangePage from 'components/Abroad/content/ExchangePage';
+import AdvicePage from 'components/Abroad/content/AdvicePage';
 
-const Tabs = ({ Bridge, Exchange, Multi, Short, Global }: any) => {
+const Tabs = ({ Bridge, Exchange, Multi, Short, Global, Advice }: any) => {
   return (
     <Layout>
       <Head>
@@ -64,7 +65,7 @@ const Tabs = ({ Bridge, Exchange, Multi, Short, Global }: any) => {
                 id: '5',
                 label: '선배님의 조언',
                 banner: <Banner6 />,
-                content: <BridgePage Bridge={Bridge} />,
+                content: <AdvicePage Advice={Advice} />,
               },
             ]}
           />
@@ -99,6 +100,10 @@ export async function getStaticProps() {
     subfolder: 'Abroad',
     file: 'Global',
   });
+  const Advice = await loadData({
+    subfolder: 'Abroad',
+    file: 'Advice',
+  });
 
   return {
     props: {
@@ -107,6 +112,7 @@ export async function getStaticProps() {
       Multi,
       Short,
       Global,
+      Advice,
     },
   };
 }
