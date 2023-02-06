@@ -7,35 +7,36 @@ import {
   Tooltip,
   ComposedChart,
   ResponsiveContainer,
+  Legend,
 } from 'recharts';
 
 // name은 월급
-// people는 인원수
+// 인원는 인원수
 // per는 퍼센트
 const data = [
   {
     name: '100만원미만',
-    people: 13,
+    인원: 13,
     per: 1,
   },
   {
     name: '100~200만원',
-    people: 134,
+    인원: 134,
     per: 11,
   },
   {
     name: '200~300만원',
-    people: 435,
+    인원: 435,
     per: 36,
   },
   {
     name: '300~400만원',
-    people: 407,
+    인원: 407,
     per: 34,
   },
   {
     name: '400만원 이상',
-    people: 223,
+    인원: 223,
     per: 19,
   },
 ];
@@ -71,9 +72,10 @@ export default class AverageSalaryChart extends PureComponent {
             <YAxis />
             <Area
               type="monotone"
-              dataKey="people"
-              stroke="#8296FF"
+              dataKey="인원"
+              stroke="#2E4EF9"
               fill={`url(#gradient)`}
+              dot={{ r: 4, fill: '#2E4EF9' }}
             />
             {/* 그라데이션  */}
             <defs>
@@ -82,15 +84,8 @@ export default class AverageSalaryChart extends PureComponent {
                 <stop offset="95%" stopColor="white" />
               </linearGradient>
             </defs>
-
-            {/* 스트로크와 동그라미 */}
-            <Line
-              type="monotone"
-              dataKey="people"
-              stroke="#2E4EF9"
-              dot={{ r: 4, fill: '#2E4EF9' }}
-            />
             <Tooltip content={<CustomTooltip />} />
+            <Legend />
           </ComposedChart>
         </ResponsiveContainer>
       </div>
