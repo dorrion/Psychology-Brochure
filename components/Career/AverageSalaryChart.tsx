@@ -1,5 +1,13 @@
 import React, { PureComponent } from 'react';
-import { Area, Line, XAxis, YAxis, Tooltip, ComposedChart } from 'recharts';
+import {
+  Area,
+  Line,
+  XAxis,
+  YAxis,
+  Tooltip,
+  ComposedChart,
+  ResponsiveContainer,
+} from 'recharts';
 
 // name은 월급
 // people는 인원수
@@ -48,42 +56,44 @@ const CustomTooltip = ({ active, payload, label }: any) => {
 export default class AverageSalaryChart extends PureComponent {
   render() {
     return (
-      <ComposedChart
-        width={1024}
-        height={522}
-        data={data}
-        margin={{
-          top: 10,
-          right: 30,
-          left: 0,
-          bottom: 0,
-        }}
-      >
-        <XAxis dataKey="name" />
-        <YAxis />
-        <Area
-          type="monotone"
-          dataKey="people"
-          stroke="#8296FF"
-          fill={`url(#gradient)`}
-        />
-        {/* 그라데이션  */}
-        <defs>
-          <linearGradient id="gradient" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="5%" stopColor="#8296FF" />
-            <stop offset="95%" stopColor="white" />
-          </linearGradient>
-        </defs>
+      <div className="w-full h-96">
+        <ResponsiveContainer width="100%" height="100%">
+          <ComposedChart
+            data={data}
+            margin={{
+              top: 10,
+              right: 30,
+              left: 0,
+              bottom: 0,
+            }}
+          >
+            <XAxis dataKey="name" />
+            <YAxis />
+            <Area
+              type="monotone"
+              dataKey="people"
+              stroke="#8296FF"
+              fill={`url(#gradient)`}
+            />
+            {/* 그라데이션  */}
+            <defs>
+              <linearGradient id="gradient" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="5%" stopColor="#8296FF" />
+                <stop offset="95%" stopColor="white" />
+              </linearGradient>
+            </defs>
 
-        {/* 스트로크와 동그라미 */}
-        <Line
-          type="monotone"
-          dataKey="people"
-          stroke="#2E4EF9"
-          dot={{ r: 4, fill: '#2E4EF9' }}
-        />
-        <Tooltip content={<CustomTooltip />} />
-      </ComposedChart>
+            {/* 스트로크와 동그라미 */}
+            <Line
+              type="monotone"
+              dataKey="people"
+              stroke="#2E4EF9"
+              dot={{ r: 4, fill: '#2E4EF9' }}
+            />
+            <Tooltip content={<CustomTooltip />} />
+          </ComposedChart>
+        </ResponsiveContainer>
+      </div>
     );
   }
 }
