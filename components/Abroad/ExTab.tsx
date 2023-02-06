@@ -16,12 +16,12 @@ const ExTabs: React.FC<Props> = ({ tabs }) => {
   return (
     <>
       {/* 탭 나열 */}
-      <ul className="flexBox flex-shrink-0 ">
+      <ul className="flexBox flex-col sm:flex-row">
         {tabs.map((tab) => (
           <li
             key={tab.id}
             // 선택된 탭이면 배경색 바뀌도록
-            className={`m-4 w-1/2 h-12 p-4 flexBox border-secondaryColor text-lg font-medium text-center cursor-pointer rounded-2xl border
+            className={`m-1 sm:m-4 w-1/2 h-12 p-4 flexBox border-secondaryColor text-lg font-medium text-center cursor-pointer rounded-2xl border
             hover:bg-secondaryColor hover:text-slate-50
             ${activeTab === tab.id ? 'bg-secondaryColor text-slate-50' : ''}`}
             onClick={() => setActiveTab(tab.id)}
