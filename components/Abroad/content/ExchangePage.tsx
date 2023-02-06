@@ -130,6 +130,37 @@ const ExchangePage = ({ Exchange }: any) => {
     );
   });
 
+  const Duo = Exchange[7].map((el: GlobalProps, idx: number) => {
+    return (
+      <div key={idx} className="mb-5">
+        <h2 className="text-xl font-normal">{el.head}</h2>
+        {el.desc.map((de, i) => {
+          return (
+            <p key={i} className="text-lg font-extralight">
+              {de}
+            </p>
+          );
+        })}
+        <p className="text-secondaryColor text-lg font-extralight">{el.and}</p>
+      </div>
+    );
+  });
+  const Mirae = Exchange[8].map((el: GlobalProps, idx: number) => {
+    return (
+      <div key={idx} className="mb-5">
+        <h2 className="text-xl font-normal">{el.head}</h2>
+        {el.desc.map((de, i) => {
+          return (
+            <p key={i} className="text-lg font-extralight">
+              {de}
+            </p>
+          );
+        })}
+        <p className="text-secondaryColor text-lg font-extralight">{el.and}</p>
+      </div>
+    );
+  });
+
   return (
     <>
       <section className="mb-10">
@@ -208,30 +239,19 @@ const ExchangePage = ({ Exchange }: any) => {
             {
               id: '0',
               label: 'AESM-DUO Scholarship',
-              content: (
-                <>
-                  {ExProgram}
-                  <h2 className="text-xl font-normal">선발방법 및 시기</h2>
-                  <h3 className="text-lg font-normal mt-5">선발방법</h3>
-                  <p className="text-lg font-extralight">
-                    1차 서류전형 - 2차 면접전형
-                  </p>
-                  <h3 className="text-lg font-normal mt-5">선발시기</h3>
-                  <ExTable />
-                </>
-              ),
+              content: <>{Duo}</>,
             },
             {
               id: '1',
               label: '미래에셋 장학금',
-              content: <>{ISFPProgram}</>,
+              content: <>{Mirae}</>,
             },
           ]}
         />
       </section>
       <Footer
-        description="글로벌인턴쉽 선발 및 진행 정보, 기업 정보와 선배님들의 후기가 궁금하다면?"
-        link="https://www.ajou.ac.kr/oia/outgoing/global-process.do"
+        description="교환학생 선발 및 진행 정보, 자매대 정보와 선배님들의 후기가 궁금하다면?"
+        link="https://www.ajou.ac.kr/oia/outgoing/exchange-require.do"
       />
     </>
   );
