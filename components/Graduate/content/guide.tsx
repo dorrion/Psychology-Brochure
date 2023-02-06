@@ -17,12 +17,12 @@ const Guide = () => {
     return (
       <>
         {/* 탭 나열 */}
-        <ul className="flexBox flex-shrink-0 border-gray-200">
+        <ul className="flexBox  flex-col sm:flex-row border-gray-200">
           {tabs.map((tab) => (
             <li
               key={tab.id}
               // 선택된 탭이면 배경색 바뀌도록
-              className={`m-4 w-56 h-12 p-4 flexBox text-base text-center cursor-pointer rounded-2xl border ${
+              className={`m-1 sm:m-4 w-56 h-12 p-4 flexBox text-base text-center cursor-pointer rounded-2xl border ${
                 activeTab === tab.id ? 'bg-shadowColor' : ''
               }`}
               onClick={() => setActiveTab(tab.id)}
