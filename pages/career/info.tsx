@@ -12,6 +12,13 @@ export default function Info() {
       ssr: false,
     },
   );
+
+  const AverageSalaryChart = dynamic(
+    () => import('components/Career/AverageSalaryChart'),
+    {
+      ssr: false,
+    },
+  );
   return (
     <>
       <Layout>
@@ -27,6 +34,9 @@ export default function Info() {
           <div className="container px-5 py-12 mx-auto flexBox flex-col">
             <StatusChart />
             <FirstJobChart />
+            <h1>평균초봉</h1>
+            <AverageSalaryChart />
+            <h1>평균초봉</h1>
           </div>
         </section>
       </Layout>
