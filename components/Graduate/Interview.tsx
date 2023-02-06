@@ -2,6 +2,8 @@ import { QnAProps } from 'shared/store/type';
 
 export default function Interview({ question, answer }: QnAProps) {
   const AnswerList = answer?.map((ans, idx: any) => {
+    let ansName = ans.name;
+    let length = ansName?.length;
     return (
       <div key={idx} className={`flex mt-4 items-center`}>
         {/* <div className="w-14 h-14 circle bg-interview-100" />
@@ -13,7 +15,7 @@ export default function Interview({ question, answer }: QnAProps) {
         <div className={`flexBox w-10 h-10 circle bg-interview-${ans.color}`}>
           <div
             className={`text-slate-50 font-normal ${
-              ans.name.length > 3 ? 'text-[0.5rem]' : 'text-base'
+              length && length > 3 ? 'text-[0.5rem]' : 'text-base'
             }`}
           >
             {ans.name}
