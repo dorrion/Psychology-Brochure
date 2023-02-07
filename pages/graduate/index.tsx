@@ -16,6 +16,7 @@ import LifePage from 'components/Graduate/content/life';
 import MajorPage from 'components/Graduate/content/major';
 import FreePage from 'components/Graduate/content/free';
 import GuidePage from 'components/Graduate/content/guide';
+import MajorInfo from 'components/Graduate/MajorInfo';
 
 const Tabs = ({ Curriculum, Prepare, Life, Major, Free }: any) => {
   return (
@@ -41,19 +42,33 @@ const Tabs = ({ Curriculum, Prepare, Life, Major, Free }: any) => {
                 id: '1',
                 label: '대학원 준비',
                 banner: <Banner2 />,
-                content: <PreparePage GraduatePrepareData={Prepare} />,
+                content: (
+                  <>
+                    <MajorInfo />
+                    <PreparePage GraduatePrepareData={Prepare} />
+                  </>
+                ),
               },
               {
                 id: '2',
                 label: '대학원 생활',
                 banner: <Banner3 />,
-                content: <LifePage GraduateLife={Life} />,
+                content: (
+                  <>
+                    <MajorInfo />
+                    <LifePage GraduateLife={Life} />
+                  </>
+                ),
               },
               {
                 id: '3',
                 label: '전공별 질문',
                 banner: <Banner4 />,
-                content: <MajorPage GraduateMajor={Major} />,
+                content: (
+                  <>
+                    <MajorInfo /> <MajorPage GraduateMajor={Major} />
+                  </>
+                ),
               },
               {
                 id: '4',
