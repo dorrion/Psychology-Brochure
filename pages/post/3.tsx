@@ -80,7 +80,7 @@ export default function index() {
               참여할 수 있는 방법이 알 수 있을까요? 감사합니다.
             </p>
             <p className="mt-12 dark_text800">000드림</p>
-            <div className="absolute p-4 -left-5 -bottom-5 w-2/3 h-20 bg-secondaryColor">
+            <div className="absolute p-4 -left-5 -bottom-5 w-2/3 h-20 bg-[#20C770]">
               <div className="font-semibold text-base text-slate-800">
                 코로나19로 인한 대면 수업 수강이 어려워 교수님께 메일을
                 보내야하는 상황
