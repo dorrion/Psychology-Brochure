@@ -28,11 +28,11 @@ export default function Header() {
             <Link href="/abroad" className="mr-5 text-xl hover:text-gray-900">
               유학
             </Link>
-            <Link href="/tool" className="mr-5 text-xl hover:text-gray-900">
+            {/* <Link href="/tool" className="mr-5 text-xl hover:text-gray-900">
               도구
-            </Link>
+            </Link> */}
           </nav>
-          <DarkmodeToggleButton />
+          {/* <DarkmodeToggleButton /> */}
         </div>
       </header>
     </>
