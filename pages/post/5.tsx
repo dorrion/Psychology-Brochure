@@ -24,7 +24,7 @@ export default function index({ data }: any) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="text-gray-600 body-font">
+      <div className="text-gray-600 body-font max-w-[64rem] mx-auto">
         <section>
           <div className="container py-12 mx-auto flex-col flexBox ">
             <h1 className="text-5xl font-bold font-sans text-gray-900 mb-4 text-left">
