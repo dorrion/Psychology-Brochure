@@ -18,12 +18,12 @@ export default function index() {
             심리학과 메일 쓰기
           </h1>
           <div className="w-full mx-auto flexBox flex-col">
-            <h2 className="text-2xl font-bold mb-16">
+            <h2 className="text-2xl font-bold mb-12">
               공식적인 메일 작성 요소
             </h2>
-            <div className="flex">
+            <div className="flex flex-col sm:flex-row">
               {/* 제목 */}
-              <div className="flex ">
+              <div className="flex">
                 <div className="mr-2.5 w-12 h-12 flex-shrink-0 flexBox bg-primaryColor circle text-slate-50">
                   제목
                 </div>
@@ -37,7 +37,7 @@ export default function index() {
                 </div>
               </div>
               {/* 내용 */}
-              <div className="flex ml-32">
+              <div className="flex ml-0 sm:ml-32 mt-8 sm:mt-0">
                 <div className="mr-2.5 w-12 h-12 flex-shrink-0 flexBox bg-[#505050] circle text-slate-50">
                   내용
                 </div>
