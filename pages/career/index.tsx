@@ -25,28 +25,17 @@ export default function Home({ CareerInterview }: any) {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-
-        <section className="text-gray-600 body-font max-w-[64rem] mx-auto">
-          {/* 상단 배너 */}
-          <Image
-            src={'/images/취업.webp'}
-            className="h-48 w-full object-cover object-center mb-4"
-            alt="picture"
-            width={1920}
-            height={200}
-            priority={true}
-          />
-          <div className="container px-5 py-24 mx-auto relative">
-            <div className="w-2/3 max-w-5xl mb-36">
+        <section className="px-5">
+          <section className="text-gray-600 body-font max-w-[64rem] mx-auto mb-36 flexBox">
+            <div className="container relative py-12">
               {/* 취업 현황 배너 */}
               <h1 className="text-5xl mb-4 font-medium">취업 현황</h1>
               <Image
                 src={'/images/취업현황.webp'}
-                className="absolute w-full h-64 object-cover object-center mb-4"
+                className="absolute w-full h-64 object-cover object-center"
                 alt="picture"
-                width={1920}
-                height={200}
-                layout="fixed"
+                width={1024}
+                height={259}
               />
               <div className="absolute w-full flex-col flex justify-end items-center">
                 {/* 반투명한 검은 배경 */}
@@ -73,16 +62,20 @@ export default function Home({ CareerInterview }: any) {
                 </div>
               </div>
             </div>
-          </div>
-          {/* 취업 인터뷰 */}
-          <div className="container px-5 py-12 mx-auto relative">
-            <h1 className="text-5xl mb-4 font-medium">취업 인터뷰</h1>
-            <p className="mb-8 text-base font-extralight text-gray-500">
-              심리학과 졸업생들의 취업 이야기. 취업과 관련된 다양한 궁금증을
-              물어봤습니다.
-            </p>
-            <div className="flex flex-wrap -m-4">{CarrerList}</div>
-          </div>
+          </section>
+          <section className="text-gray-600 body-font">
+            <div className="container relative py-12 max-w-[64rem] mx-auto ">
+              {/* 취업 인터뷰 */}
+              <div className="container py-12 mx-auto relative">
+                <h1 className="text-5xl mb-4 font-medium">취업 인터뷰</h1>
+                <p className="mb-8 text-base font-extralight text-gray-500">
+                  심리학과 졸업생들의 취업 이야기. 취업과 관련된 다양한 궁금증을
+                  물어봤습니다.
+                </p>
+                <div className="flex flex-wrap -m-4">{CarrerList}</div>
+              </div>
+            </div>
+          </section>
         </section>
       </Layout>
     </>
