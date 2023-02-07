@@ -1,5 +1,6 @@
 import { BridgeProps } from 'shared/store/type';
 import Footer from 'components/Abroad/Footer';
+import Image from 'next/image';
 
 const BridgePage = ({ Bridge }: any) => {
   const feature = Bridge[0].map((el: BridgeProps, idx: number) => {
@@ -19,14 +20,26 @@ const BridgePage = ({ Bridge }: any) => {
   const university = Bridge[1].map((el: BridgeProps, idx: number) => {
     return (
       <div key={idx} className="mb-5">
-        <h2 className="text-xl font-normal">{el.head}</h2>
-        {el.desc.map((de, i) => {
-          return (
-            <p key={i} className="text-lg font-extralight">
-              {de}
-            </p>
-          );
-        })}
+        <div className="flex">
+          <div className="flexBox object-cover object-center w-16">
+            <Image
+              src={el.image!}
+              width={100}
+              height={100}
+              alt="파란사다리 파견대학"
+            />
+          </div>
+          <div className="ml-4">
+            <h2 className="text-xl font-normal">{el.head}</h2>
+            {el.desc.map((de, i) => {
+              return (
+                <p key={i} className="text-lg font-extralight">
+                  {de}
+                </p>
+              );
+            })}
+          </div>
+        </div>
       </div>
     );
   });
