@@ -39,7 +39,10 @@ export default function Home({ data }: any) {
                 </p>
               </div>
             </div>
-            <div className="flex flex-wrap -m-4">{TipList}</div>
+            {/* 노트북 반응형 */}
+            <div className="flex flex-wrap max-w-[64rem] mx-auto -m-4">
+              {TipList}
+            </div>
           </div>
         </section>
       </Layout>

@@ -26,11 +26,11 @@ export default function Home({ CareerInterview }: any) {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <section className="text-gray-600 body-font bg-slate-200 dark:bg-slate-800 ">
+        <section className="text-gray-600 body-font max-w-[64rem] mx-auto">
           {/* 상단 배너 */}
           <Image
             src={'/images/취업.webp'}
-            className="lg:h-48 md:h-36 w-full object-cover object-center mb-4"
+            className="h-48 w-full object-cover object-center mb-4"
             alt="picture"
             width={1920}
             height={200}

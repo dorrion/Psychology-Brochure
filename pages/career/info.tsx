@@ -36,14 +36,14 @@ export default function Info() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <section className="text-gray-600 body-font ">
+        <section className="text-gray-600 body-font max-w-[64rem] mx-auto">
           <div className="container px-5 py-12 mx-auto flexBox flex-col">
             <StatusChart />
             <FirstJobChart />
           </div>
         </section>
 
-        <section>
+        <section className="max-w-[64rem] mx-auto">
           <div className="container px-5 py-12 mx-auto flex-col">
             <h1 className="text-4xl font-black text-left mb-4">평균초봉</h1>
             <AverageSalaryChart />
