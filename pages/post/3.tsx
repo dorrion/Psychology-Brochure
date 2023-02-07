@@ -13,7 +13,7 @@ export default function index() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <section className="text-gray-600 body-font">
-        <div className="container px-5 py-12 mx-auto flex flex-col">
+        <div className="container px-5 py-12 max-w-[64rem] mx-auto flex flex-col">
           <h1 className="text-6xl sm:text-5xl font-bold font-sans text-gray-900 mb-4 text-left">
             심리학과 메일 쓰기
           </h1>
@@ -61,7 +61,7 @@ export default function index() {
         </div>
       </section>
       <section className="text-gray-600 body-font bg-gray-200 dark:bg-slate-700">
-        <div className="container px-5 py-12 mx-auto flex flex-col">
+        <div className="container px-5 py-12 max-w-[64rem] mx-auto flex flex-col">
           <h2 className="font-bold text-2xl">메일 작성 CONCEPT : Simple</h2>
           <h3 className="text-base">
             메일은 간결하게, 본인의 신원과 메일의 목적을 명확하게 제시할 것.

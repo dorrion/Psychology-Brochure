@@ -58,15 +58,19 @@ export default function index({ data }: any) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <section className="text-gray-600 body-font ">
-        <div className="container px-5 py-12 mx-auto flex-col flexBox">
-          <div className="flex flex-wrap">{school}</div>
+        <div className="container px-5 py-12  max-w-[64rem]  mx-auto flex-col flexBox">
+          <div className="flexBox flex-wrap max-w-[64rem] mx-auto">
+            {school}
+          </div>
           <button className="flex-col flexBox" onClick={onClickMoreViewButton}>
             <p className="mb-4 font-base">
               {isSchoolMoreView ? '접기' : '더보기'}
             </p>
             {isSchoolMoreView ? <UpArrow /> : <DownArrow />}
           </button>
-          <div className="flex flex-wrap">{suburbs}</div>
+          <div className="flexBox flex-wrap max-w-[64rem] mx-auto">
+            {suburbs}
+          </div>
           <button
             className="flex-col flexBox"
             onClick={onClickSuburbsMoreViewButton}

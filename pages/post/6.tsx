@@ -25,41 +25,43 @@ export default function index({ data }: any) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section>
-        <div className="container py-12 px-5 mx-auto flex-col flexBox ">
-          <h1 className="text-5xl font-bold font-sans text-gray-900 mb-4 text-left">
-            심리학과에서 공부하기
-          </h1>
-        </div>
-      </section>
-      <section className="text-gray-600 body-font bg-secondaryColor">
-        <div className="container px-5 py-12 mx-auto flex-col flexBox ">
-          <h1 className="text-xl font-semibold mb-8">
-            수강신청 성공하는 꿀팁!🍯
-          </h1>
-          <div className="overflow-y-auto w-full h-96 flex flex-col flex-wrap items-center p-4 bg-fixed">
-            {Enrole}
+      <div className="max-w-[64rem] mx-auto">
+        <section>
+          <div className="container py-12 px-5 mx-auto flex-col flexBox ">
+            <h1 className="text-5xl font-bold font-sans text-gray-900 mb-4 text-left">
+              심리학과에서 공부하기
+            </h1>
           </div>
-        </div>
-      </section>
-      <section className="text-gray-600 body-font">
-        <div className="container px-5 py-12 mx-auto flex-col flexBox ">
-          <h1 className="text-xl font-semibold mb-8">학과 공부 꿀팁!🍯</h1>
-          <div className="overflow-y-auto w-full h-96 flex flex-col flex-wrap items-center p-4 bg-fixed">
-            {StudyTip}
+        </section>
+        <section className="text-gray-600 body-font bg-secondaryColor">
+          <div className="container px-5 py-12 mx-auto flex-col flexBox ">
+            <h1 className="text-xl font-semibold mb-8">
+              수강신청 성공하는 꿀팁!🍯
+            </h1>
+            <div className="overflow-y-auto w-full h-96 flex flex-col flex-wrap items-center p-4 bg-fixed">
+              {Enrole}
+            </div>
           </div>
-        </div>
-      </section>
-      <section className="text-gray-600 body-font bg-shadowColor">
-        <div className="container px-5 py-12 mx-auto flex-col flexBox ">
-          <h1 className="dark:text-slate-700 text-xl font-semibold mb-8">
-            논문 검색 꿀팁!🍯
-          </h1>
-          <div className="overflow-y-auto w-full h-96 flex flex-col flex-wrap items-center p-4 bg-fixed">
-            {SearchTip}
+        </section>
+        <section className="text-gray-600 body-font">
+          <div className="container px-5 py-12 mx-auto flex-col flexBox ">
+            <h1 className="text-xl font-semibold mb-8">학과 공부 꿀팁!🍯</h1>
+            <div className="overflow-y-auto w-full h-96 flex flex-col flex-wrap items-center p-4 bg-fixed">
+              {StudyTip}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+        <section className="text-gray-600 body-font bg-shadowColor">
+          <div className="container px-5 py-12 mx-auto flex-col flexBox ">
+            <h1 className="dark:text-slate-700 text-xl font-semibold mb-8">
+              논문 검색 꿀팁!🍯
+            </h1>
+            <div className="overflow-y-auto w-full h-96 flex flex-col flex-wrap items-center p-4 bg-fixed">
+              {SearchTip}
+            </div>
+          </div>
+        </section>
+      </div>
     </Layout>
   );
 }

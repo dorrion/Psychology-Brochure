@@ -140,7 +140,9 @@ export default function index({ data }: any) {
                 label: '프로그램',
                 content: (
                   <div className="flexBox flex-col">
-                    <div className="flex-wrap flexBox">{lecture}</div>
+                    <div className="flex-wrap flexBox max-w-[64rem]">
+                      {lecture}
+                    </div>
                     <button
                       className="flex-col flexBox"
                       onClick={onClickMoreViewButton}
@@ -150,7 +152,9 @@ export default function index({ data }: any) {
                       </p>
                       {isLectureMoreView ? <UpArrow /> : <DownArrow />}
                     </button>
-                    <div className="flex-wrap flexBox">{seminar}</div>
+                    <div className="flex-wrap flexBox max-w-[64rem]">
+                      {seminar}
+                    </div>
                     <button
                       className="flex-col flexBox"
                       onClick={onClickSeminarMoreViewButton}
@@ -160,7 +164,9 @@ export default function index({ data }: any) {
                       </p>
                       {isSeminarMoreView ? <UpArrow /> : <DownArrow />}
                     </button>
-                    <div className="flex-wrap flexBox">{camp}</div>
+                    <div className="flex-wrap flexBox max-w-[64rem]">
+                      {camp}
+                    </div>
                   </div>
                 ),
               },
@@ -168,7 +174,7 @@ export default function index({ data }: any) {
                 id: '1',
                 label: '비교과 후기',
                 content: (
-                  <div className="text-gray-600 body-font">
+                  <div className="text-gray-600 body-font max-w-[64rem] mx-auto">
                     <section className="bg-secondaryColor">
                       <div className="container px-5 py-16 mx-auto flex-col flexBox ">
                         <h1 className="text-xl font-semibold mb-8">

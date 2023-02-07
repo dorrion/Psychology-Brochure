@@ -26,7 +26,7 @@ export default function Introduce({ MemberData }: any) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section className="text-gray-600 body-font">
+      <section className="text-gray-600 body-font  max-w-[64rem] mx-auto">
         <div className="container px-5 py-12 mx-auto">
           <div className="flex-col flex-wrap w-full mb-20">
             <h2 className="mt-6 text-center text-5xl font-black tracking-tight text-gray-900">

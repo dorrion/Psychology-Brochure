@@ -27,7 +27,7 @@ const Tabs = ({ Bridge, Exchange, Multi, Short, Global, Advice }: any) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section className="text-gray-600 body-font">
+      <section className="text-gray-600 body-font max-w-[64rem] mx-auto">
         <div className="container px-5 mx-auto">
           <Tab
             tabs={[

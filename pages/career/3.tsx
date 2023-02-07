@@ -39,7 +39,7 @@ export default function Home({ WebProgrammer }: any) {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <section className="text-gray-600 body-font">
+        <section className="text-gray-600 body-font max-w-[64rem] mx-auto">
           {/* 프로필 */}
           <div className="container px-5 py-12 mx-auto flex flex-col">
             <section className="flexBox flex-col sm:flex-row">
