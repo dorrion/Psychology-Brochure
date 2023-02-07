@@ -36,17 +36,16 @@ export default function Home({ CareerInterview }: any) {
             height={200}
             priority={true}
           />
-          <div className="container px-5 py-24 mx-auto relative">
-            <div className="w-2/3 max-w-5xl mb-36">
+          <div className="container py-24 mx-auto relative">
+            <div className="mb-36">
               {/* 취업 현황 배너 */}
               <h1 className="text-5xl mb-4 font-medium">취업 현황</h1>
               <Image
                 src={'/images/취업현황.webp'}
-                className="absolute w-full h-64 object-cover object-center mb-4"
+                className="absolute w-full h-64 object-cover object-center"
                 alt="picture"
-                width={1920}
-                height={200}
-                layout="fixed"
+                width={1024}
+                height={259}
               />
               <div className="absolute w-full flex-col flex justify-end items-center">
                 {/* 반투명한 검은 배경 */}
