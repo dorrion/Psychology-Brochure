@@ -1,18 +1,3 @@
 User-agent: *
-Disallow: /
-
-# Google Search
-User-agent: Googlebot
-Allow : / 
-Disallow: /api*/
-Disallow: /oauth*/
-Disallow: /userprofile*/
-
-# Naver Search
-User-agent: Yeti
 Allow: /
-Disallow: /api*/
-Disallow: /oauth*/
-Disallow: /userprofile*/
-
 Sitemap: https://psychology-brochure.vercel.app/sitemap.xml
