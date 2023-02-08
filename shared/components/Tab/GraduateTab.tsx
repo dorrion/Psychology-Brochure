@@ -1,5 +1,5 @@
-import { Router, useRouter } from 'next/router';
-import React, { FC } from 'react';
+import { useRouter } from 'next/router';
+import React, { FC, useEffect } from 'react';
 import { useState } from 'react';
 
 interface Tab {
@@ -15,7 +15,16 @@ interface Props {
 
 const GraduateTab: FC<Props> = ({ tabs }) => {
   const router = useRouter();
+  const { category } = router.query;
   const [activeTab, setActiveTab] = useState(tabs[0].id);
+
+  // 다른 사람이 카테고리 입력했을 때 해당하는 페이지를 보여주도록
+  useEffect(() => {
+    if (category) {
+      setActiveTab(+category);
+    }
+  }, [category]);
+
   const handleTabClick = (category: any) => {
     setActiveTab(category);
     router.push({
