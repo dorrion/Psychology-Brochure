@@ -3,10 +3,12 @@ import Script from 'next/script';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { ThemeProvider } from 'next-themes';
+import type { AppProps } from 'next/app';
+import { Analytics } from '@vercel/analytics/react';
 
 import * as gtag from '../lib/gtag';
 
-function MyApp({ Component, pageProps }: any) {
+function MyApp({ Component, pageProps }: AppProps) {
   // GA 설정 시작
   const router = useRouter();
   useEffect(() => {
@@ -44,6 +46,8 @@ function MyApp({ Component, pageProps }: any) {
       />
       {/* GA 설정 끝 */}
       <Component {...pageProps} />
+      {/* Vercel Analytics */}
+      <Analytics />
     </ThemeProvider>
   );
 }
