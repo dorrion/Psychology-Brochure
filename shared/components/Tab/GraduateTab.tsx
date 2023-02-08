@@ -36,7 +36,7 @@ const GraduateTab: FC<Props> = ({ tabs }) => {
             // 선택된 탭이면 배경색 바뀌도록
             className={`py-px px-4 flexBox flex-wrap text-xl font-normal ${
               activeTab === tab.id ? 'text-secondaryColor' : ''
-            } ${tab.id === 5 ? '' : 'border-r'}`}
+            } ${tab.id === 6 ? '' : 'border-r'}`}
             onClick={() => handleTabClick(tab.id)}
           >
             {/* 탭 라벨 */}
