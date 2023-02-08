@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Layout from 'components/layout';
-import Tab from 'shared/components/Tab';
+import AbroadTab from 'shared/components/Tab/AbroadTab';
 import {
   Banner1,
   Banner2,
@@ -29,40 +29,40 @@ const Tabs = ({ Bridge, Exchange, Multi, Short, Global, Advice }: any) => {
       </Head>
       <section className="text-gray-600 body-font max-w-[64rem] mx-auto">
         <div className="container px-5 mx-auto">
-          <Tab
+          <AbroadTab
             tabs={[
               {
-                id: '0',
+                id: 1,
                 label: '파란사다리',
                 banner: <Banner1 />,
                 content: <BridgePage Bridge={Bridge} />,
               },
               {
-                id: '1',
+                id: 2,
                 label: '교환학생',
                 banner: <Banner2 />,
                 content: <ExchangePage Exchange={Exchange} />,
               },
               {
-                id: '2',
+                id: 3,
                 label: '복수학위',
                 banner: <Banner3 />,
                 content: <MultiPage Multi={Multi} />,
               },
               {
-                id: '3',
+                id: 4,
                 label: '단기해외연수',
                 banner: <Banner4 />,
                 content: <ShortPage Short={Short} />,
               },
               {
-                id: '4',
+                id: 5,
                 label: '글로벌인턴쉽',
                 banner: <Banner5 />,
                 content: <GlobalPage Global={Global} />,
               },
               {
-                id: '5',
+                id: 6,
                 label: '선배님의 조언',
                 banner: <Banner6 />,
                 content: <AdvicePage Advice={Advice} />,

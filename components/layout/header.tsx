@@ -19,13 +19,19 @@ export default function Header() {
             >
               소개
             </Link>
-            <Link href="/graduate" className="mr-5 text-xl hover:text-gray-900">
+            <Link
+              href="/graduate?category=1"
+              className="mr-5 text-xl hover:text-gray-900"
+            >
               대학원
             </Link>
             <Link href="/career" className="mr-5 text-xl hover:text-gray-900">
               취업
             </Link>
-            <Link href="/abroad" className="mr-5 text-xl hover:text-gray-900">
+            <Link
+              href="/abroad?category=1"
+              className="mr-5 text-xl hover:text-gray-900"
+            >
               유학
             </Link>
             {/* <Link href="/tool" className="mr-5 text-xl hover:text-gray-900">

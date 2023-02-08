@@ -1,8 +1,9 @@
-import React, { FC } from 'react';
+import { useRouter } from 'next/router';
+import React, { FC, useEffect } from 'react';
 import { useState } from 'react';
 
 interface Tab {
-  id?: string;
+  id?: number;
   label?: string;
   banner?: React.ReactNode;
   content?: React.ReactNode;
@@ -12,8 +13,25 @@ interface Props {
   tabs: Tab[];
 }
 
-const Tab: FC<Props> = ({ tabs }) => {
+const AbroadTab: FC<Props> = ({ tabs }) => {
+  const router = useRouter();
+  const { category } = router.query;
   const [activeTab, setActiveTab] = useState(tabs[0].id);
+
+  // 다른 사람이 카테고리 입력했을 때 해당하는 페이지를 보여주도록
+  useEffect(() => {
+    if (category) {
+      setActiveTab(+category);
+    }
+  }, [category]);
+
+  const handleTabClick = (category: any) => {
+    setActiveTab(category);
+    router.push({
+      pathname: '/abroad',
+      query: { category },
+    });
+  };
 
   return (
     <>
@@ -27,8 +45,8 @@ const Tab: FC<Props> = ({ tabs }) => {
             // 선택된 탭이면 배경색 바뀌도록
             className={`py-px px-4 flexBox flex-wrap text-xl font-normal ${
               activeTab === tab.id ? 'text-secondaryColor' : ''
-            } ${tab.id === '5' ? '' : 'border-r'}`}
-            onClick={() => setActiveTab(tab.id)}
+            } ${tab.id === 6 ? '' : 'border-r'}`}
+            onClick={() => handleTabClick(tab.id)}
           >
             {/* 탭 라벨 */}
             {tab.label}
@@ -43,4 +61,4 @@ const Tab: FC<Props> = ({ tabs }) => {
   );
 };
 
-export default Tab;
+export default AbroadTab;
