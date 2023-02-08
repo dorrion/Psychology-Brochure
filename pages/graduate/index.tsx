@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Layout from 'components/layout';
-import Tab from 'shared/components/Tab';
+import GraduateTab from 'shared/components/Tab/GraduateTab';
 import {
   Banner1,
   Banner2,
@@ -30,16 +30,16 @@ const Tabs = ({ Curriculum, Prepare, Life, Major, Free }: any) => {
       </Head>
       <section className="text-gray-600 body-font max-w-[64rem] mx-auto">
         <div className="container px-5 mx-auto">
-          <Tab
+          <GraduateTab
             tabs={[
               {
-                id: '0',
+                id: '1',
                 label: '추천 커리큘럼',
                 banner: <Banner1 />,
                 content: <CurriculumPage Curriculum={Curriculum} />,
               },
               {
-                id: '1',
+                id: '2',
                 label: '대학원 준비',
                 banner: <Banner2 />,
                 content: (
@@ -50,7 +50,7 @@ const Tabs = ({ Curriculum, Prepare, Life, Major, Free }: any) => {
                 ),
               },
               {
-                id: '2',
+                id: '3',
                 label: '대학원 생활',
                 banner: <Banner3 />,
                 content: (
@@ -61,7 +61,7 @@ const Tabs = ({ Curriculum, Prepare, Life, Major, Free }: any) => {
                 ),
               },
               {
-                id: '3',
+                id: '4',
                 label: '전공별 질문',
                 banner: <Banner4 />,
                 content: (
@@ -71,13 +71,13 @@ const Tabs = ({ Curriculum, Prepare, Life, Major, Free }: any) => {
                 ),
               },
               {
-                id: '4',
+                id: '5',
                 label: '자유발언',
                 banner: <Banner5 />,
                 content: <FreePage Free={Free} />,
               },
               {
-                id: '5',
+                id: '6',
                 label: '입시요강',
                 banner: <Banner6 />,
                 content: <GuidePage />,
