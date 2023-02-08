@@ -12,8 +12,12 @@ interface Props {
   tabs: Tab[];
 }
 
-const Tab: FC<Props> = ({ tabs }) => {
+const AbroadTab: FC<Props> = ({ tabs }) => {
   const [activeTab, setActiveTab] = useState(tabs[0].id);
+  const handleTabClick = (tabId: any) => {
+    setActiveTab(tabId);
+    window.history.pushState({}, '', `/abroad/${tabId}`);
+  };
 
   return (
     <>
@@ -28,7 +32,7 @@ const Tab: FC<Props> = ({ tabs }) => {
             className={`py-px px-4 flexBox flex-wrap text-xl font-normal ${
               activeTab === tab.id ? 'text-secondaryColor' : ''
             } ${tab.id === '5' ? '' : 'border-r'}`}
-            onClick={() => setActiveTab(tab.id)}
+            onClick={() => handleTabClick(tab.id)}
           >
             {/* 탭 라벨 */}
             {tab.label}
@@ -43,4 +47,4 @@ const Tab: FC<Props> = ({ tabs }) => {
   );
 };
 
-export default Tab;
+export default AbroadTab;
