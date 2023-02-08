@@ -32,37 +32,37 @@ const Tabs = ({ Bridge, Exchange, Multi, Short, Global, Advice }: any) => {
           <AbroadTab
             tabs={[
               {
-                id: '1',
+                id: 1,
                 label: '파란사다리',
                 banner: <Banner1 />,
                 content: <BridgePage Bridge={Bridge} />,
               },
               {
-                id: '2',
+                id: 2,
                 label: '교환학생',
                 banner: <Banner2 />,
                 content: <ExchangePage Exchange={Exchange} />,
               },
               {
-                id: '3',
+                id: 3,
                 label: '복수학위',
                 banner: <Banner3 />,
                 content: <MultiPage Multi={Multi} />,
               },
               {
-                id: '4',
+                id: 4,
                 label: '단기해외연수',
                 banner: <Banner4 />,
                 content: <ShortPage Short={Short} />,
               },
               {
-                id: '5',
+                id: 5,
                 label: '글로벌인턴쉽',
                 banner: <Banner5 />,
                 content: <GlobalPage Global={Global} />,
               },
               {
-                id: '6',
+                id: 6,
                 label: '선배님의 조언',
                 banner: <Banner6 />,
                 content: <AdvicePage Advice={Advice} />,
