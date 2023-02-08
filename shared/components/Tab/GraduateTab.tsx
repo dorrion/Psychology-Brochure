@@ -16,11 +16,11 @@ interface Props {
 const GraduateTab: FC<Props> = ({ tabs }) => {
   const router = useRouter();
   const [activeTab, setActiveTab] = useState(tabs[0].id);
-  const handleTabClick = (id: any) => {
-    setActiveTab(id);
+  const handleTabClick = (category: any) => {
+    setActiveTab(category);
     router.push({
       pathname: '/graduate',
-      query: { id },
+      query: { category },
     });
   };
 

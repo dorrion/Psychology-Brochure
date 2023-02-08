@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router';
 import React, { FC } from 'react';
 import { useState } from 'react';
 
@@ -13,10 +14,14 @@ interface Props {
 }
 
 const AbroadTab: FC<Props> = ({ tabs }) => {
+  const router = useRouter();
   const [activeTab, setActiveTab] = useState(tabs[0].id);
-  const handleTabClick = (tabId: any) => {
-    setActiveTab(tabId);
-    window.history.pushState({}, '', `/abroad/${tabId}`);
+  const handleTabClick = (category: any) => {
+    setActiveTab(category);
+    router.push({
+      pathname: '/abroad',
+      query: { category },
+    });
   };
 
   return (
