@@ -33,13 +33,13 @@ const Tabs = ({ Curriculum, Prepare, Life, Major, Free }: any) => {
           <GraduateTab
             tabs={[
               {
-                id: '1',
+                id: 1,
                 label: '추천 커리큘럼',
                 banner: <Banner1 />,
                 content: <CurriculumPage Curriculum={Curriculum} />,
               },
               {
-                id: '2',
+                id: 2,
                 label: '대학원 준비',
                 banner: <Banner2 />,
                 content: (
@@ -50,7 +50,7 @@ const Tabs = ({ Curriculum, Prepare, Life, Major, Free }: any) => {
                 ),
               },
               {
-                id: '3',
+                id: 3,
                 label: '대학원 생활',
                 banner: <Banner3 />,
                 content: (
@@ -61,7 +61,7 @@ const Tabs = ({ Curriculum, Prepare, Life, Major, Free }: any) => {
                 ),
               },
               {
-                id: '4',
+                id: 4,
                 label: '전공별 질문',
                 banner: <Banner4 />,
                 content: (
@@ -71,13 +71,13 @@ const Tabs = ({ Curriculum, Prepare, Life, Major, Free }: any) => {
                 ),
               },
               {
-                id: '5',
+                id: 5,
                 label: '자유발언',
                 banner: <Banner5 />,
                 content: <FreePage Free={Free} />,
               },
               {
-                id: '6',
+                id: 6,
                 label: '입시요강',
                 banner: <Banner6 />,
                 content: <GuidePage />,
