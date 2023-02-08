@@ -4,7 +4,6 @@ import { useRouter } from 'next/router';
 const PostHead = () => {
   const router = useRouter();
   const { pathname } = router;
-  console.log(pathname);
 
   return (
     <Head>

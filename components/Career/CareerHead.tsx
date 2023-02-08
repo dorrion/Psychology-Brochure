@@ -3,8 +3,7 @@ import { useRouter } from 'next/router';
 
 const CareerHead = () => {
   const router = useRouter();
-  const { pathname, query } = router;
-  console.log(pathname);
+  const { pathname } = router;
 
   return (
     <Head>
@@ -24,6 +23,10 @@ const CareerHead = () => {
             property="og:description"
             content="심리학과 취업현황에 대해 알려드려요"
           />
+          <meta
+            property="og:url"
+            content="https://psychology-brochure.vercel.app/career/info"
+          />
         </>
       )}
       {pathname === '/career' && (
@@ -38,6 +41,10 @@ const CareerHead = () => {
           <meta
             property="og:description"
             content="심리학과 취업 현황과 취업한 선배님 인터뷰를 전해드려요"
+          />
+          <meta
+            property="og:url"
+            content="https://psychology-brochure.vercel.app/career"
           />
         </>
       )}
@@ -54,6 +61,10 @@ const CareerHead = () => {
             property="og:description"
             content="공군 장교 추천 커리큘럼, 인터뷰를 알려드려요"
           />
+          <meta
+            property="og:url"
+            content="https://psychology-brochure.vercel.app/career/1"
+          />
         </>
       )}
       {pathname === '/career/2' && (
@@ -68,6 +79,10 @@ const CareerHead = () => {
           <meta
             property="og:description"
             content="신용분석가 추천 커리큘럼, 인터뷰를 알려드려요"
+          />
+          <meta
+            property="og:url"
+            content="https://psychology-brochure.vercel.app/career/2"
           />
         </>
       )}
@@ -84,16 +99,16 @@ const CareerHead = () => {
             property="og:description"
             content="그래픽스 엔지니어 추천 커리큘럼, 인터뷰를 알려드려요"
           />
+          <meta
+            property="og:url"
+            content="https://psychology-brochure.vercel.app/career/3"
+          />
         </>
       )}
 
       <meta
         property="og:image"
         content="/_next/image?url=%2Fimages%2F%ED%99%88%EC%A1%B8%EC%97%85.webp&w=256&q=75 1x, /_next/image?url=%2Fimages%2F%ED%99%88%EC%A1%B8%EC%97%85.webp&w=640&q=75 2x"
-      />
-      <meta
-        property="og:url"
-        content="https://psychology-brochure.vercel.app/"
       />
       <meta property="og:type" content="website" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />

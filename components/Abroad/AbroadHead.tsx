@@ -113,7 +113,7 @@ const AbroadHead = () => {
       />
       <meta
         property="og:url"
-        content="https://psychology-brochure.vercel.app/"
+        content="http://localhost:3000/abroad?category=1"
       />
       <meta property="og:type" content="website" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
