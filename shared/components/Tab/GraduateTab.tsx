@@ -1,3 +1,4 @@
+import { Router, useRouter } from 'next/router';
 import React, { FC } from 'react';
 import { useState } from 'react';
 
@@ -13,10 +14,14 @@ interface Props {
 }
 
 const GraduateTab: FC<Props> = ({ tabs }) => {
+  const router = useRouter();
   const [activeTab, setActiveTab] = useState(tabs[0].id);
-  const handleTabClick = (tabId: any) => {
-    setActiveTab(tabId);
-    window.history.pushState({}, '', `/graduate/${tabId}`);
+  const handleTabClick = (id: any) => {
+    setActiveTab(id);
+    router.push({
+      pathname: '/graduate',
+      query: { id },
+    });
   };
 
   return (
