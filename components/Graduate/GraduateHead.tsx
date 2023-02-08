@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
-const CustomHead = () => {
+const GraduateHead = () => {
   const router = useRouter();
   const { query } = router;
 
@@ -69,7 +69,7 @@ const CustomHead = () => {
             name="keywords"
             content="대학원, 임상심리, 상담심리, 사회심리, 응용인지심리, 교육대학원"
           />
-          <meta property="og:title" content="대학원 생활" />
+          <meta property="og:title" content="전공별 질문" />
           <meta
             property="og:description"
             content="세부 전공 별 대학원 생활에 대한 정보를 알려드려요"
@@ -96,7 +96,7 @@ const CustomHead = () => {
           <title>입시요강</title>
           <meta name="description" content="대학별 모집요강을 안내드려요" />
           <meta name="keywords" content="서울대, 고려대, 연세대, 아주대" />
-          <meta property="og:title" content="자유발언" />
+          <meta property="og:title" content="입시요강" />
           <meta
             property="og:description"
             content="대학별 모집요강을 안내드려요"
@@ -118,4 +118,4 @@ const CustomHead = () => {
   );
 };
 
-export default CustomHead;
+export default GraduateHead;
