@@ -23,17 +23,17 @@ export default function Home({ data }: any) {
           <title>아주대학교 심리학과 요람</title>
           <meta
             name="description"
-            content="아주대학교 심리학과에서 제공하는 교육과정을 알아보세요. 프로그램과 강좌를 알아보세요."
+            content="아주대학교 심리학과 학생들에게 유용한 정보를 소개합니다. 장학금, 비교과, 기숙사 등 다양한 정보를 알아보세요."
           />
           <meta
             name="keywords"
             content="아주대학교, 심리학과, 졸업, 장학금, 메일, 비교과, 공부, 근로, 기숙사, 맛집, 놀기"
           />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <meta property="og:title" content="아주대학교 심리학과 교육과정" />
+          <meta property="og:title" content="아주대학교 심리학과 요람" />
           <meta
             property="og:description"
-            content="아주대학교 심리학과에서 제공하는 교육과정을 알아보세요. 프로그램과 강좌를 알아보세요."
+            content="아주대학교 심리학과 학생들에게 유용한 정보를 소개합니다."
           />
           <meta
             property="og:image"
