@@ -7,7 +7,9 @@ const FreePage = ({ Free }: any) => {
     return <FreeCard key={idx} idx={idx} name={el.name} tip={el.tip} />;
   });
 
-  return <div className="grid grid-cols-3 gap-4">{FreeList}</div>;
+  return (
+    <div className="grid gird-cols-1 sm:grid-cols-3 gap-4">{FreeList}</div>
+  );
 };
 
 export default FreePage;
