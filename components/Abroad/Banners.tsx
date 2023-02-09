@@ -87,32 +87,10 @@ export const Banner6 = () => {
         <h1 className="text-3xl font-medium mb-2 dark:text-slate-800">
           선배님의 조언
         </h1>
-        <div className="flex flex-col sm:flex-row">
-          <div className="flex mr-2 mb-2 sm:mb-0">
-            <div className="w-10 h-10  mr-2 circle bg-interview-300 text-base text-slate-50">
-              익명1
-            </div>
-            <div>
-              <div className="font-normal text-base">
-                Sapporo Gakuin University
-              </div>
-              <div className="font-normal text-base">아주대 단기파견</div>
-            </div>
-          </div>
-          <div className="flex mr-2 mb-2 sm:mb-0">
-            <div className="w-10 h-10  mr-2 circle bg-interview-400 text-base text-slate-50">
-              익명2
-            </div>
-            <div>
-              <div className="font-normal text-base">
-                University of Michigan
-              </div>
-              <div className="font-normal text-base">파란사다리</div>
-            </div>
-          </div>
+        <div className="flex">
           <div className="flex mr-2">
             <div className="w-10 h-10  mr-2 circle bg-interview-600 text-base text-slate-50">
-              익명3
+              익명
             </div>
             <div className="w-10 h-10  mr-2 circle bg-interview-600 text-base text-slate-50">
               라이언
