@@ -21,7 +21,7 @@ export default function Home({ CareerInterview }: any) {
       <Layout>
         <CareerHead />
         <section className="px-5">
-          <section className="text-gray-600 body-font max-w-[64rem] mx-auto mb-36 flexBox">
+          <section className="text-gray-600 body-font max-w-[64rem] mx-auto mb-56 flexBox">
             <div className="container relative py-12">
               {/* 취업 현황 배너 */}
               <h1 className="text-5xl mb-4 font-medium">취업 현황</h1>
@@ -59,10 +59,10 @@ export default function Home({ CareerInterview }: any) {
             </div>
           </section>
           <section className="text-gray-600 body-font">
-            <div className="container relative py-12 max-w-[64rem] mx-auto ">
+            <div className="max-w-[64rem]">
               {/* 취업 인터뷰 */}
-              <div className="container py-12 mx-auto relative">
-                <h1 className="text-5xl mb-4 font-medium">취업 인터뷰</h1>
+              <div className="container my-12 mx-auto">
+                <h1 className="text-5xl font-medium">취업 인터뷰</h1>
                 <p className="mb-8 text-base font-extralight text-gray-500">
                   심리학과 졸업생들의 취업 이야기. 취업과 관련된 다양한 궁금증을
                   물어봤습니다.
