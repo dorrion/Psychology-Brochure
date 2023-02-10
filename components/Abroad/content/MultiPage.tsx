@@ -33,7 +33,10 @@ const MultiPage = ({ Multi }: any) => {
         </p>
         <div className="flexBox flex-col sm:flex-row">
           <div>
-            <a href="https://oia.ajou.ac.kr/oia/outgoing/degree-info.do?mode=view&articleNo=112823&article.offset=0&articleLimit=10">
+            <a
+              href="https://oia.ajou.ac.kr/oia/outgoing/degree-info.do?mode=view&articleNo=112823&article.offset=0&articleLimit=10"
+              target="_blank"
+            >
               <div className="w-96 h-28 flexBox hover:border border-secondaryColor rounded-lg">
                 <Image
                   src={'/images/복수학위자매대1.webp'}
@@ -46,7 +49,10 @@ const MultiPage = ({ Multi }: any) => {
             </a>
           </div>
           <div>
-            <a href="https://oia.ajou.ac.kr/oia/outgoing/degree-info.do?mode=view&articleNo=112826&article.offset=0&articleLimit=10">
+            <a
+              href="https://oia.ajou.ac.kr/oia/outgoing/degree-info.do?mode=view&articleNo=112826&article.offset=0&articleLimit=10"
+              target="_blank"
+            >
               <div className="w-96 h-28 flexBox hover:border border-secondaryColor rounded-lg">
                 <Image
                   src={'/images/복수학위자매대2.webp'}
