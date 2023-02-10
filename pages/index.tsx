@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Layout from 'components/layout';
 import SurvivalWrapper from 'components/Home/SurvivalWrapper';
 import { SurvivalProps } from 'shared/store/type';
+import { GlobalAlt, HomeIcon, AcademicCap, Document } from 'components/icon';
 
 export default function Home({ data }: any) {
   const HomeData = data;
@@ -67,6 +68,58 @@ export default function Home({ data }: any) {
             {/* 노트북 반응형 */}
             <div className="flex flex-wrap max-w-[64rem] mx-auto -m-4">
               {TipList}
+            </div>
+            <div className="flex-col flex-wrap flexBox w-full my-20">
+              <div className="w-full lg:w-1/2 flexBox flex-col mb-6 lg:mb-0 text-center">
+                <h1 className="text-6xl font-black mb-1.5 text-gray-900 dark:text-gray-100">
+                  심리학과 주요 사이트
+                </h1>
+                <div className="flex justify-center items-start flex-wrap mt-24 text-center">
+                  <a
+                    href="https://www.ajou.ac.kr/kr/index02.do"
+                    target="_blank"
+                    className="mr-4 sm:mr-8"
+                  >
+                    <div className="w-20 h-20 mb-3 flexBox circle bg-secondaryColor">
+                      <GlobalAlt />
+                    </div>
+                    <div>아주대학교</div>
+                  </a>
+                  <a
+                    href="http://www2.ajou.ac.kr/apsy/index.jsp"
+                    target="_blank"
+                    className="mr-4 sm:mr-8"
+                  >
+                    <div className="w-20 h-20 mb-3 flexBox circle bg-secondaryColor">
+                      <HomeIcon />
+                    </div>
+                    <div>심리학과</div>
+                  </a>
+                  <a
+                    href="https://grad.ajou.ac.kr/gs/research/faculty25.do"
+                    target="_blank"
+                    className="mr-4 sm:mr-8"
+                  >
+                    <div className="w-20 h-20 mb-3 flexBox circle bg-secondaryColor">
+                      <AcademicCap />
+                    </div>
+                    <div>
+                      아주대학교 <br />
+                      대학원
+                    </div>
+                  </a>
+                  <a
+                    href="https://ajoupsy.modoo.at/"
+                    target="_blank"
+                    className="mr-4 sm:mr-8"
+                  >
+                    <div className="w-20 h-20 mb-3 flexBox circle bg-secondaryColor">
+                      <Document />
+                    </div>
+                    <div>2021 요람</div>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </section>
