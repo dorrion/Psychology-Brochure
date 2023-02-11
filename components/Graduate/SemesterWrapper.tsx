@@ -56,8 +56,8 @@ const Major = ({
         </div>
         <div className="ml-4 flex-col">
           <p className="text-xl font-medium dark:text-slate-200">{el.name}</p>
-          <p className="text-lg font-extralight">{el.engName}</p>
-          <p className="text-lg font-extralight">{el.explain}</p>
+          <p className="text-lg font-light">{el.engName}</p>
+          <p className="text-lg font-light">{el.explain}</p>
         </div>
       </div>
     );
@@ -72,14 +72,14 @@ const Major = ({
         </div>
         <div className="ml-4 flex-col">
           <p className="text-xl font-medium dark:text-slate-200">{el.name}</p>
-          <p className="text-lg font-extralight">{el.engName}</p>
-          <p className="text-lg font-extralight">{el.explain}</p>
+          <p className="text-lg font-light">{el.engName}</p>
+          <p className="text-lg font-light">{el.explain}</p>
           {el.addExplain && (
             <div className="flex mt-4 p-3 bg-gray-200 dark:bg-slate-500">
               <div className="mr-1 text-primaryColor">
                 <BulbIcon />
               </div>
-              <p className="text-base font-extralight dark:text-slate-300">
+              <p className="text-base font-light dark:text-slate-300">
                 {el.addExplain}
               </p>
             </div>

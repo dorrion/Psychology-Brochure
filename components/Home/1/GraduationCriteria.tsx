@@ -14,7 +14,7 @@ export default function GraduationCriteria() {
         <p className="text-2xl font-bold leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
           Summary
         </p>
-        <p className="text-lg font-extralight leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
+        <p className="text-lg font-light leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
           심리학과 졸업요건
         </p>
       </div>

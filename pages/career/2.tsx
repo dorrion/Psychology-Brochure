@@ -51,13 +51,13 @@ export default function Home({ Analyst }: any) {
                 <h1 className="text-5xl font-black mb-5">김별명</h1>
                 <div className="flex">
                   <p className="text-base font-extrabold">직업군</p>
-                  <p className="text-base font-extralight ml-3.5">
+                  <p className="text-base font-light ml-3.5">
                     경영/사무/금융/보험직
                   </p>
                 </div>
                 <div className="flex">
                   <p className="text-base font-extrabold">직업명</p>
-                  <p className="text-base font-extralight ml-3.5">신용분석가</p>
+                  <p className="text-base font-light ml-3.5">신용분석가</p>
                 </div>
               </div>
             </section>

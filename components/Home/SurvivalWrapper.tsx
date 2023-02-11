@@ -48,7 +48,7 @@ export default function SurvivalWrapper({
                 {subtitle}
               </p>
             </div>
-            <div className="absolute bottom-4 left-4 flexBox text-base font-extralight text-slate-400 inline-flex items-center md:mb-2 lg:mb-0 ">
+            <div className="absolute bottom-4 left-4 flexBox text-base font-light text-slate-400 inline-flex items-center md:mb-2 lg:mb-0 ">
               보기
               <ArrowRightIcon />
             </div>

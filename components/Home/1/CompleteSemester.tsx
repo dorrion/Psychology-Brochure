@@ -12,7 +12,7 @@ export default function CompleteSemester() {
                 <h1 className="text-[3.125rem] text-white text-center">6</h1>
                 <h1 className="text-xl text-white text-center">학기</h1>
               </div>
-              <p className="text-large font-extralight mt-4  whitespace-pre-line">
+              <p className="text-large font-light mt-4  whitespace-pre-line">
                 해당 학기를 포함하여 6학기 혹은 7학기를 등록하는 자
               </p>
             </div>
@@ -23,7 +23,7 @@ export default function CompleteSemester() {
                   이수
                 </h1>
               </div>
-              <p className="text-large font-extralight mt-4 whitespace-pre-line">
+              <p className="text-large font-light mt-4 whitespace-pre-line">
                 해당 등록 정규학기 수강신청 학점을 포함하여 졸업요건을 모두 갖춘
                 자
               </p>
@@ -33,17 +33,17 @@ export default function CompleteSemester() {
                 <h1 className="text-xl text-white">누계평점</h1>
                 <h1 className="text-6xl text-white">3.75</h1>
               </div>
-              <p className="text-large font-extralight mt-4  whitespace-pre-line">
+              <p className="text-large font-light mt-4  whitespace-pre-line">
                 성적 누계평점평균이 3.75인자
               </p>
             </div>
           </div>
           <div className="text-lg mt-8">
             <h3 className="font-medium">3가지 모두 해당일 때 조기 졸업 가능</h3>
-            <p className="font-extralight">
+            <p className="font-light">
               이 외엔 정규 졸업을 해야한다(8학기 졸업)
             </p>
-            <p className="mt-4 font-extralight">
+            <p className="mt-4 font-light">
               즉, 6학기 혹은 7학기를 재학 학생 중에서 졸업학점과 어학 점수를
               채웠으며, 평균 학점이 3.75 이상일 경우 조기 졸업이 가능하다
             </p>

@@ -7,7 +7,7 @@ export default function Interview({ name, color, interview }: any) {
           <div className={`w-10 h-10 circle bg-interview-${color}`}>
             <div className="text-slate-50 text-base font-normal">{name}</div>
           </div>
-          <p className="text-lg font-extralight ml-6">{el.answer}</p>
+          <p className="text-lg font-light ml-6">{el.answer}</p>
         </div>
       </div>
     );

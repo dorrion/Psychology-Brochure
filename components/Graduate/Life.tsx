@@ -13,7 +13,7 @@ export default function Interview({ question, answer }: any) {
             {ans.name}
           </div>
         </div>
-        <p className="text-lg font-extralight ml-6">{ans.content}</p>
+        <p className="text-lg font-light ml-6">{ans.content}</p>
       </div>
     );
   });

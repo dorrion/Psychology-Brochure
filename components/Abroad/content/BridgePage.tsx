@@ -9,7 +9,7 @@ const BridgePage = ({ Bridge }: any) => {
         <h2 className="text-xl font-normal">{el.head}</h2>
         {el.desc.map((de, i) => {
           return (
-            <p key={i} className="text-lg font-extralight">
+            <p key={i} className="text-lg font-light">
               {de}
             </p>
           );
@@ -33,7 +33,7 @@ const BridgePage = ({ Bridge }: any) => {
             <h2 className="text-xl font-normal">{el.head}</h2>
             {el.desc.map((de, i) => {
               return (
-                <p key={i} className="text-lg font-extralight">
+                <p key={i} className="text-lg font-light">
                   {de}
                 </p>
               );

@@ -9,12 +9,12 @@ const MultiPage = ({ Multi }: any) => {
         <h2 className="text-xl font-normal">{el.head}</h2>
         {el.desc.map((de, i) => {
           return (
-            <p key={i} className="text-lg font-extralight">
+            <p key={i} className="text-lg font-light">
               {de}
             </p>
           );
         })}
-        <p className="text-secondaryColor text-lg font-extralight">{el.and}</p>
+        <p className="text-secondaryColor text-lg font-light">{el.and}</p>
       </div>
     );
   });
@@ -28,7 +28,7 @@ const MultiPage = ({ Multi }: any) => {
       </section>
       <section className="mb-24">
         <h1 className="text-2xl font-medium">미국 2개교 자매대 정보</h1>
-        <p className="text-secondaryColor text-lg font-extralight  mb-5">
+        <p className="text-secondaryColor text-lg font-light  mb-5">
           ※ 자매대학 정보를 보시려면 아래를 클릭해주세요
         </p>
         <div className="flexBox flex-col sm:flex-row">

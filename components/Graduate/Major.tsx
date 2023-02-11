@@ -16,7 +16,7 @@ export default function Interview({ major, explain }: any) {
               {ans.name}
             </div>
           </div>
-          <div className="ml-6 text-lg font-extralight">{ans.content}</div>
+          <div className="ml-6 text-lg font-light">{ans.content}</div>
         </div>
       );
     });

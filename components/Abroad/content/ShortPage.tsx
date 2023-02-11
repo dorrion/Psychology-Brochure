@@ -8,12 +8,12 @@ const ShortPage = ({ Short }: any) => {
         <h2 className="text-xl font-medium">{el.head}</h2>
         {el.desc.map((de, i) => {
           return (
-            <p key={i} className="text-lg font-extralight">
+            <p key={i} className="text-lg font-light">
               {de}
             </p>
           );
         })}
-        <p className="text-secondaryColor text-lg font-extralight">{el.and}</p>
+        <p className="text-secondaryColor text-lg font-light">{el.and}</p>
       </div>
     );
   });
@@ -23,12 +23,12 @@ const ShortPage = ({ Short }: any) => {
         <h2 className="text-lg font-medium">{el.head}</h2>
         {el.desc.map((de, i) => {
           return (
-            <p key={i} className="text-lg font-extralight">
+            <p key={i} className="text-lg font-light">
               {de}
             </p>
           );
         })}
-        <p className="text-secondaryColor text-lg font-extralight">{el.and}</p>
+        <p className="text-secondaryColor text-lg font-light">{el.and}</p>
       </div>
     );
   });
@@ -36,7 +36,9 @@ const ShortPage = ({ Short }: any) => {
     <>
       {/* 단기해외연수 프로그램 소개 */}
       <section>
-        <h1 className="text-2xl font-medium mb-5">단기해외연수 프로그램 소개</h1>
+        <h1 className="text-2xl font-medium mb-5">
+          단기해외연수 프로그램 소개
+        </h1>
         {program}
       </section>
       <section className="mb-20">

@@ -10,7 +10,7 @@ const ExchangePage = ({ Exchange }: any) => {
         <h2 className="text-xl font-medium">{el.head}</h2>
         {el.desc.map((de, i) => {
           return (
-            <p key={i} className="text-lg font-extralight">
+            <p key={i} className="text-lg font-light">
               {de}
             </p>
           );
@@ -24,7 +24,7 @@ const ExchangePage = ({ Exchange }: any) => {
         <h2 className="text-xl font-medium">{el.head}</h2>
         {el.desc.map((de, i) => {
           return (
-            <p key={i} className="text-lg font-extralight">
+            <p key={i} className="text-lg font-light">
               {de}
             </p>
           );
@@ -39,7 +39,7 @@ const ExchangePage = ({ Exchange }: any) => {
         <h2 className="text-xl font-normal">{el.head}</h2>
         {el.desc.map((de, i) => {
           return (
-            <p key={i} className="text-lg font-extralight">
+            <p key={i} className="text-lg font-light">
               {de}
             </p>
           );
@@ -47,10 +47,7 @@ const ExchangePage = ({ Exchange }: any) => {
         {el.and &&
           el.and.map((ae, i) => {
             return (
-              <p
-                key={i}
-                className="text-secondaryColor text-lg font-extralight"
-              >
+              <p key={i} className="text-secondaryColor text-lg font-light">
                 {ae}
               </p>
             );
@@ -65,12 +62,12 @@ const ExchangePage = ({ Exchange }: any) => {
         <h2 className="text-xl font-normal">{el.head}</h2>
         {el.desc.map((de, i) => {
           return (
-            <p key={i} className="text-lg font-extralight">
+            <p key={i} className="text-lg font-light">
               {de}
             </p>
           );
         })}
-        <p className="text-secondaryColor text-lg font-extralight">{el.and}</p>
+        <p className="text-secondaryColor text-lg font-light">{el.and}</p>
       </div>
     );
   });
@@ -81,7 +78,7 @@ const ExchangePage = ({ Exchange }: any) => {
         <h2 className="text-xl font-normal">{el.head}</h2>
         {el.desc.map((de, i) => {
           return (
-            <p key={i} className="text-lg font-extralight">
+            <p key={i} className="text-lg font-light">
               {de}
             </p>
           );
@@ -96,7 +93,7 @@ const ExchangePage = ({ Exchange }: any) => {
         <h2 className="text-xl font-normal">{el.head}</h2>
         {el.desc.map((de, i) => {
           return (
-            <p key={i} className="text-lg font-extralight">
+            <p key={i} className="text-lg font-light">
               {de}
             </p>
           );
@@ -104,10 +101,7 @@ const ExchangePage = ({ Exchange }: any) => {
         {el.and &&
           el.and.map((ae, i) => {
             return (
-              <p
-                key={i}
-                className="text-secondaryColor text-lg font-extralight"
-              >
+              <p key={i} className="text-secondaryColor text-lg font-light">
                 {ae}
               </p>
             );
@@ -121,7 +115,7 @@ const ExchangePage = ({ Exchange }: any) => {
         <h2 className="text-xl font-normal">{el.head}</h2>
         {el.desc.map((de, i) => {
           return (
-            <p key={i} className="text-lg font-extralight">
+            <p key={i} className="text-lg font-light">
               {de}
             </p>
           );
@@ -136,12 +130,12 @@ const ExchangePage = ({ Exchange }: any) => {
         <h2 className="text-xl font-normal">{el.head}</h2>
         {el.desc.map((de, i) => {
           return (
-            <p key={i} className="text-lg font-extralight">
+            <p key={i} className="text-lg font-light">
               {de}
             </p>
           );
         })}
-        <p className="text-secondaryColor text-lg font-extralight">{el.and}</p>
+        <p className="text-secondaryColor text-lg font-light">{el.and}</p>
       </div>
     );
   });
@@ -151,12 +145,12 @@ const ExchangePage = ({ Exchange }: any) => {
         <h2 className="text-xl font-normal">{el.head}</h2>
         {el.desc.map((de, i) => {
           return (
-            <p key={i} className="text-lg font-extralight">
+            <p key={i} className="text-lg font-light">
               {de}
             </p>
           );
         })}
-        <p className="text-secondaryColor text-lg font-extralight">{el.and}</p>
+        <p className="text-secondaryColor text-lg font-light">{el.and}</p>
       </div>
     );
   });
@@ -181,7 +175,7 @@ const ExchangePage = ({ Exchange }: any) => {
                 {ExProgram}
                 <h2 className="text-xl font-normal">선발방법 및 시기</h2>
                 <h3 className="text-lg font-normal mt-5">선발방법</h3>
-                <p className="text-lg font-extralight">
+                <p className="text-lg font-light">
                   1차 서류전형 - 2차 면접전형
                 </p>
                 <h3 className="text-lg font-normal mt-5">선발시기</h3>

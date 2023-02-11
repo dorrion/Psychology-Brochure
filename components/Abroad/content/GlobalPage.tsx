@@ -8,7 +8,7 @@ const GlobalPage = ({ Global }: any) => {
         <h2 className="text-xl font-medium">{el.head}</h2>
         {el.desc.map((de, i) => {
           return (
-            <p key={i} className="text-lg font-extralight">
+            <p key={i} className="text-lg font-light">
               {de}
             </p>
           );
@@ -16,10 +16,7 @@ const GlobalPage = ({ Global }: any) => {
         {el.and &&
           el.and.map((ae, i) => {
             return (
-              <p
-                key={i}
-                className="text-secondaryColor text-lg font-extralight"
-              >
+              <p key={i} className="text-secondaryColor text-lg font-light">
                 {ae}
               </p>
             );

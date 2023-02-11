@@ -51,7 +51,7 @@ export default function Introduce({ MemberData }: any) {
             <h2 className="mt-6 text-center text-5xl font-black tracking-tight text-gray-900">
               구르는 감자단 소개
             </h2>
-            <p className="mt-2 text-center text-base font-extralight text-gray-600">
+            <p className="mt-2 text-center text-base font-light text-gray-600">
               프로젝트 사용 설명 및 팀 소개
             </p>
           </div>
@@ -63,7 +63,7 @@ export default function Introduce({ MemberData }: any) {
               </span>
               <span className="text-left text-interview-300">Us</span>
             </p>
-            <div className="text-xl font-extralight">
+            <div className="text-xl font-light">
               <p className="my-5"> 안녕하세요. 구르는 감자단입니다.</p>
               <p className="my-5">
                 아주대 심리학과는 다양한 진로를 선택할 수 있다는 장점이 있는
@@ -103,7 +103,7 @@ export default function Introduce({ MemberData }: any) {
             <p className="text-5xl font-medium text-left text-neutral-800 dark:text-slate-100">
               License
             </p>
-            <div className="text-xl font-extralight">
+            <div className="text-xl font-light">
               <p className="my-4">
                 - 본 요람은 아주대학교 심리학과 학우분들의 공익을 위한 목적이
                 있었기에 소중한 이야기를 담을 수 있었습니다. 이에, 타대학교 유출

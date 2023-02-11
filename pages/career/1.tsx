@@ -53,13 +53,13 @@ export default function Home({ AirForce }: any) {
                 <h1 className="text-5xl font-black mb-5">참새</h1>
                 <div className="flex">
                   <p className="text-base font-extrabold">직업군</p>
-                  <p className="text-base font-extralight ml-3.5">
+                  <p className="text-base font-light ml-3.5">
                     교육/법률/사회복지/경찰/소방직 및 군인
                   </p>
                 </div>
                 <div className="flex">
                   <p className="text-base font-extrabold">직업명</p>
-                  <p className="text-base font-extralight ml-3.5">공군 장교</p>
+                  <p className="text-base font-light ml-3.5">공군 장교</p>
                 </div>
               </div>
             </section>
