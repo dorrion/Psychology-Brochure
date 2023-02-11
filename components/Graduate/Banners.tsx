@@ -8,7 +8,7 @@ export const Banner1 = () => {
           <h1 className="text-3xl font-medium mb-2 dark:text-slate-800">
             추천 커리큘럼
           </h1>
-          <h2 className="text-xl font-extralight dark:text-slate-800">
+          <h2 className="text-xl font-light dark:text-slate-800">
             세부 전공 별 추천 이수 과목을 알려드려요
           </h2>
         </div>
@@ -33,7 +33,7 @@ export const Banner2 = () => {
           <h1 className="text-3xl font-medium mb-2 dark:text-slate-800">
             대학원 준비
           </h1>
-          <h2 className="text-xl font-extralight dark:text-slate-800">
+          <h2 className="text-xl font-light dark:text-slate-800">
             세부 전공 별 대학원 입시 준비에 대한 정보를 알려드려요
           </h2>
         </div>
@@ -59,7 +59,7 @@ export const Banner3 = () => {
           <h1 className="text-3xl font-medium mb-2 dark:text-slate-800">
             대학원 생활
           </h1>
-          <h2 className="text-xl font-extralight dark:text-slate-800">
+          <h2 className="text-xl font-light dark:text-slate-800">
             세부 전공 별 대학원 생활에 대한 정보를 알려드려요
           </h2>
         </div>
@@ -85,7 +85,7 @@ export const Banner4 = () => {
           <h1 className="text-3xl font-medium mb-2 dark:text-slate-800">
             전공별 질문
           </h1>
-          <h2 className="text-xl font-extralight dark:text-slate-800">
+          <h2 className="text-xl font-light dark:text-slate-800">
             세부 전공 별 정보를 알려드려요
           </h2>
         </div>
@@ -111,7 +111,7 @@ export const Banner5 = () => {
           <h1 className="text-3xl font-medium mb-2 dark:text-slate-800">
             자유 발언
           </h1>
-          <h2 className="text-xl font-extralight dark:text-slate-800">
+          <h2 className="text-xl font-light dark:text-slate-800">
             선배님들의 추가 조언을 전해드려요
           </h2>
         </div>
@@ -136,7 +136,7 @@ export const Banner6 = () => {
           <h1 className="text-3xl font-medium mb-2 dark:text-slate-800">
             대학원 입시요강
           </h1>
-          <h2 className="text-xl font-extralight dark:text-slate-800">
+          <h2 className="text-xl font-light dark:text-slate-800">
             대학별 모집요강을 안내드려요
           </h2>
         </div>

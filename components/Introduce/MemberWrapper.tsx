@@ -26,7 +26,7 @@ export default function MemberWrapper({
         {role?.map((el, idx) => (
           <h3
             key={idx}
-            className="text-xl font-extralight text-gray-500 dark:text-slate-400 mb-2"
+            className="text-xl font-light text-gray-500 dark:text-slate-400 mb-2"
           >
             {el}
           </h3>

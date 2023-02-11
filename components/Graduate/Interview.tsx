@@ -21,7 +21,7 @@ export default function Interview({ question, answer }: QnAProps) {
             {ans.name}
           </div>
         </div>
-        <div className="text-lg font-extralight ml-6">{ans.content}</div>
+        <div className="text-lg font-light ml-6">{ans.content}</div>
       </div>
     );
   });

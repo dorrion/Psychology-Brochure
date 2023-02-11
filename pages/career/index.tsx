@@ -40,7 +40,7 @@ export default function Home({ CareerInterview }: any) {
                   <h1 className="text-4xl font-bold mb-2.5 text-slate-100">
                     취업 관련 정보
                   </h1>
-                  <h2 className="text-base font-extralight text-slate-100 mb-6">
+                  <h2 className="text-base font-light text-slate-100 mb-6">
                     심리학과 취업률, 급여, 취직 분야 통계 자료
                   </h2>
                   {/* 취업 정보 바로 가기 버튼 */}
@@ -63,7 +63,7 @@ export default function Home({ CareerInterview }: any) {
               {/* 취업 인터뷰 */}
               <div className="container my-12 mx-auto">
                 <h1 className="text-5xl font-medium">취업 인터뷰</h1>
-                <p className="mb-8 text-base font-extralight text-gray-500">
+                <p className="mb-8 text-base font-light text-gray-500">
                   심리학과 졸업생들의 취업 이야기. 취업과 관련된 다양한 궁금증을
                   물어봤습니다.
                 </p>
