@@ -9,7 +9,7 @@ export default function index() {
       <PostHead />
       <section className="text-gray-600 body-font ">
         <div className="container px-5 py-12 max-w-[64rem] mx-auto flex flex-col">
-          <h1 className="text-6xl sm:text-5xl font-bold font-sans text-gray-900 mb-4 text-left">
+          <h1 className="text-6xl font-black text-gray-900 mb-4 text-center">
             심리학과 메일 쓰기
           </h1>
           <div className="w-full mx-auto flexBox flex-col">

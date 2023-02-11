@@ -53,6 +53,9 @@ export default function index({ data }: any) {
       <PostHead />
       <section className="text-gray-600 body-font ">
         <div className="container px-5 py-12  max-w-[64rem]  mx-auto flex-col flexBox">
+          <h1 className="text-6xl font-black text-gray-900 mb-4">
+            심리학과에서 장학금 받기
+          </h1>
           <div className="flexBox flex-wrap max-w-[64rem] mx-auto">
             {school}
           </div>

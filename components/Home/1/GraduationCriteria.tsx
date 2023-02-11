@@ -8,7 +8,7 @@ export default function GraduationCriteria() {
   return (
     <>
       <div className="text-center mb-14">
-        <h1 className="text-6xl sm:text-5xl font-bold font-sans text-gray-900 mb-4">
+        <h1 className="text-6xl font-black text-gray-900 mb-4">
           심리학과 졸업하기
         </h1>
         <p className="text-2xl font-bold leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">

@@ -21,7 +21,7 @@ export default function index({ data }: any) {
       <div className="text-gray-600 body-font max-w-[64rem] mx-auto">
         <section>
           <div className="container py-12 px-5 mx-auto flex-col flexBox ">
-            <h1 className="text-5xl font-bold font-sans text-gray-900 mb-4 text-left">
+            <h1 className="text-6xl font-black text-gray-900 mb-4 text-left">
               심리학과에서 놀기
             </h1>
           </div>

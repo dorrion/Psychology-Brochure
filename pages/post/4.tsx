@@ -124,7 +124,7 @@ export default function index({ data }: any) {
       <PostHead />
       <section className="text-gray-600 body-font ">
         <div className="container px-5 py-12 mx-auto flex-col flexBox">
-          <h1 className="text-6xl sm:text-5xl font-bold font-sans text-gray-900 mb-4 text-left">
+          <h1 className="text-6xl font-black text-gray-900 mb-4 text-center">
             심리학과 비교과 프로그램 하기
           </h1>
           <Tabs
