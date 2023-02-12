@@ -53,9 +53,7 @@ export default function Home({ WebProgrammer }: any) {
                 <h1 className="text-5xl font-black mb-5">익명</h1>
                 <div className="flex">
                   <p className="text-base font-extrabold">직업군</p>
-                  <p className="text-base font-light ml-3.5">
-                    연구직/공학 기술직
-                  </p>
+                  <p className="text-base font-light ml-3.5">it/웹개발</p>
                 </div>
                 <div className="flex">
                   <p className="text-base font-extrabold">직업명</p>
