@@ -59,22 +59,16 @@ export default function Home({ WebProgrammer }: any) {
                 </div>
                 <div className="flex">
                   <p className="text-base font-extrabold">직업명</p>
-                  <p className="text-base font-light ml-3.5">
-                    웹개발자, 그래픽스엔지니어
-                  </p>
+                  <p className="text-base font-light ml-3.5">웹개발자</p>
                 </div>
               </div>
             </section>
             <section className="mt-40">
-              <h1 className="text-5xl font-black">
-                그래픽스 엔지니어 추천 커리큘럼
-              </h1>
+              <h1 className="text-5xl font-black">웹 개발자 추천 커리큘럼</h1>
               {WebProgrammerCurri}
             </section>
             <section className="mt-40">
-              <h1 className="text-5xl font-black">
-                그래픽스 엔지니어 취업 이야기
-              </h1>
+              <h1 className="text-5xl font-black">웹 개발자 취업 이야기</h1>
               {WebProgrammerInterview}
             </section>
           </div>
