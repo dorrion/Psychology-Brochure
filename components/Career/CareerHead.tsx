@@ -88,16 +88,16 @@ const CareerHead = () => {
       )}
       {pathname === '/career/3' && (
         <>
-          <title>그래픽스 엔지니어</title>
+          <title>웹 개발자</title>
           <meta
             name="description"
-            content="그래픽스 엔지니어 추천 커리큘럼, 인터뷰를 알려드려요"
+            content="웹 개발자 추천 커리큘럼, 인터뷰를 알려드려요"
           />
-          <meta name="keywords" content="그래픽스 엔지니어, 커리큘럼, 인터뷰" />
-          <meta property="og:title" content="그래픽스 엔지니어" />
+          <meta name="keywords" content="웹 개발자, 커리큘럼, 인터뷰" />
+          <meta property="og:title" content="웹 개발자" />
           <meta
             property="og:description"
-            content="그래픽스 엔지니어 추천 커리큘럼, 인터뷰를 알려드려요"
+            content="웹 개발자 추천 커리큘럼, 인터뷰를 알려드려요"
           />
           <meta
             property="og:url"
