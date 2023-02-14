@@ -59,7 +59,7 @@ export default function Home({ CareerInterview }: any) {
             </div>
           </section>
           <section className="text-gray-600 body-font">
-            <div className="max-w-[64rem]">
+            <div className=" max-w-[64rem] mx-auto mb-56 flexBox">
               {/* 취업 인터뷰 */}
               <div className="container my-12 mx-auto">
                 <h1 className="text-5xl font-medium">취업 인터뷰</h1>
