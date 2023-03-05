@@ -83,7 +83,9 @@
               "name": "사회심리학 및 실험",
               "engName": "Theories & Experiments in Social Psychology",
               "explain": "사회적 상황에서의 인간의 행동과 사고과정에 관한 여러 이 론들과 실험연구들을 고찰한다."
-            },
+            }
+          ],
+          "majorChoice": [
             {
               "name": "데이터 분석 방법과 적용",
               "engName": "Data Analysis and Its Application",
